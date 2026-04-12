@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================
+   SACKERS GOTHIC FONT FACES
+   ============================================ */
+
+@font-face {
+  font-family: "Sackers Gothic Heavy";
+  src: url("/fonts/Sackers Gothic Heavy.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sackers Gothic Medium";
+  src: url("/fonts/Sackers Gothic Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sackers Gothic Light";
+  src: url("/fonts/Sackers Gothic Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ============================================
+   CSS CUSTOM PROPERTIES - PALETA RUA | LAREU
+   ============================================ */
+
+:root {
+  --color-primary: #314A43;
+  --color-primary-light: #E8EFEC;
+  --color-accent: #C5A572;
+  --color-background: #F8F6F3;
+  --color-text: #1A1A1A;
+  --color-text-secondary: #666666;
+  --color-white: #FFFFFF;
+
+  --background: var(--color-background);
+  --foreground: var(--color-text);
+}
+
+/* ============================================
+   BASE STYLES
+   ============================================ */
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* offset for fixed header when using anchor links */
+    scroll-padding-top: 80px;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--font-inter), system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Background video: override Tailwind Preflight (max-width:100%, height:auto) */
+  video[aria-hidden="true"] {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    display: block !important;
+  }
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Sackers Gothic utilities */
+  .font-sackers-heavy {
+    font-family: "Sackers Gothic Heavy", serif;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+
+  .font-sackers-medium {
+    font-family: "Sackers Gothic Medium", serif;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .font-sackers-light {
+    font-family: "Sackers Gothic Light", serif;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  /* Image overlays */
+  .overlay-primary {
+    position: relative;
+  }
+
+  .overlay-primary::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: var(--color-primary);
+    opacity: 0.6;
+  }
+
+  /* Section spacing */
+  .section-padding {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  @media (min-width: 1024px) {
+    .section-padding {
+      padding-top: 7rem;
+      padding-bottom: 7rem;
+    }
+  }
+
+  /* Thin decorative line */
+  .line-accent {
+    display: block;
+    width: 3rem;
+    height: 1px;
+    background-color: var(--color-accent);
+  }
+
+  /* Animation helpers - start hidden, animate when .animate class is added */
+  .animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  .animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
