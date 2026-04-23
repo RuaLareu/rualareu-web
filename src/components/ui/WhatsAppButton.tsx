@@ -7,7 +7,7 @@ export default function WhatsAppButton() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Contactar por WhatsApp"
-      className="fixed bottom-6 right-6 z-40 group"
+      className="fixed bottom-5 right-4 sm:bottom-6 sm:right-6 z-40 group"
     >
       {/* Pulse ring */}
       <span className="absolute inset-0 rounded-full bg-[#25D366]/40 animate-whatsapp-pulse" />

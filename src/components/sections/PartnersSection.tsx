@@ -53,7 +53,7 @@ export default function PartnersSection() {
                     <p className="font-sackers-light text-accent text-[9px] tracking-[0.25em] mb-1.5">
                       {partner.area}
                     </p>
-                    <h3 className="font-sackers-heavy text-primary text-base lg:text-lg leading-tight whitespace-nowrap">
+                    <h3 className="font-sackers-heavy text-primary text-sm sm:text-base lg:text-lg leading-tight">
                       {partner.name}
                     </h3>
                     <p className="text-text-secondary text-xs mt-0.5">{partner.title}</p>
@@ -63,7 +63,7 @@ export default function PartnersSection() {
                 <div className="w-8 h-px bg-accent mb-6" />
 
                 {/* Bio */}
-                <div className="text-text-secondary text-sm leading-relaxed space-y-3 text-justify">
+                <div className="text-text-secondary text-sm leading-relaxed space-y-3">
                   {partner.bio.split("\n\n").map((paragraph, j) => (
                     <p key={j}>{paragraph}</p>
                   ))}

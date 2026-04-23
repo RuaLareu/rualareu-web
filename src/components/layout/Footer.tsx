@@ -15,10 +15,10 @@ export default function Footer() {
       <div className="h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
 
       <div className="max-w-7xl mx-auto px-6 lg:px-8 pt-16 pb-12 lg:pt-20 lg:pb-14">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-8">
 
           {/* ── Brand column ── */}
-          <div className="sm:col-span-2 lg:col-span-4">
+          <div className="col-span-2 lg:col-span-4">
             <Image
               src="/images/rua-lareu-horizontal-sin-fondo.png"
               alt="RUA | LAREU"
@@ -133,7 +133,7 @@ export default function Footer() {
           </div>
 
           {/* ── Contact ── */}
-          <div className="sm:col-span-2 lg:col-span-2">
+          <div className="col-span-2 lg:col-span-2">
             <h3 className="font-sackers-medium text-[10px] tracking-[0.22em] text-white/90 mb-5">
               Contacto
             </h3>
