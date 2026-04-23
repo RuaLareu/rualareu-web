@@ -11,7 +11,7 @@ export default function AboutSection() {
             <p className="font-sackers-light text-accent text-[10px] sm:text-xs tracking-[0.32em] mb-5">
               Quiénes somos
             </p>
-            <h2 className="font-sackers-heavy text-primary text-3xl sm:text-4xl lg:text-5xl mb-7">
+            <h2 className="font-sackers-heavy text-primary text-3xl sm:text-4xl lg:text-4xl xl:text-5xl mb-7">
               Estudio
             </h2>
             <div className="w-10 h-px bg-accent mb-8" />

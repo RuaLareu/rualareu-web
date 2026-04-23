@@ -27,7 +27,7 @@ export default function PartnersSection() {
           <p className="font-sackers-light text-accent text-[10px] sm:text-xs tracking-[0.32em] mb-4">
             El equipo
           </p>
-          <h2 className="font-sackers-heavy text-primary text-3xl sm:text-4xl lg:text-5xl">
+          <h2 className="font-sackers-heavy text-primary text-3xl sm:text-4xl lg:text-4xl xl:text-5xl">
             Socios
           </h2>
           <div className="w-12 h-px bg-accent mx-auto mt-6" />

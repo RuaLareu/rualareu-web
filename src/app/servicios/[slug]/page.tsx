@@ -150,7 +150,7 @@ export default function ServicePage({ params }: Props) {
             <p className="font-sackers-light text-white/60 text-[10px] sm:text-xs tracking-[0.3em] mb-4">
               {service.area === "juridico" ? "Servicio Jurídico" : "Servicio Contable"}
             </p>
-            <h1 className="font-sackers-heavy text-3xl sm:text-4xl lg:text-5xl mb-6">{data.title}</h1>
+            <h1 className="font-sackers-heavy text-3xl sm:text-4xl lg:text-4xl xl:text-5xl mb-6">{data.title}</h1>
             <div className="w-12 h-px bg-white/30 mx-auto mb-6" />
             <p className="text-white/70 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
               {data.subtitle}

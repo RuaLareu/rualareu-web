@@ -16,7 +16,7 @@ export default function BlogPreview() {
             <p className="font-sackers-light text-accent text-[10px] sm:text-xs tracking-[0.32em] mb-4">
               Novedades
             </p>
-            <h2 className="font-sackers-heavy text-primary text-3xl sm:text-4xl lg:text-5xl">
+            <h2 className="font-sackers-heavy text-primary text-3xl sm:text-4xl lg:text-4xl xl:text-5xl">
               Publicaciones
             </h2>
             <div className="w-12 h-px bg-accent mt-6" />
@@ -29,7 +29,7 @@ export default function BlogPreview() {
           </Link>
         </ScrollAnimation>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {posts.map((post, i) => (
             <ScrollAnimation key={post.slug} delay={i * 80}>
               <Link

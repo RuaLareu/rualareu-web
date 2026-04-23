@@ -56,9 +56,9 @@ export default function Hero() {
 
       {/* ── Contenido posicionado a la derecha ── */}
       <div className="relative z-10 min-h-[85vh] lg:min-h-screen flex items-end lg:items-center">
-        <div className="w-full lg:w-auto lg:ml-auto lg:mr-[5%] xl:mr-[8%] px-8 sm:px-10 lg:px-16 xl:px-20 pb-24 lg:pb-0 max-w-xl hero-fade-in text-left">
+        <div className="w-full lg:w-auto lg:ml-auto lg:mr-[5%] xl:mr-[8%] px-8 sm:px-10 lg:px-16 xl:px-20 pb-32 lg:pb-0 max-w-xl hero-fade-in text-left">
           {/* Eyebrow */}
-          <p className="font-sackers-light text-white/50 text-[9px] sm:text-[10px] tracking-[0.20em] mb-6 whitespace-nowrap">
+          <p className="font-sackers-light text-white/50 text-[9px] sm:text-[10px] lg:text-xs tracking-[0.20em] mb-6">
             Estudio jurídico contable en Mar del Plata
           </p>
 
@@ -84,13 +84,13 @@ export default function Hero() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center border border-white/40 text-white text-xs font-sackers-light tracking-[0.20em] px-8 py-3.5 hover:bg-white hover:text-primary transition-all duration-300"
+              className="inline-flex items-center justify-center w-full sm:w-auto border border-white/40 text-white text-xs font-sackers-light tracking-[0.20em] px-8 py-3.5 hover:bg-white hover:text-primary transition-all duration-300"
             >
               Agendar consulta
             </a>
             <a
               href="#servicios"
-              className="inline-flex items-center justify-center border border-white/20 text-white/60 text-xs font-sackers-light tracking-[0.20em] px-8 py-3.5 hover:border-white/40 hover:text-white transition-all duration-300"
+              className="inline-flex items-center justify-center w-full sm:w-auto border border-white/20 text-white/60 text-xs font-sackers-light tracking-[0.20em] px-8 py-3.5 hover:border-white/40 hover:text-white transition-all duration-300"
             >
               Nuestros servicios
             </a>

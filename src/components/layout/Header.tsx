@@ -44,17 +44,37 @@ export default function Header({ lightHero = false }: HeaderProps) {
             solid ? "max-h-0 opacity-0" : "max-h-10 opacity-100"
           }`}
         >
-          <div className="bg-primary/40 border-b border-white/8">
+          <div
+            className={
+              solid
+                ? "bg-white/95 border-b border-black/5"
+                : "bg-transparent"
+            }
+          >
             <div className="max-w-7xl mx-auto px-8 h-9 flex items-center justify-between">
-              <div className="flex items-center gap-1.5 text-white/55 text-[11px]">
+              <div
+                className={`flex items-center gap-1.5 text-[11px] ${
+                  solid
+                    ? "text-text-secondary"
+                    : "text-white/75 [text-shadow:0_1px_3px_rgba(0,0,0,0.4)]"
+                }`}
+              >
                 <MapPin size={10} className="flex-shrink-0" />
                 <span>{CONTACT.address}</span>
               </div>
-              <div className="flex items-center gap-6 text-white/55 text-[11px]">
+              <div
+                className={`flex items-center gap-6 text-[11px] ${
+                  solid
+                    ? "text-text-secondary"
+                    : "text-white/75 [text-shadow:0_1px_3px_rgba(0,0,0,0.4)]"
+                }`}
+              >
                 <span>Lunes a Viernes · {CONTACT.hours}</span>
                 <a
                   href={`tel:${CONTACT.phoneRaw}`}
-                  className="flex items-center gap-1.5 hover:text-white/90 transition-colors"
+                  className={`flex items-center gap-1.5 transition-colors ${
+                    solid ? "hover:text-text" : "hover:text-white"
+                  }`}
                 >
                   <Phone size={10} />
                   {CONTACT.phone}

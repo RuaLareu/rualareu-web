@@ -99,7 +99,7 @@ export default function RegistroMarcasLanding() {
               <span className="text-white/70 text-xs">5.0 en Google · 18 opiniones</span>
             </div>
 
-            <h1 className="text-white text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-6">
+            <h1 className="text-white text-3xl sm:text-4xl lg:text-4xl xl:text-5xl font-bold leading-tight mb-6">
               Protegé tu marca.
               <br />
               <span className="text-white/70">Registrala antes de que otro lo haga.</span>

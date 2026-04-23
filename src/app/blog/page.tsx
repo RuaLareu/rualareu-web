@@ -56,7 +56,7 @@ export default function BlogPage() {
             <p className="font-sackers-light text-white/70 text-[10px] sm:text-xs tracking-[0.3em] mb-4">
               Análisis jurídico y contable
             </p>
-            <h1 className="font-sackers-heavy text-3xl sm:text-4xl lg:text-5xl mb-6">
+            <h1 className="font-sackers-heavy text-3xl sm:text-4xl lg:text-4xl xl:text-5xl mb-6">
               Publicaciones
             </h1>
             <div className="w-12 h-px bg-white/30 mx-auto mb-6" />

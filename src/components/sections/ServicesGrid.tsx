@@ -46,7 +46,7 @@ function ServiceCard({ service }: { service: Service }) {
       </div>
 
       {/* Title */}
-      <h3 className="font-sackers-medium text-[10px] sm:text-[11px] tracking-[0.18em] text-primary mb-3 leading-tight">
+      <h3 className="font-sackers-medium text-[10px] sm:text-[11px] lg:text-xs xl:text-[13px] tracking-[0.18em] text-primary mb-3 leading-tight">
         {service.title}
       </h3>
 
@@ -102,7 +102,7 @@ export default function ServicesGrid() {
           <p className="font-sackers-light text-accent text-[10px] sm:text-xs tracking-[0.32em] mb-4">
             Lo que hacemos
           </p>
-          <h2 className="font-sackers-heavy text-primary text-3xl sm:text-4xl lg:text-5xl">
+          <h2 className="font-sackers-heavy text-primary text-3xl sm:text-4xl lg:text-4xl xl:text-5xl">
             Servicios
           </h2>
           <div className="w-12 h-px bg-accent mx-auto mt-6" />
