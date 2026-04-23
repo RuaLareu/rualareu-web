@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, type ReactNode } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 
 interface ScrollAnimationProps {
   children: ReactNode;
@@ -14,28 +14,37 @@ export default function ScrollAnimation({
   delay = 0,
 }: ScrollAnimationProps) {
   const ref = useRef<HTMLDivElement>(null);
+  const [visible, setVisible] = useState(false);
 
   useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setTimeout(() => {
-              entry.target.classList.add("is-visible");
-            }, delay);
+            if (delay > 0) {
+              setTimeout(() => setVisible(true), delay);
+            } else {
+              setVisible(true);
+            }
             observer.unobserve(entry.target);
           }
         });
       },
-      { threshold: 0.1 }
+      { threshold: 0.05, rootMargin: "0px 0px -30px 0px" }
     );
 
-    if (ref.current) observer.observe(ref.current);
+    observer.observe(el);
     return () => observer.disconnect();
   }, [delay]);
 
   return (
-    <div ref={ref} className={`animate-on-scroll ${className}`}>
+    <div
+      ref={ref}
+      className={`scroll-animate ${visible ? "visible" : ""} ${className}`}
+    >
       {children}
     </div>
   );

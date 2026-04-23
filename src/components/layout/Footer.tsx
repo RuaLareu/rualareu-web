@@ -4,22 +4,15 @@ import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import { CONTACT, NAV_LINKS, WHATSAPP_URL } from "@/lib/constants";
 import { SERVICES } from "@/lib/services";
 
-const JURIDICAL_SLUGS = [
-  "laboral-seguridad-social",
-  "comercial-societario",
-  "defensa-del-consumidor",
-  "civil-familia-sucesiones",
-];
-
 export default function Footer() {
   const year = new Date().getFullYear();
-  const juridical = SERVICES.filter((s) => JURIDICAL_SLUGS.includes(s.slug));
-  const accounting = SERVICES.filter((s) => !JURIDICAL_SLUGS.includes(s.slug));
+  const juridical = SERVICES.filter((s) => s.area === "juridico");
+  const accounting = SERVICES.filter((s) => s.area === "contable");
 
   return (
     <footer className="bg-primary text-white">
       {/* Accent top border */}
-      <div className="h-px bg-gradient-to-r from-transparent via-accent/40 to-transparent" />
+      <div className="h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
 
       <div className="max-w-7xl mx-auto px-6 lg:px-8 pt-16 pb-12 lg:pt-20 lg:pb-14">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8">
@@ -44,7 +37,7 @@ export default function Footer() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-accent text-xs tracking-wide hover:text-accent/80 transition-colors group"
+              className="inline-flex items-center gap-2 text-white/90 text-xs tracking-wide hover:text-white transition-colors group"
             >
               <span className="w-4 h-4 flex-shrink-0">
                 <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -56,11 +49,35 @@ export default function Footer() {
               </span>
               <span className="group-hover:translate-x-0.5 transition-transform text-xs">→</span>
             </a>
+
+            {/* Social links */}
+            <div className="flex items-center gap-4 mt-6">
+              <a
+                href="#"
+                aria-label="Instagram"
+                className="text-white/60 hover:text-white transition-colors"
+              >
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-[18px] h-[18px]">
+                  <rect x="2" y="2" width="20" height="20" rx="5" />
+                  <circle cx="12" cy="12" r="5" />
+                  <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none" />
+                </svg>
+              </a>
+              <a
+                href="#"
+                aria-label="LinkedIn"
+                className="text-white/60 hover:text-white transition-colors"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor" className="w-[18px] h-[18px]">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                </svg>
+              </a>
+            </div>
           </div>
 
           {/* ── Juridical services ── */}
           <div className="lg:col-span-2">
-            <h3 className="font-sackers-medium text-[10px] tracking-[0.22em] text-accent/80 mb-5">
+            <h3 className="font-sackers-medium text-[10px] tracking-[0.22em] text-white/90 mb-5">
               Jurídicos
             </h3>
             <ul className="space-y-2.5">
@@ -79,7 +96,7 @@ export default function Footer() {
 
           {/* ── Accounting services ── */}
           <div className="lg:col-span-2">
-            <h3 className="font-sackers-medium text-[10px] tracking-[0.22em] text-accent/80 mb-5">
+            <h3 className="font-sackers-medium text-[10px] tracking-[0.22em] text-white/90 mb-5">
               Contables
             </h3>
             <ul className="space-y-2.5">
@@ -98,7 +115,7 @@ export default function Footer() {
 
           {/* ── Navigation ── */}
           <div className="lg:col-span-2">
-            <h3 className="font-sackers-medium text-[10px] tracking-[0.22em] text-accent/80 mb-5">
+            <h3 className="font-sackers-medium text-[10px] tracking-[0.22em] text-white/90 mb-5">
               Navegación
             </h3>
             <ul className="space-y-2.5">
@@ -117,16 +134,16 @@ export default function Footer() {
 
           {/* ── Contact ── */}
           <div className="sm:col-span-2 lg:col-span-2">
-            <h3 className="font-sackers-medium text-[10px] tracking-[0.22em] text-accent/80 mb-5">
+            <h3 className="font-sackers-medium text-[10px] tracking-[0.22em] text-white/90 mb-5">
               Contacto
             </h3>
             <ul className="space-y-3.5">
               <li className="flex items-start gap-2.5">
-                <MapPin size={13} className="mt-0.5 flex-shrink-0 text-accent/60" />
+                <MapPin size={13} className="mt-0.5 flex-shrink-0 text-white/50" />
                 <span className="text-white/50 text-xs leading-relaxed">{CONTACT.address}</span>
               </li>
               <li className="flex items-center gap-2.5">
-                <Phone size={13} className="flex-shrink-0 text-accent/60" />
+                <Phone size={13} className="flex-shrink-0 text-white/50" />
                 <a
                   href={`tel:${CONTACT.phoneRaw}`}
                   className="text-white/50 text-xs hover:text-white/85 transition-colors"
@@ -135,7 +152,7 @@ export default function Footer() {
                 </a>
               </li>
               <li className="flex items-center gap-2.5">
-                <Mail size={13} className="flex-shrink-0 text-accent/60" />
+                <Mail size={13} className="flex-shrink-0 text-white/50" />
                 <a
                   href={`mailto:${CONTACT.email}`}
                   className="text-white/50 text-xs hover:text-white/85 transition-colors"
@@ -144,7 +161,7 @@ export default function Footer() {
                 </a>
               </li>
               <li className="flex items-center gap-2.5">
-                <Clock size={13} className="flex-shrink-0 text-accent/60" />
+                <Clock size={13} className="flex-shrink-0 text-white/50" />
                 <span className="text-white/50 text-xs">{CONTACT.hours}</span>
               </li>
             </ul>

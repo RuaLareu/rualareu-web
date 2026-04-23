@@ -9,6 +9,10 @@ import {
   TrendingUp,
   Rocket,
   ArrowRight,
+  Clock,
+  Wallet,
+  ShieldAlert,
+  Globe,
   type LucideProps,
 } from "lucide-react";
 import ScrollAnimation from "@/components/ui/ScrollAnimation";
@@ -23,6 +27,10 @@ const iconMap: Record<string, React.ComponentType<LucideProps>> = {
   FileText,
   TrendingUp,
   Rocket,
+  Clock,
+  Wallet,
+  ShieldAlert,
+  Globe,
 };
 
 function ServiceCard({ service }: { service: Service }) {
@@ -30,7 +38,7 @@ function ServiceCard({ service }: { service: Service }) {
   return (
     <Link
       href={`/servicios/${service.slug}`}
-      className="group flex flex-col bg-white p-6 border border-gray-100 hover:border-accent/25 hover:shadow-[0_4px_20px_rgba(0,0,0,0.07)] transition-all duration-200"
+      className="group flex flex-col h-full bg-white p-6 border border-primary/15 hover:border-accent hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
     >
       {/* Icon */}
       <div className="mb-5 w-10 h-10 flex items-center justify-center bg-primary-light text-primary group-hover:bg-primary group-hover:text-white transition-all duration-200">
@@ -66,9 +74,21 @@ function AreaLabel({ children }: { children: React.ReactNode }) {
         <span className="font-sackers-medium text-[10px] tracking-[0.28em] text-text-secondary/60 whitespace-nowrap">
           {children}
         </span>
-        <span className="flex-1 h-px bg-gray-100" />
+        <span className="flex-1 h-px bg-primary/15" />
       </div>
     </ScrollAnimation>
+  );
+}
+
+function ServiceRow({ services }: { services: Service[] }) {
+  return (
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      {services.map((service, i) => (
+        <ScrollAnimation key={service.slug} delay={i * 70}>
+          <ServiceCard service={service} />
+        </ScrollAnimation>
+      ))}
+    </div>
   );
 }
 
@@ -91,25 +111,13 @@ export default function ServicesGrid() {
         {/* ── Jurídicos ── */}
         <div className="mb-12">
           <AreaLabel>Jurídicos</AreaLabel>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {JURIDICAL_SERVICES.map((service, i) => (
-              <ScrollAnimation key={service.slug} delay={i * 70}>
-                <ServiceCard service={service} />
-              </ScrollAnimation>
-            ))}
-          </div>
+          <ServiceRow services={JURIDICAL_SERVICES} />
         </div>
 
         {/* ── Contables ── */}
         <div>
           <AreaLabel>Contables</AreaLabel>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {ACCOUNTING_SERVICES.map((service, i) => (
-              <ScrollAnimation key={service.slug} delay={i * 70}>
-                <ServiceCard service={service} />
-              </ScrollAnimation>
-            ))}
-          </div>
+          <ServiceRow services={ACCOUNTING_SERVICES} />
         </div>
 
       </div>

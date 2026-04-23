@@ -24,11 +24,11 @@ export default function CTAButton({
   };
 
   const variants = {
-    solid: "bg-accent text-white hover:bg-accent/90",
-    outline: "border border-white text-white hover:bg-white hover:text-primary",
+    solid: "bg-accent text-white font-semibold hover:bg-accent/90",
+    outline: "border border-white text-white font-medium hover:bg-white hover:text-primary",
   };
 
-  const classes = `inline-flex items-center justify-center font-medium tracking-wide transition-colors ${sizes[size]} ${variants[variant]} ${className}`;
+  const classes = `inline-flex items-center justify-center tracking-wide transition-colors ${sizes[size]} ${variants[variant]} ${className}`;
 
   if (external) {
     return (

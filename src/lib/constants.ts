@@ -17,23 +17,23 @@ export const WHATSAPP_URL = `https://wa.me/${CONTACT.phoneRaw}?text=${CONTACT.wh
 export const GOOGLE_REVIEWS = {
   rating: 5.0,
   reviewCount: 18,
-  profileUrl: CONTACT.googleProfileUrl,
+  profileUrl: "https://www.google.com/maps/place/?q=place_id:ChIJx6Hka-K1v5URnEwHjBNJbz0",
 };
 
 export const NAV_LINKS = [
   { label: "Estudio", href: "/#estudio" },
   { label: "Servicios", href: "/#servicios" },
   { label: "Socios", href: "/#socios" },
-  { label: "Blog", href: "/blog" },
+  { label: "Publicaciones", href: "/blog" },
   { label: "Contacto", href: "/contacto" },
 ];
 
 export const COLORS = {
   primary: "#314A43",
-  primaryLight: "#E8EFEC",
-  accent: "#C5A572",
-  background: "#F8F6F3",
-  text: "#1A1A1A",
+  primaryLight: "#EDE7D9",
+  accent: "#314A43",
+  background: "#FAF5EC",
+  text: "#1B1B1B",
   textSecondary: "#666666",
   white: "#FFFFFF",
 } as const;

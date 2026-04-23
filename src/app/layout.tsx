@@ -1,10 +1,19 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Montserrat, Lora } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
+const montserrat = Montserrat({
   subsets: ["latin"],
-  variable: "--font-inter",
+  weight: ["400", "500", "600"],
+  variable: "--font-montserrat",
+  display: "swap",
+});
+
+const lora = Lora({
+  subsets: ["latin"],
+  weight: ["400"],
+  style: ["italic"],
+  variable: "--font-lora",
   display: "swap",
 });
 
@@ -14,7 +23,7 @@ export const metadata: Metadata = {
     template: "%s | RUA | LAREU - Estudio Jurídico Contable",
   },
   description:
-    "Estudio jurídico contable en Mar del Plata. Asesoramiento laboral, comercial, impositivo y contable. Soluciones claras para decisiones seguras.",
+    "Estudio jurídico y contable en Mar del Plata. Asesoramiento en derecho laboral, civil, familia, defensa del consumidor, contabilidad, impuestos y sociedades.",
   keywords: [
     "estudio jurídico contable",
     "abogados Mar del Plata",
@@ -39,7 +48,7 @@ export const metadata: Metadata = {
     siteName: "RUA | LAREU - Estudio Jurídico Contable",
     title: "RUA | LAREU - Estudio Jurídico Contable en Mar del Plata",
     description:
-      "Estudio jurídico contable en Mar del Plata. Asesoramiento laboral, comercial, impositivo y contable. Soluciones claras para decisiones seguras.",
+      "Estudio jurídico y contable en Mar del Plata. Asesoramiento en derecho laboral, civil, familia, defensa del consumidor, contabilidad, impuestos y sociedades.",
     images: [
       {
         url: "/og/og-default.jpg",
@@ -53,8 +62,16 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "RUA | LAREU - Estudio Jurídico Contable en Mar del Plata",
     description:
-      "Estudio jurídico contable en Mar del Plata. Asesoramiento laboral, comercial, impositivo y contable.",
+      "Estudio jurídico y contable en Mar del Plata. Asesoramiento en derecho laboral, civil, familia, defensa del consumidor, contabilidad, impuestos y sociedades.",
     images: ["/og/og-default.jpg"],
+  },
+  icons: {
+    icon: [
+      { url: "/images/favicon-192.png", sizes: "192x192", type: "image/png" },
+    ],
+    apple: [
+      { url: "/images/favicon-192.png", sizes: "192x192", type: "image/png" },
+    ],
   },
   robots: {
     index: true,
@@ -75,7 +92,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es-AR" className={inter.variable}>
+    <html lang="es-AR" className={`${montserrat.variable} ${lora.variable}`}>
       <body className="antialiased bg-background text-text">{children}</body>
     </html>
   );

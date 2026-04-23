@@ -60,7 +60,7 @@ export default function ContactForm() {
             {...register("nombre")}
             type="text"
             placeholder="Tu nombre completo"
-            className="w-full px-4 py-3 border border-gray-200 text-sm focus:outline-none focus:border-primary transition-colors bg-white"
+            className="w-full px-4 py-3 border border-primary/20 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/30 transition-colors bg-white"
           />
           {errors.nombre && (
             <p className="mt-1 text-xs text-red-500">{errors.nombre.message}</p>
@@ -74,7 +74,7 @@ export default function ContactForm() {
             {...register("email")}
             type="email"
             placeholder="tu@email.com"
-            className="w-full px-4 py-3 border border-gray-200 text-sm focus:outline-none focus:border-primary transition-colors bg-white"
+            className="w-full px-4 py-3 border border-primary/20 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/30 transition-colors bg-white"
           />
           {errors.email && (
             <p className="mt-1 text-xs text-red-500">{errors.email.message}</p>
@@ -91,7 +91,7 @@ export default function ContactForm() {
             {...register("telefono")}
             type="tel"
             placeholder="223 000 0000"
-            className="w-full px-4 py-3 border border-gray-200 text-sm focus:outline-none focus:border-primary transition-colors bg-white"
+            className="w-full px-4 py-3 border border-primary/20 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/30 transition-colors bg-white"
           />
         </div>
         <div>
@@ -102,7 +102,7 @@ export default function ContactForm() {
             {...register("asunto")}
             type="text"
             placeholder="¿Sobre qué necesitás asesoramiento?"
-            className="w-full px-4 py-3 border border-gray-200 text-sm focus:outline-none focus:border-primary transition-colors bg-white"
+            className="w-full px-4 py-3 border border-primary/20 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/30 transition-colors bg-white"
           />
           {errors.asunto && (
             <p className="mt-1 text-xs text-red-500">{errors.asunto.message}</p>
@@ -118,7 +118,7 @@ export default function ContactForm() {
           {...register("mensaje")}
           rows={5}
           placeholder="Contanos brevemente tu situación..."
-          className="w-full px-4 py-3 border border-gray-200 text-sm focus:outline-none focus:border-primary transition-colors bg-white resize-none"
+          className="w-full px-4 py-3 border border-primary/20 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/30 transition-colors bg-white resize-none"
         />
         {errors.mensaje && (
           <p className="mt-1 text-xs text-red-500">{errors.mensaje.message}</p>
@@ -128,7 +128,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={isSubmitting}
-        className="w-full bg-primary text-white text-sm font-medium py-4 tracking-wide hover:bg-primary/90 transition-colors disabled:opacity-60"
+        className="w-full bg-primary text-white text-sm font-semibold py-4 tracking-wide hover:bg-primary/90 transition-colors disabled:opacity-60"
       >
         {isSubmitting ? "Enviando..." : "Enviar consulta"}
       </button>

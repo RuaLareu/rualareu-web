@@ -11,18 +11,19 @@ const config: Config = {
       colors: {
         primary: {
           DEFAULT: "#314A43",
-          light: "#E8EFEC",
+          light: "#EDE7D9",
         },
-        accent: "#C5A572",
-        background: "#F8F6F3",
+        accent: "#314A43",
+        background: "#FAF5EC",
         text: {
-          DEFAULT: "#1A1A1A",
-          secondary: "#666666",
+          DEFAULT: "#1B1B1B",
+          secondary: "#555555",
         },
       },
       fontFamily: {
-        sans: ["var(--font-inter)", "system-ui", "sans-serif"],
+        sans: ["var(--font-montserrat)", "system-ui", "sans-serif"],
         display: ['"Sackers Gothic Heavy"', "serif"],
+        editorial: ['"Lora"', "Georgia", "serif"],
         "sackers-heavy": ['"Sackers Gothic Heavy"', "serif"],
         "sackers-medium": ['"Sackers Gothic Medium"', "serif"],
         "sackers-light": ['"Sackers Gothic Light"', "serif"],

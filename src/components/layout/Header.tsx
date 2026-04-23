@@ -8,7 +8,13 @@ import { Menu, Phone, MapPin } from "lucide-react";
 import { NAV_LINKS, CONTACT, WHATSAPP_URL } from "@/lib/constants";
 import MobileMenu from "./MobileMenu";
 
-export default function Header() {
+interface HeaderProps {
+  /** Set true when the page's hero is on a light background (cream/bone/white).
+   * Keeps the header in its solid state from the top so nav/logo/CTA stay legible. */
+  lightHero?: boolean;
+}
+
+export default function Header({ lightHero = false }: HeaderProps) {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
@@ -20,21 +26,22 @@ export default function Header() {
     return () => window.removeEventListener("scroll", update);
   }, []);
 
-  const transparent = !scrolled;
+  const solid = scrolled || lightHero;
+  const transparent = !solid;
 
   return (
     <>
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled
-            ? "bg-white/96 backdrop-blur-md shadow-[0_1px_0_rgba(0,0,0,0.06)]"
+          solid
+            ? "bg-white/95 backdrop-blur-md shadow-sm"
             : "bg-transparent"
         }`}
       >
-        {/* ── Top info bar: desktop only, collapses on scroll ── */}
+        {/* ── Top info bar: desktop only, hides on scroll or when hero is light ── */}
         <div
           className={`hidden lg:block overflow-hidden transition-[max-height,opacity] duration-300 ${
-            scrolled ? "max-h-0 opacity-0" : "max-h-10 opacity-100"
+            solid ? "max-h-0 opacity-0" : "max-h-10 opacity-100"
           }`}
         >
           <div className="bg-primary/40 border-b border-white/8">
@@ -60,18 +67,20 @@ export default function Header() {
         {/* ── Main navigation ── */}
         <nav
           className={`max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 flex items-center justify-between transition-all duration-300 ${
-            scrolled ? "h-16" : "h-[72px]"
+            solid ? "h-16" : "h-[72px]"
           }`}
         >
-          {/* Logo */}
+          {/* Logo image */}
           <Link href="/" className="flex-shrink-0">
             <Image
               src="/images/rua-lareu-horizontal-sin-fondo.png"
               alt="RUA | LAREU - Estudio Jurídico Contable"
-              width={192}
-              height={52}
+              width={160}
+              height={40}
               className={`w-auto transition-all duration-300 ${
-                scrolled ? "h-10 brightness-0" : "h-11 brightness-0 invert drop-shadow-[0_1px_3px_rgba(0,0,0,0.6)]"
+                solid
+                  ? "h-10 brightness-0"
+                  : "h-10 brightness-0 invert drop-shadow-[0_1px_3px_rgba(0,0,0,0.6)]"
               }`}
               priority
             />
@@ -95,11 +104,10 @@ export default function Header() {
                   }`}
                 >
                   {link.label}
-                  {/* Underline indicator */}
                   <span
-                    className={`absolute -bottom-px left-0 h-px bg-accent transition-all duration-300 ${
-                      active ? "w-full" : "w-0 group-hover:w-full"
-                    }`}
+                    className={`absolute -bottom-px left-0 h-px transition-all duration-300 ${
+                      transparent ? "bg-white" : "bg-primary"
+                    } ${active ? "w-full" : "w-0 group-hover:w-full"}`}
                   />
                 </Link>
               );
@@ -112,10 +120,10 @@ export default function Header() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className={`hidden lg:inline-flex items-center text-[13px] font-medium px-5 py-2.5 tracking-wide transition-all duration-200 ${
+              className={`hidden lg:inline-flex items-center text-[13px] font-semibold px-6 py-2.5 rounded tracking-wide transition-all duration-300 ${
                 transparent
-                  ? "bg-accent text-white hover:bg-[#b8935f]"
-                  : "bg-primary text-white hover:bg-primary/90"
+                  ? "bg-white text-primary hover:bg-white/90"
+                  : "bg-primary text-white hover:bg-[#263B35]"
               }`}
             >
               Agenda tu consulta

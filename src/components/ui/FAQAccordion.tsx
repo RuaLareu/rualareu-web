@@ -12,7 +12,7 @@ export default function FAQAccordion({ faqs }: FAQAccordionProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <div className="divide-y divide-gray-200">
+    <div className="divide-y divide-primary/20">
       {faqs.map((faq, index) => (
         <div key={index} className="py-5">
           <button

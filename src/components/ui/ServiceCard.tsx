@@ -34,7 +34,7 @@ export default function ServiceCard({ service }: ServiceCardProps) {
   return (
     <Link
       href={`/servicios/${service.slug}`}
-      className="group flex flex-col p-6 bg-white border border-gray-100 hover:border-accent/30 hover:shadow-md transition-all duration-200"
+      className="group flex flex-col p-6 bg-white border border-primary/15 hover:border-accent/30 hover:shadow-md transition-all duration-200"
     >
       <div className="mb-4 w-10 h-10 flex items-center justify-center bg-primary-light text-primary group-hover:bg-primary group-hover:text-white transition-colors">
         <Icon size={20} />

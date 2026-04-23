@@ -6,14 +6,14 @@ const partners = [
     title: "Abogado",
     area: "Área Jurídica",
     initials: "JR",
-    bio: "Abogado matriculado en el Colegio de Abogados de Mar del Plata (T° XVII, F° 441) y en la Matrícula Federal del Poder Judicial de la Nación (T° 704, F° 501). Socio fundador de RUA | LAREU, lidera el Área Jurídica con foco en Derecho Laboral y Comercial. Representa a empleadores, trabajadores y empresas en conflictos laborales. Asesora en materia de contratos, cuestiones societarias, defensa del consumidor, sucesiones y amparos de salud.",
+    bio: "Socio fundador. Responsable del Área Jurídica del estudio.\n\nEjerce en Derecho Laboral, accidentes de trabajo y enfermedades profesionales, Derecho Civil y Comercial, y Defensa del Consumidor. Asesora y litiga en representación de trabajadores, empleadores, empresas y particulares ante la justicia provincial y federal.\n\nMat. CAMP T. XVII, F. 441 | Mat. Federal T. 704, F. 501",
   },
   {
     name: "Francisco Lareu",
     title: "Contador Público",
     area: "Área Contable e Impositiva",
     initials: "FL",
-    bio: "Contador Público matriculado en el Consejo Profesional de Ciencias Económicas de la Provincia de Buenos Aires (T° 184, F° 222, Leg. 48029/1). Socio fundador de RUA | LAREU, lidera el Área Contable e Impositiva del estudio. Asesora a monotributistas, responsables inscriptos, sociedades y emprendedores en planificación tributaria, auditoría, estados contables y consultoría financiera orientada al crecimiento del negocio.",
+    bio: "Socio fundador. Responsable del Área Contable e Impositiva del estudio.\n\nAsesora a monotributistas, responsables inscriptos, sociedades y PyMEs en materia tributaria, contable y financiera. Interviene en planificación fiscal, liquidación de impuestos, constitución de sociedades, comercio exterior y auditoría de estados contables.\n\nMat. CPCE PBA T. 184, F. 222, Leg. 48029/1",
   },
 ];
 
@@ -42,10 +42,10 @@ export default function PartnersSection() {
                 {/* Avatar + name */}
                 <div className="flex items-start gap-5 mb-7">
                   <div
-                    className="w-14 h-14 flex-shrink-0 rounded-full bg-primary flex items-center justify-center"
+                    className="w-20 h-20 flex-shrink-0 rounded-full bg-primary flex items-center justify-center"
                     aria-hidden="true"
                   >
-                    <span className="font-sackers-heavy text-white text-xs tracking-widest">
+                    <span className="font-sackers-heavy text-white text-sm tracking-widest">
                       {partner.initials}
                     </span>
                   </div>
@@ -53,7 +53,7 @@ export default function PartnersSection() {
                     <p className="font-sackers-light text-accent text-[9px] tracking-[0.25em] mb-1.5">
                       {partner.area}
                     </p>
-                    <h3 className="font-sackers-heavy text-primary text-lg leading-tight">
+                    <h3 className="font-sackers-heavy text-primary text-base lg:text-lg leading-tight whitespace-nowrap">
                       {partner.name}
                     </h3>
                     <p className="text-text-secondary text-xs mt-0.5">{partner.title}</p>
@@ -62,20 +62,24 @@ export default function PartnersSection() {
 
                 <div className="w-8 h-px bg-accent mb-6" />
 
-                <p className="text-text-secondary text-sm leading-relaxed">
-                  {partner.bio}
-                </p>
+                {/* Bio */}
+                <div className="text-text-secondary text-sm leading-relaxed space-y-3 text-justify">
+                  {partner.bio.split("\n\n").map((paragraph, j) => (
+                    <p key={j}>{paragraph}</p>
+                  ))}
+                </div>
 
               </div>
             </ScrollAnimation>
           ))}
         </div>
 
-        {/* ── Network note ── */}
+        {/* ── Profesionales asociados ── */}
         <ScrollAnimation className="text-center mt-10">
-          <p className="text-text-secondary text-sm max-w-md mx-auto leading-relaxed">
-            Contamos con una red de profesionales especializados que colaboran en casos específicos,
-            ampliando nuestra capacidad de respuesta en cada área.
+          <p className="text-text-secondary text-sm max-w-xl mx-auto leading-relaxed">
+            Contamos con una red de profesionales asociados en áreas complementarias:
+            peritos médicos e informáticos, ingenieros en seguridad e higiene,
+            despachantes de aduana y abogados especializados.
           </p>
         </ScrollAnimation>
 

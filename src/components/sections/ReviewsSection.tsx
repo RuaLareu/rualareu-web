@@ -56,7 +56,7 @@ function GoogleLogo() {
 
 export default function ReviewsSection() {
   return (
-    <section className="section-padding bg-white">
+    <section className="section-padding bg-background">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
         {/* ── Header ── */}
@@ -66,14 +66,14 @@ export default function ReviewsSection() {
             href={GOOGLE_REVIEWS.profileUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 mb-10 px-5 py-3 border border-gray-100 bg-background hover:border-gray-200 transition-colors group"
+            className="inline-flex items-center gap-3 mb-10 px-5 py-3 border border-primary/15 bg-background hover:border-primary/30 transition-colors group"
           >
             <GoogleLogo />
             <Stars />
             <span className="font-semibold text-sm text-text">
               {GOOGLE_REVIEWS.rating.toFixed(1)}
             </span>
-            <span className="w-px h-4 bg-gray-200" />
+            <span className="w-px h-4 bg-primary-light" />
             <span className="text-text-secondary text-sm">
               {GOOGLE_REVIEWS.reviewCount} opiniones en Google
             </span>
@@ -98,7 +98,7 @@ export default function ReviewsSection() {
                 <p className="text-text text-sm leading-relaxed flex-1 mt-4 mb-6">
                   &ldquo;{review.text}&rdquo;
                 </p>
-                <div className="flex items-center gap-3 pt-5 border-t border-gray-100">
+                <div className="flex items-center gap-3 pt-5 border-t border-primary/15">
                   <div className="w-9 h-9 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
                     <span className="text-white text-xs font-semibold">{review.initial}</span>
                   </div>
