@@ -84,13 +84,13 @@ export default function Hero() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center w-full sm:w-auto border border-white/40 text-white text-xs font-sackers-light tracking-[0.20em] px-8 py-3.5 hover:bg-white hover:text-primary transition-all duration-300"
+              className="inline-flex items-center justify-center w-full sm:w-auto border border-white/40 text-white text-xs font-sackers-light tracking-[0.20em] px-8 py-4 hover:bg-white hover:text-primary transition-all duration-300"
             >
               Agendar consulta
             </a>
             <a
               href="#servicios"
-              className="inline-flex items-center justify-center w-full sm:w-auto border border-white/20 text-white/60 text-xs font-sackers-light tracking-[0.20em] px-8 py-3.5 hover:border-white/40 hover:text-white transition-all duration-300"
+              className="inline-flex items-center justify-center w-full sm:w-auto border border-white/20 text-white/60 text-xs font-sackers-light tracking-[0.20em] px-8 py-4 hover:border-white/40 hover:text-white transition-all duration-300"
             >
               Nuestros servicios
             </a>
