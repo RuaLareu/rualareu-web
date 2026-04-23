@@ -87,7 +87,7 @@ export default function Header({ lightHero = false }: HeaderProps) {
           </Link>
 
           {/* Desktop links */}
-          <div className="hidden lg:flex items-center gap-8 xl:gap-10">
+          <div className="hidden lg:flex items-center gap-5 lg:gap-6 xl:gap-10">
             {NAV_LINKS.map((link) => {
               const active =
                 link.href === "/" || link.href.startsWith("/#")
@@ -97,7 +97,7 @@ export default function Header({ lightHero = false }: HeaderProps) {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`relative text-[13px] tracking-wide transition-colors group pb-0.5 ${
+                  className={`relative text-[13px] lg:text-[12px] xl:text-[13px] tracking-wide transition-colors group pb-0.5 ${
                     transparent
                       ? "text-white/90 hover:text-white [text-shadow:0_1px_4px_rgba(0,0,0,0.5)]"
                       : "text-text/65 hover:text-text"
@@ -120,7 +120,7 @@ export default function Header({ lightHero = false }: HeaderProps) {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className={`hidden lg:inline-flex items-center text-[13px] font-semibold px-6 py-2.5 rounded tracking-wide transition-all duration-300 ${
+              className={`hidden lg:inline-flex items-center text-[13px] lg:text-[12px] xl:text-[13px] font-semibold lg:px-4 xl:px-6 lg:py-2 xl:py-2.5 rounded tracking-wide transition-all duration-300 ${
                 transparent
                   ? "bg-white text-primary hover:bg-white/90"
                   : "bg-primary text-white hover:bg-[#263B35]"
