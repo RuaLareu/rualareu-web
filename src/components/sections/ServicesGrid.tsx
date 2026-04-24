@@ -82,13 +82,41 @@ function AreaLabel({ children }: { children: React.ReactNode }) {
 
 function ServiceRow({ services }: { services: Service[] }) {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-      {services.map((service, i) => (
-        <ScrollAnimation key={service.slug} delay={i * 70}>
-          <ServiceCard service={service} />
-        </ScrollAnimation>
-      ))}
-    </div>
+    <>
+      {/* Desktop: grid de cards */}
+      <div className="hidden lg:grid grid-cols-3 gap-4">
+        {services.map((service, i) => (
+          <ScrollAnimation key={service.slug} delay={i * 70}>
+            <ServiceCard service={service} />
+          </ScrollAnimation>
+        ))}
+      </div>
+
+      {/* Mobile / tablet: lista compacta */}
+      <div className="lg:hidden space-y-1.5">
+        {services.map((service) => {
+          const Icon = iconMap[service.icon] ?? Briefcase;
+          return (
+            <Link
+              key={service.slug}
+              href={`/servicios/${service.slug}`}
+              className="group flex items-center gap-3 px-4 py-3.5 bg-white border border-primary/10 hover:bg-primary-light hover:border-primary/20 transition-all"
+            >
+              <div className="w-9 h-9 flex items-center justify-center bg-primary-light flex-shrink-0">
+                <Icon size={16} strokeWidth={1.5} className="text-primary" />
+              </div>
+              <span className="font-sackers-medium text-[10px] sm:text-[11px] tracking-[0.15em] text-primary flex-1">
+                {service.title}
+              </span>
+              <ArrowRight
+                size={14}
+                className="text-primary/30 group-hover:text-primary/60 flex-shrink-0 transition-colors"
+              />
+            </Link>
+          );
+        })}
+      </div>
+    </>
   );
 }
 
