@@ -8,6 +8,7 @@ const partners = [
     area: "Área Jurídica",
     initials: "JR",
     photo: "/images/socios/joaquin-rua.jpg",
+    photoPosition: "50% 30%",
     bio: "Socio fundador. Responsable del Área Jurídica del estudio.\n\nEjerce en Derecho Laboral, accidentes de trabajo y enfermedades profesionales, Derecho Civil y Comercial, y Defensa del Consumidor. Asesora y litiga en representación de trabajadores, empleadores, empresas y particulares ante la justicia provincial y federal.\n\nMat. CAMP T. XVII, F. 441 | Mat. Federal T. 704, F. 501",
   },
   {
@@ -16,6 +17,7 @@ const partners = [
     area: "Área Contable e Impositiva",
     initials: "FL",
     photo: "/images/socios/francisco-lareu.jpg",
+    photoPosition: "60% 30%",
     bio: "Socio fundador. Responsable del Área Contable e Impositiva del estudio.\n\nAsesora a monotributistas, responsables inscriptos, sociedades y PyMEs en materia tributaria, contable y financiera. Interviene en planificación fiscal, liquidación de impuestos, constitución de sociedades, comercio exterior y auditoría de estados contables.\n\nMat. CPCE PBA T. 184, F. 222, Leg. 48029/1",
   },
 ];
@@ -48,9 +50,10 @@ export default function PartnersSection() {
                     <Image
                       src={partner.photo}
                       alt={partner.name}
-                      width={400}
-                      height={400}
+                      width={500}
+                      height={889}
                       className="w-full h-full object-cover"
+                      style={{ objectPosition: partner.photoPosition }}
                     />
                   </div>
                   <div className="pt-1">
