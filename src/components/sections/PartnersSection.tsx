@@ -57,7 +57,7 @@ export default function PartnersSection() {
                     <p className="font-sackers-light text-accent text-[9px] tracking-[0.25em] mb-1.5">
                       {partner.area}
                     </p>
-                    <h3 className="font-sackers-heavy text-primary text-sm sm:text-base leading-tight whitespace-nowrap">
+                    <h3 className="font-sackers-heavy text-primary text-[11px] sm:text-sm md:text-base leading-tight whitespace-nowrap">
                       {partner.name}
                     </h3>
                     <p className="text-text-secondary text-xs mt-0.5">{partner.title}</p>
