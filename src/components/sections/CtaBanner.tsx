@@ -1,10 +1,23 @@
+import Image from "next/image";
 import ScrollAnimation from "@/components/ui/ScrollAnimation";
 import { WHATSAPP_URL } from "@/lib/constants";
 
 export default function CtaBanner() {
   return (
-    <section className="py-24 lg:py-32 bg-primary">
-      <ScrollAnimation className="max-w-2xl mx-auto px-6 lg:px-8 text-center">
+    <section className="relative py-24 lg:py-32 overflow-hidden">
+      {/* Foto de fondo */}
+      <Image
+        src="/images/estudio-recepcion.jpg"
+        alt=""
+        fill
+        className="object-cover object-center"
+        quality={80}
+        aria-hidden="true"
+      />
+      {/* Overlay verde forest para legibilidad */}
+      <div className="absolute inset-0 bg-[#314A43]/[0.78]" aria-hidden="true" />
+
+      <ScrollAnimation className="relative z-10 max-w-2xl mx-auto px-6 lg:px-8 text-center">
         <div className="w-10 h-px bg-white/30 mx-auto mb-8" />
         <h2 className="font-sackers-heavy text-white text-2xl sm:text-3xl lg:text-4xl leading-snug mb-5">
           Estamos para <span className="text-white/70">ayudarte</span>
