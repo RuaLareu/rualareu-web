@@ -16,7 +16,7 @@ const partners = [
     area: "Área Contable e Impositiva",
     initials: "FL",
     photo: "/images/socios/francisco-lareu.jpg",
-    bio: "Socio fundador. Responsable del Área Contable e Impositiva del estudio.\n\nAsesora a monotributistas, responsables inscriptos, sociedades y PyMEs en materia tributaria, contable y financiera. Interviene en planificación fiscal, liquidación de impuestos, constitución de sociedades, comercio exterior y auditoría de estados contables.\n\nMat. CPCE PBA T. 184, F. 222, Leg. 48029/1",
+    bio: "Socio fundador. Responsable del Área Contable e Impositiva del estudio.\n\nAsesora a monotributistas, responsables inscriptos, sociedades y PyMEs en materia tributaria, contable y financiera. Actúa como director financiero externo de empresas, con intervención en planificación fiscal, auditoría de estados contables y comercio exterior.\n\nMat. CPCE PBA T. 184, F. 222, Leg. 48029/1",
   },
 ];
 
