@@ -4,43 +4,29 @@ const data: ServicePageData = {
   slug: "consultoria-empresarial",
   title: "Consultoría Empresarial",
   subtitle:
-    "Información clara para decisiones seguras. Acompañamos el crecimiento de tu empresa con análisis financiero y visión estratégica.",
+    "Director financiero externo para tu empresa. Información clara para decisiones seguras, con análisis financiero y visión estratégica.",
   areas: [
-    // ── Análisis y gestión financiera ──
     {
-      title: "Análisis de costos y rentabilidad",
+      title: "Costos y Precios",
       items: [
-        "Determinación de costos fijos, variables y punto de equilibrio",
-        "Rentabilidad por producto, línea de negocio o cliente",
+        "Relevamiento y análisis de costos fijos y variables",
+        "Determinación de punto de equilibrio económico y financiero",
+        "Rentabilidad por producto, línea de negocio y/o cliente",
         "Márgenes de contribución y análisis de precios",
-        "Detección de ineficiencias y oportunidades de ahorro",
-        "Benchmarking con indicadores del sector",
-        "Informes de rentabilidad periódicos para la dirección",
       ],
     },
     {
-      title: "Flujos de fondos y presupuestos",
+      title: "Análisis económico y financiero",
       items: [
-        "Proyección de flujo de fondos a corto y mediano plazo",
-        "Cash flow operativo: cobros, pagos y capital de trabajo",
-        "Elaboración de presupuestos anuales por área o proyecto",
-        "Control presupuestario: desvíos y acciones correctivas",
-        "Análisis de necesidades de financiamiento",
+        "Armado de estados de resultados mensuales",
+        "Armado de flujo de fondos y proyectados a corto y mediano plazo",
+        "Análisis operativo: cobros, pagos y capital de trabajo",
+        "Rentabilidad económica vs. caja real. Identificación de desvíos y fugas",
         "Gestión de tesorería y optimización de excedentes",
+        "Presupuestos por proyectos. Elaboración, control y análisis de desvíos",
+        "Informes mensuales con implementación de tableros, KPIs y OKRs",
       ],
     },
-    {
-      title: "Tableros de control e indicadores (KPIs)",
-      items: [
-        "Diseño de tableros de control ejecutivos",
-        "Definición de KPIs relevantes para tu negocio",
-        "Informes de gestión mensuales con análisis de tendencias",
-        "Seguimiento de metas comerciales y operativas",
-        "Alertas tempranas ante desvíos críticos",
-        "Reportes visuales para reuniones de socios o directorio",
-      ],
-    },
-    // ── Estrategia y crecimiento ──
     {
       title: "Financiamiento y acceso al crédito",
       items: [
@@ -63,23 +49,12 @@ const data: ServicePageData = {
         "Definición de estructura organizativa y roles clave",
       ],
     },
-    {
-      title: "Reestructuración y situaciones de crisis",
-      items: [
-        "Diagnóstico financiero integral de empresas en dificultades",
-        "Plan de reestructuración de deudas y refinanciación",
-        "Reducción de costos y reorganización operativa",
-        "Asesoramiento previo a concurso preventivo",
-        "Análisis de continuidad del negocio vs. cierre ordenado",
-        "Acompañamiento a socios en decisiones críticas",
-      ],
-    },
   ],
   faqs: [
     {
       question: "¿En qué se diferencia la consultoría empresarial de la contabilidad?",
       answer:
-        "La contabilidad registra lo que pasó; la consultoría te ayuda a decidir qué hacer con esa información. Analizamos tu situación financiera actual y te damos herramientas concretas para mejorar la rentabilidad, reducir costos, planificar inversiones o encarar una reestructuración. Es mirar hacia adelante, no solo hacia atrás.",
+        "La contabilidad registra lo que pasó; la consultoría te ayuda a decidir qué hacer con esa información. Analizamos tu situación financiera actual y te damos herramientas concretas para mejorar la rentabilidad, reducir costos y planificar inversiones. Es mirar hacia adelante, no solo hacia atrás.",
     },
     {
       question: "¿Es solo para empresas grandes?",
@@ -95,11 +70,6 @@ const data: ServicePageData = {
       question: "¿Cómo sé si mi negocio es realmente rentable?",
       answer:
         "Muchos empresarios confunden facturación con rentabilidad. Un análisis de costos detallado permite saber cuánto ganás realmente por cada producto o servicio, cuál es tu punto de equilibrio y dónde se concentran los gastos innecesarios. A veces pequeños ajustes generan mejoras significativas en el margen.",
-    },
-    {
-      question: "Mi empresa está en dificultades, ¿pueden ayudarme?",
-      answer:
-        "Sí. Hacemos un diagnóstico financiero integral para entender la situación real y evaluar las alternativas: reestructuración de deudas, reducción de costos, refinanciación con acreedores o, si es necesario, asesoramiento previo a un concurso preventivo. Lo importante es actuar rápido y con información clara para tomar la mejor decisión posible.",
     },
     {
       question: "¿Qué es un tablero de control y para qué me sirve?",

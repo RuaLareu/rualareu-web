@@ -22,9 +22,8 @@ const data: ServicePageData = {
       title: "Cargas sociales y contribuciones",
       items: [
         "Confección y presentación del F.931 mensual ante ARCA",
-        "Aportes y contribuciones: jubilación, obra social, PAMI, asignaciones",
         "Contribuciones sindicales y cuotas de solidaridad",
-        "ART: altas, bajas, declaración de nómina y denuncia de siniestros",
+        "ART: altas, bajas, declaración de nómina, denuncia de siniestros y análisis de reducción de alícuota",
         "Seguro de vida obligatorio y coberturas adicionales",
         "Conciliación de pagos y generación de VEP",
       ],

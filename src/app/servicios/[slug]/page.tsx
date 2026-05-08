@@ -128,7 +128,7 @@ export default function ServicePage({ params }: Props) {
   const isCompliance = params.slug === "compliance-prevencion-legal";
   const isComex = params.slug === "comercio-exterior";
   const hasIntro = isLaboral || isCivil || isFamilia || isConsumidor || isContabilidad || isImpuestos || isConsultoria || isNuevos || isSueldos || isCompliance || isComex;
-  const hasSplitGrid = isLaboral || isCivil || isContabilidad || isImpuestos || isConsultoria || isNuevos || isSueldos || isCompliance || isComex;
+  const hasSplitGrid = isLaboral || isCivil || isImpuestos || isConsultoria || isNuevos || isSueldos || isCompliance || isComex;
   const whatsappMsg = `https://wa.me/5492235790012?text=Hola%2C%20me%20contacto%20desde%20la%20web.%20Quisiera%20consultar%20sobre%20${encodeURIComponent(service.title)}.`;
   const posts = relatedPosts[params.slug] ?? [];
 
@@ -299,10 +299,10 @@ export default function ServicePage({ params }: Props) {
                         de fondos proyectados y escenarios bien analizados.
                       </p>
                       <p>
-                        Trabajamos con PyMEs, comercios y profesionales independientes de Mar del
-                        Plata que quieren profesionalizar la gestión de su negocio. Desde un análisis
-                        de costos puntual hasta un acompañamiento estratégico continuo, adaptamos
-                        el servicio a lo que cada cliente necesita.
+                        Funcionamos como director financiero externo para PyMEs, comercios y
+                        profesionales independientes de Mar del Plata. Desde un análisis de costos
+                        puntual hasta un acompañamiento estratégico continuo, adaptamos el servicio
+                        a lo que cada cliente necesita.
                       </p>
                       <p>
                         No importa si tu empresa factura mucho o poco: lo que importa es saber cuánto
@@ -323,11 +323,11 @@ export default function ServicePage({ params }: Props) {
                         Asesoramos a monotributistas, responsables inscriptos, sociedades y
                         emprendedores en Mar del Plata y toda la Provincia de Buenos Aires.
                         Gestionamos las liquidaciones, las presentaciones ante ARCA y ARBA, y
-                        te acompañamos frente a inspecciones y fiscalizaciones.
+                        te asesoramos para evitar inspecciones y fiscalizaciones.
                       </p>
                       <p>
-                        Además de cumplir con las obligaciones del presente, te ayudamos a planificar
-                        para pagar lo justo: ni más ni menos de lo que corresponde.
+                        Te ayudamos a planificar e implementar estrategias para atenuar la carga
+                        impositiva, cumpliendo con la normativa vigente.
                       </p>
                     </>
                   )}
@@ -414,7 +414,7 @@ export default function ServicePage({ params }: Props) {
                 <ScrollAnimation>
                   <div className="flex items-center gap-5 mb-7">
                     <span className="font-sackers-medium text-[10px] tracking-[0.28em] text-text-secondary/60 whitespace-nowrap">
-                      {isLaboral ? "Para trabajadores" : isCivil ? "Derecho Civil" : isContabilidad ? "Registración y contabilidad" : isImpuestos ? "Impuestos nacionales" : isConsultoria ? "Análisis y gestión financiera" : isSueldos ? "Liquidación y cargas sociales" : isCompliance ? "Prevención laboral y contractual" : isComex ? "Importación y exportación" : "Puesta en marcha"}
+                      {isLaboral ? "Para trabajadores" : isCivil ? "Derecho Civil" : isContabilidad ? "Registración y contabilidad" : isImpuestos ? "Impuestos nacionales, provinciales y municipales" : isConsultoria ? "Análisis y gestión financiera" : isSueldos ? "Liquidación y cargas sociales" : isCompliance ? "Prevención laboral y contractual" : isComex ? "Importación y exportación" : "Puesta en marcha"}
                     </span>
                     <span className="flex-1 h-px bg-primary/15" />
                   </div>
@@ -443,7 +443,7 @@ export default function ServicePage({ params }: Props) {
                 <ScrollAnimation>
                   <div className="flex items-center gap-5 mb-7">
                     <span className="font-sackers-medium text-[10px] tracking-[0.28em] text-text-secondary/60 whitespace-nowrap">
-                      {isLaboral ? "Para empleadores y PyMEs" : isCivil ? "Derecho Comercial" : isContabilidad ? "Outsourcing y asesoría especializada" : isImpuestos ? "Provinciales, municipales y planificación" : isConsultoria ? "Estrategia y crecimiento" : isSueldos ? "Servicios complementarios" : isCompliance ? "Datos, compliance tributario y abono" : isComex ? "Cambiario, compliance y contable" : "Crecimiento y operación"}
+                      {isLaboral ? "Para empleadores y PyMEs" : isCivil ? "Derecho Comercial" : isContabilidad ? "Outsourcing y asesoría especializada" : isImpuestos ? "Planificación, moratorias e inspecciones" : isConsultoria ? "Estrategia y crecimiento" : isSueldos ? "Servicios complementarios" : isCompliance ? "Datos, compliance tributario y abono" : isComex ? "Cambiario, compliance y contable" : "Crecimiento y operación"}
                     </span>
                     <span className="flex-1 h-px bg-primary/15" />
                   </div>
@@ -840,7 +840,7 @@ export default function ServicePage({ params }: Props) {
           </section>
         )}
 
-        {/* ── Sección destacada: Outsourcing (solo contabilidad) ── */}
+        {/* ── Sección destacada: Auditoría (solo contabilidad) ── */}
         {isContabilidad && (
           <section className="py-16 lg:py-20 bg-primary-light">
             <div className="max-w-4xl mx-auto px-6 lg:px-8">
@@ -850,21 +850,20 @@ export default function ServicePage({ params }: Props) {
                     Área destacada
                   </p>
                   <h2 className="font-sackers-heavy text-primary text-2xl sm:text-3xl mb-4">
-                    Outsourcing contable para PyMEs
+                    Auditoría de estados contables
                   </h2>
                   <p className="text-text-secondary text-[15px] leading-[1.85] mb-8 max-w-2xl">
-                    Tercerizá el área contable y administrativa de tu empresa. Nos encargamos de
-                    la registración, los balances, las conciliaciones y los reportes de gestión
-                    para que vos te enfoques en hacer crecer tu negocio.
+                    Realizamos auditorías externas e internas de estados contables,
+                    revisión de procesos y control de gestión. Un informe profesional
+                    que aporta confianza a socios, inversores y organismos de control.
                   </p>
                   <div className="flex flex-wrap gap-2 mb-10">
                     {[
-                      "Registración mensual",
-                      "Conciliaciones bancarias",
-                      "Reportes de gestión",
-                      "Análisis de costos",
-                      "Cuentas a pagar y cobrar",
-                      "Balances y certificaciones",
+                      "Auditoría externa",
+                      "Auditoría interna",
+                      "Control de gestión",
+                      "Cumplimiento normativo",
+                      "Detección de irregularidades",
                     ].map((tag) => (
                       <span key={tag} className="text-xs text-primary bg-white px-3 py-1.5 border border-primary/20">
                         {tag}
@@ -872,7 +871,7 @@ export default function ServicePage({ params }: Props) {
                     ))}
                   </div>
                   <a
-                    href="https://wa.me/5492235790012?text=Hola%2C%20me%20interesa%20el%20servicio%20de%20outsourcing%20contable."
+                    href="https://wa.me/5492235790012?text=Hola%2C%20necesito%20asesoramiento%20sobre%20auditor%C3%ADa%20contable."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center bg-accent text-white text-sm font-semibold px-8 py-4 rounded tracking-wide hover:bg-[#263B35] transition-all duration-300"

@@ -6,72 +6,44 @@ const data: ServicePageData = {
   subtitle:
     "Gestión, liquidación y planificación fiscal integral. Impuestos nacionales, provinciales y municipales para personas y PyMEs.",
   areas: [
-    // ── Impuestos nacionales ──
     {
       title: "Ganancias, IVA y Bienes Personales",
       items: [
-        "Impuesto a las Ganancias: liquidación anual para personas y sociedades",
-        "Deducciones, retenciones y percepciones de Ganancias",
-        "IVA: liquidación mensual y regímenes especiales",
+        "Liquidación de Ganancias para personas físicas y sociedades",
+        "Presentación anual de SIRADIG",
+        "Liquidación mensual de IVA",
         "Solicitud de exclusión de retenciones y percepciones de IVA",
         "Bienes Personales: liquidación anual, bienes en el país y exterior",
         "Régimen de información y declaraciones juradas informativas",
       ],
     },
     {
-      title: "Monotributo",
+      title: "Ingresos Brutos e Impuestos Municipales",
       items: [
-        "Inscripción y elección de categoría",
-        "Recategorización semestral obligatoria",
-        "Exclusión del monotributo y transición a Responsable Inscripto",
-        "Monotributo social y régimen simplificado",
-        "Facturación electrónica y obligaciones formales",
-        "Análisis de conveniencia: monotributo vs. responsable inscripto",
-      ],
-    },
-    {
-      title: "Ingresos Brutos y tributos provinciales",
-      items: [
-        "Inscripción y liquidación mensual o bimestral en ARBA",
-        "Convenio Multilateral para contribuyentes con actividad en varias provincias",
+        "Inscripciones y liquidación mensual de Ingresos Brutos local y Convenio Multilateral",
         "Regímenes de retención y percepción ARBA y SIRCREB",
         "Solicitud de exclusión y reducción de alícuotas",
-        "Impuesto Inmobiliario y Automotor: valuaciones y exenciones",
-        "Impuesto de Sellos en operaciones inmobiliarias y comerciales",
-      ],
-    },
-    // ── Municipales y planificación ──
-    {
-      title: "Impuestos municipales (Mar del Plata)",
-      items: [
         "Tasa por Inspección de Seguridad e Higiene: habilitación y liquidación",
-        "Exenciones y reducciones de tasas municipales",
-        "Tasas por servicios urbanos, publicidad y espectáculos",
-        "Trámites de habilitación comercial e industrial",
-        "Gestión ante la Municipalidad de General Pueyrredón",
-        "Asesoramiento para nuevos comercios y emprendimientos locales",
       ],
     },
     {
-      title: "Planificación fiscal",
+      title: "Monotributo",
+      items: [
+        "Inscripciones generales y análisis de categoría",
+        "Proyecciones mensuales",
+        "Recategorizaciones semestrales",
+      ],
+    },
+    {
+      title: "Planificación fiscal, moratorias e inspecciones",
       items: [
         "Estructura óptima de negocios y elección del régimen impositivo",
-        "Elección del tipo societario según impacto fiscal",
-        "Planificación fiscal preventiva para reducir la carga tributaria",
-        "Reorganización empresaria con beneficios impositivos",
-        "Precios de transferencia: documentación e informes",
-        "Operaciones con sujetos vinculados del exterior",
-      ],
-    },
-    {
-      title: "Moratoria, regularización y defensa fiscal",
-      items: [
+        "Reorganización empresarial y societaria con beneficios impositivos. Puente del régimen simplificado al régimen general",
+        "Proyecciones de Impuesto a las Ganancias. Diseño de estrategias para reducirlo",
+        "Control mensual de IVA. Diseño de estrategias para optimizarlo",
+        "Asesoramiento para regularización de deuda impositiva y previsional",
         "Adhesión a planes de facilidades de ARCA y ARBA",
-        "Mis Facilidades: planes permanentes y especiales",
-        "Regularización de deuda impositiva y previsional",
         "Atención de inspecciones y fiscalizaciones de ARCA y ARBA",
-        "Descargos, recursos de reconsideración y apelaciones",
-        "Determinaciones de oficio y defensa ante el Tribunal Fiscal",
       ],
     },
   ],
