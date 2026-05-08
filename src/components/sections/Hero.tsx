@@ -10,8 +10,8 @@ export default function Hero() {
     >
       {/* ── Foto full-width como fondo ── */}
       <Image
-        src="/images/hero-despacho.png"
-        alt="Sala de reuniones de RUA | LAREU, estudio jurídico contable en Mar del Plata"
+        src="/images/estudio-reuniones.jpg"
+        alt="Sala de reuniones del estudio jurídico contable RUA | LAREU en Mar del Plata"
         fill
         className="object-cover object-center"
         priority
@@ -21,7 +21,7 @@ export default function Hero() {
       {/* ── Overlay general sutil ── */}
       <div
         aria-hidden="true"
-        className="absolute inset-0 bg-[#314A43]/30 pointer-events-none"
+        className="absolute inset-0 bg-[#314A43]/40 pointer-events-none"
       />
 
       {/* ── Gradiente lateral: transparente a la izquierda → oscuro a la derecha ── */}
@@ -30,7 +30,7 @@ export default function Hero() {
         className="absolute inset-0 pointer-events-none hidden lg:block"
         style={{
           background:
-            "linear-gradient(to right, transparent 35%, rgba(49,74,67,0.55) 55%, rgba(49,74,67,0.85) 75%, rgba(49,74,67,0.95) 100%)",
+            "linear-gradient(to right, transparent 25%, rgba(49,74,67,0.55) 45%, rgba(49,74,67,0.85) 65%, rgba(49,74,67,0.95) 100%)",
         }}
       />
 
@@ -40,7 +40,7 @@ export default function Hero() {
         className="absolute inset-0 pointer-events-none lg:hidden"
         style={{
           background:
-            "linear-gradient(to bottom, transparent 30%, rgba(49,74,67,0.6) 55%, rgba(49,74,67,0.9) 100%)",
+            "linear-gradient(to bottom, transparent 20%, rgba(49,74,67,0.6) 50%, rgba(49,74,67,0.92) 100%)",
         }}
       />
 
