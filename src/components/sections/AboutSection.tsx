@@ -1,3 +1,4 @@
+import Image from "next/image";
 import ScrollAnimation from "@/components/ui/ScrollAnimation";
 
 export default function AboutSection() {
@@ -18,6 +19,15 @@ export default function AboutSection() {
             <p className="text-text-secondary text-sm leading-relaxed">
               Mar del Plata, Buenos Aires,<br className="hidden lg:block" /> Argentina.
             </p>
+            <div className="mt-8 overflow-hidden">
+              <Image
+                src="/images/estudio-recepcion.jpg"
+                alt="Recepción del estudio RUA | LAREU"
+                width={1200}
+                height={900}
+                className="w-full h-auto object-cover"
+              />
+            </div>
           </ScrollAnimation>
 
           {/* ── Right: body text ── */}
