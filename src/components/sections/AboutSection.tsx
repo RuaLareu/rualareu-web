@@ -1,13 +1,14 @@
+import Image from "next/image";
 import ScrollAnimation from "@/components/ui/ScrollAnimation";
 
 export default function AboutSection() {
   return (
     <section id="estudio" className="section-padding bg-background">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 xl:gap-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 xl:gap-24">
 
-          {/* ── Left: heading ── */}
-          <ScrollAnimation className="lg:col-span-4 lg:pt-1">
+          {/* ── Left: heading + foto ── */}
+          <ScrollAnimation className="lg:pt-1">
             <p className="font-sackers-light text-accent text-[10px] sm:text-xs tracking-[0.32em] mb-5">
               Quiénes somos
             </p>
@@ -15,13 +16,22 @@ export default function AboutSection() {
               Estudio
             </h2>
             <div className="w-10 h-px bg-accent mb-8" />
-            <p className="text-text-secondary text-sm leading-relaxed">
+            <p className="text-text-secondary text-sm leading-relaxed mb-8">
               Mar del Plata, Buenos Aires,<br className="hidden lg:block" /> Argentina.
             </p>
+            <div className="overflow-hidden">
+              <Image
+                src="/images/estudio-espera.jpg"
+                alt="Sala de espera del estudio RUA | LAREU"
+                width={1200}
+                height={900}
+                className="w-full h-auto object-cover"
+              />
+            </div>
           </ScrollAnimation>
 
           {/* ── Right: body text ── */}
-          <ScrollAnimation delay={120} className="lg:col-span-8">
+          <ScrollAnimation delay={120}>
             <div className="space-y-6 text-text-secondary text-[15px] lg:text-base leading-[1.85]">
               <p>
                 RUA | LAREU es un estudio jurídico contable comprometido con la excelencia,
