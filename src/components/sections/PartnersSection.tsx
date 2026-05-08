@@ -1,3 +1,4 @@
+import Image from "next/image";
 import ScrollAnimation from "@/components/ui/ScrollAnimation";
 
 const partners = [
@@ -6,6 +7,7 @@ const partners = [
     title: "Abogado",
     area: "Área Jurídica",
     initials: "JR",
+    photo: "/images/socios/joaquin-rua.jpg",
     bio: "Socio fundador. Responsable del Área Jurídica del estudio.\n\nEjerce en Derecho Laboral, accidentes de trabajo y enfermedades profesionales, Derecho Civil y Comercial, y Defensa del Consumidor. Asesora y litiga en representación de trabajadores, empleadores, empresas y particulares ante la justicia provincial y federal.\n\nMat. CAMP T. XVII, F. 441 | Mat. Federal T. 704, F. 501",
   },
   {
@@ -13,6 +15,7 @@ const partners = [
     title: "Contador Público",
     area: "Área Contable e Impositiva",
     initials: "FL",
+    photo: "/images/socios/francisco-lareu.jpg",
     bio: "Socio fundador. Responsable del Área Contable e Impositiva del estudio.\n\nAsesora a monotributistas, responsables inscriptos, sociedades y PyMEs en materia tributaria, contable y financiera. Interviene en planificación fiscal, liquidación de impuestos, constitución de sociedades, comercio exterior y auditoría de estados contables.\n\nMat. CPCE PBA T. 184, F. 222, Leg. 48029/1",
   },
 ];
@@ -39,15 +42,16 @@ export default function PartnersSection() {
             <ScrollAnimation key={partner.name} delay={i * 110}>
               <div className="bg-white p-8 lg:p-10 flex flex-col h-full">
 
-                {/* Avatar + name */}
+                {/* Photo + name */}
                 <div className="flex items-start gap-5 mb-7">
-                  <div
-                    className="w-20 h-20 flex-shrink-0 rounded-full bg-primary flex items-center justify-center"
-                    aria-hidden="true"
-                  >
-                    <span className="font-sackers-heavy text-white text-sm tracking-widest">
-                      {partner.initials}
-                    </span>
+                  <div className="w-20 h-20 flex-shrink-0 rounded-full overflow-hidden bg-primary">
+                    <Image
+                      src={partner.photo}
+                      alt={partner.name}
+                      width={80}
+                      height={80}
+                      className="w-full h-full object-cover object-top"
+                    />
                   </div>
                   <div className="pt-1">
                     <p className="font-sackers-light text-accent text-[9px] tracking-[0.25em] mb-1.5">
