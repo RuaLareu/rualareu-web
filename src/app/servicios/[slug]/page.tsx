@@ -129,6 +129,7 @@ export default function ServicePage({ params }: Props) {
   const isComex = params.slug === "comercio-exterior";
   const hasIntro = isLaboral || isCivil || isFamilia || isConsumidor || isContabilidad || isImpuestos || isConsultoria || isNuevos || isSueldos || isCompliance || isComex;
   const hasSplitGrid = isLaboral || isCivil || isImpuestos || isConsultoria || isNuevos || isSueldos || isCompliance || isComex;
+  const splitAt = (isImpuestos || isConsultoria) ? 2 : 3;
   const whatsappMsg = `https://wa.me/5492235790012?text=Hola%2C%20me%20contacto%20desde%20la%20web.%20Quisiera%20consultar%20sobre%20${encodeURIComponent(service.title)}.`;
   const posts = relatedPosts[params.slug] ?? [];
 
@@ -419,8 +420,8 @@ export default function ServicePage({ params }: Props) {
                     <span className="flex-1 h-px bg-primary/15" />
                   </div>
                 </ScrollAnimation>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-                  {data.areas.slice(0, 3).map((area, i) => (
+                <div className={`grid grid-cols-1 md:grid-cols-2 ${splitAt === 3 ? "lg:grid-cols-3" : ""} gap-6 mb-12`}>
+                  {data.areas.slice(0, splitAt).map((area, i) => (
                     <ScrollAnimation key={area.title} delay={i * 80}>
                       <div className="p-8 border-t-2 border-accent h-full bg-background">
                         <h3 className="font-sackers-medium text-[11px] tracking-[0.2em] text-primary mb-5">
@@ -448,8 +449,8 @@ export default function ServicePage({ params }: Props) {
                     <span className="flex-1 h-px bg-primary/15" />
                   </div>
                 </ScrollAnimation>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {data.areas.slice(3, 6).map((area, i) => (
+                <div className={`grid grid-cols-1 md:grid-cols-2 ${splitAt === 3 ? "lg:grid-cols-3" : ""} gap-6`}>
+                  {data.areas.slice(splitAt).map((area, i) => (
                     <ScrollAnimation key={area.title} delay={i * 80}>
                       <div className="p-8 border-t-2 border-accent h-full bg-background">
                         <h3 className="font-sackers-medium text-[11px] tracking-[0.2em] text-primary mb-5">
