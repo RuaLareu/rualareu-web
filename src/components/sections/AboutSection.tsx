@@ -1,4 +1,3 @@
-import Image from "next/image";
 import ScrollAnimation from "@/components/ui/ScrollAnimation";
 
 export default function AboutSection() {
