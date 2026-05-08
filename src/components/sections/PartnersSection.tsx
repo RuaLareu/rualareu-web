@@ -50,7 +50,7 @@ export default function PartnersSection() {
                       alt={partner.name}
                       width={300}
                       height={300}
-                      className="w-full h-full object-cover scale-[1.35] object-[center_15%]"
+                      className="w-full h-full object-cover scale-[1.36] object-[center_15%]"
                     />
                   </div>
                   <div className="pt-1">
