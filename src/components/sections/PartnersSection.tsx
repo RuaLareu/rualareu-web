@@ -44,13 +44,13 @@ export default function PartnersSection() {
 
                 {/* Photo + name */}
                 <div className="flex items-start gap-5 mb-7">
-                  <div className="w-20 h-20 flex-shrink-0 rounded-full overflow-hidden bg-primary">
+                  <div className="w-24 h-24 sm:w-28 sm:h-28 flex-shrink-0 rounded-full overflow-hidden bg-primary">
                     <Image
                       src={partner.photo}
                       alt={partner.name}
-                      width={80}
-                      height={80}
-                      className="w-full h-full object-cover object-top"
+                      width={400}
+                      height={400}
+                      className="w-full h-full object-cover"
                     />
                   </div>
                   <div className="pt-1">
