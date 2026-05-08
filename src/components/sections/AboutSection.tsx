@@ -3,36 +3,39 @@ import ScrollAnimation from "@/components/ui/ScrollAnimation";
 
 export default function AboutSection() {
   return (
-    <section id="estudio" className="section-padding bg-background">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <section id="estudio" className="relative section-padding overflow-hidden">
+      {/* Foto de fondo */}
+      <Image
+        src="/images/estudio-recepcion.jpg"
+        alt=""
+        fill
+        className="object-cover object-center"
+        quality={80}
+        aria-hidden="true"
+      />
+      {/* Overlay oscuro */}
+      <div className="absolute inset-0 bg-primary/85" aria-hidden="true" />
+
+      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 xl:gap-24">
 
           {/* ── Left: heading ── */}
           <ScrollAnimation className="lg:col-span-4 lg:pt-1">
-            <p className="font-sackers-light text-accent text-[10px] sm:text-xs tracking-[0.32em] mb-5">
+            <p className="font-sackers-light text-white/50 text-[10px] sm:text-xs tracking-[0.32em] mb-5">
               Quiénes somos
             </p>
-            <h2 className="font-sackers-heavy text-primary text-3xl sm:text-4xl lg:text-4xl xl:text-5xl mb-7">
+            <h2 className="font-sackers-heavy text-white text-3xl sm:text-4xl lg:text-4xl xl:text-5xl mb-7">
               Estudio
             </h2>
-            <div className="w-10 h-px bg-accent mb-8" />
-            <p className="text-text-secondary text-sm leading-relaxed">
+            <div className="w-10 h-px bg-white/30 mb-8" />
+            <p className="text-white/50 text-sm leading-relaxed">
               Mar del Plata, Buenos Aires,<br className="hidden lg:block" /> Argentina.
             </p>
-            <div className="mt-8 overflow-hidden">
-              <Image
-                src="/images/estudio-recepcion.jpg"
-                alt="Recepción del estudio RUA | LAREU"
-                width={1200}
-                height={900}
-                className="w-full h-auto object-cover"
-              />
-            </div>
           </ScrollAnimation>
 
           {/* ── Right: body text ── */}
           <ScrollAnimation delay={120} className="lg:col-span-8">
-            <div className="space-y-6 text-text-secondary text-[15px] lg:text-base leading-[1.85]">
+            <div className="space-y-6 text-white/70 text-[15px] lg:text-base leading-[1.85]">
               <p>
                 RUA | LAREU es un estudio jurídico contable comprometido con la excelencia,
                 la ética y la transparencia.
@@ -48,8 +51,8 @@ export default function AboutSection() {
               </p>
             </div>
 
-            <div className="mt-10 pl-6 border-l-2 border-accent">
-              <p className="text-text text-[15px] lg:text-base leading-[1.85] italic">
+            <div className="mt-10 pl-6 border-l-2 border-white/30">
+              <p className="text-white/90 text-[15px] lg:text-base leading-[1.85] italic">
                 Nos concebimos como aliados en cada decisión relevante, aportando respaldo legal
                 y contable, una mirada preventiva y una visión integral para que nuestros clientes
                 avancen con seguridad en sus proyectos personales y profesionales.
