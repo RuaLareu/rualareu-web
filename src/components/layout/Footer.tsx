@@ -53,7 +53,9 @@ export default function Footer() {
             {/* Social links */}
             <div className="flex items-center gap-4 mt-6">
               <a
-                href="#"
+                href="https://www.instagram.com/rua.lareu"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Instagram"
                 className="text-white/60 hover:text-white transition-colors"
               >
@@ -64,7 +66,9 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/company/rua-lareu/"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="LinkedIn"
                 className="text-white/60 hover:text-white transition-colors"
               >
