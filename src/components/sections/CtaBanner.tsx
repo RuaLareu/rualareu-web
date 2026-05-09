@@ -8,7 +8,7 @@ export default function CtaBanner() {
       {/* Foto */}
       <div className="relative h-64 sm:h-80 lg:h-auto">
         <Image
-          src="/images/estudio-recepcion.jpg"
+          src="/images/estudio-recepcion.png"
           alt="Recepción del estudio RUA | LAREU"
           fill
           className="object-cover object-center"
