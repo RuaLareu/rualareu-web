@@ -17,7 +17,7 @@ export const WHATSAPP_URL = `https://wa.me/${CONTACT.phoneRaw}?text=${CONTACT.wh
 export const GOOGLE_REVIEWS = {
   rating: 5.0,
   reviewCount: 18,
-  profileUrl: "https://www.google.com/maps/place/?q=place_id:ChIJx6Hka-K1v5URnEwHjBNJbz0",
+  profileUrl: "https://g.page/r/CSFHrAdx3y-oEAE/",
 };
 
 export const NAV_LINKS = [
