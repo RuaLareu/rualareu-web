@@ -17,6 +17,7 @@ type FormData = z.infer<typeof schema>;
 
 export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const {
     register,
@@ -25,10 +26,23 @@ export default function ContactForm() {
   } = useForm<FormData>({ resolver: zodResolver(schema) });
 
   const onSubmit = async (data: FormData) => {
-    // TODO: integrate with email service (Resend, Formspree, etc.)
-    console.log("Form data:", data);
-    await new Promise((res) => setTimeout(res, 800));
-    setSubmitted(true);
+    setError(null);
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      if (!res.ok) {
+        throw new Error("Error al enviar");
+      }
+
+      setSubmitted(true);
+    } catch {
+      setError("Hubo un error al enviar tu consulta. Por favor, intentá de nuevo o escribinos por WhatsApp.");
+    }
   };
 
   if (submitted) {
@@ -124,6 +138,12 @@ export default function ContactForm() {
           <p className="mt-1 text-xs text-red-500">{errors.mensaje.message}</p>
         )}
       </div>
+
+      {error && (
+        <div className="p-3 bg-red-50 border border-red-200 text-red-600 text-sm">
+          {error}
+        </div>
+      )}
 
       <button
         type="submit"
