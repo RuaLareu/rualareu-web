@@ -56,12 +56,10 @@ function FeaturedCard({ post, readTime }: { post: BlogPost; readTime: number }) 
 
 function PostCard({
   post,
-  author,
   readTime,
   delay,
 }: {
   post: BlogPost;
-  author: string;
   readTime: number;
   delay: number;
 }) {
@@ -73,14 +71,12 @@ function PostCard({
       >
         <div className="h-1 bg-primary group-hover:bg-primary/80 transition-colors duration-200" />
         <div className="flex flex-col flex-1 p-6">
-          <div className="flex items-center flex-wrap gap-3 mb-4">
+          <div className="flex items-center gap-3 mb-4 whitespace-nowrap">
             <span className="text-[#314A43] text-[10px] font-sackers-light tracking-[0.2em]">
               {post.category}
             </span>
             <span className="w-px h-3 bg-primary-light" />
             <span className="text-text-secondary text-xs">{post.date}</span>
-            <span className="w-px h-3 bg-primary-light" />
-            <span className="text-text-secondary text-xs">{author}</span>
           </div>
           <h3 className="font-semibold text-text text-[15px] leading-snug mb-3 group-hover:text-[#314A43] transition-colors">
             {post.title}
@@ -282,7 +278,6 @@ export default function BlogContent({ posts }: { posts: BlogPost[] }) {
                     <PostCard
                       key={post.slug}
                       post={post}
-                      author={post.author}
                       readTime={estimateReadTime(post.content)}
                       delay={i * 60}
                     />
