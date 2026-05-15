@@ -5,14 +5,12 @@ interface PageMetadataOptions {
   title: string;
   description: string;
   path: string;
-  ogImage?: string;
 }
 
 export function generatePageMetadata({
   title,
   description,
   path,
-  ogImage = "/og/og-default.jpg",
 }: PageMetadataOptions): Metadata {
   const url = `${SITE_URL}${path}`;
 
@@ -27,20 +25,13 @@ export function generatePageMetadata({
       description,
       url,
       type: "article",
-      images: [
-        {
-          url: ogImage,
-          width: 1200,
-          height: 630,
-          alt: title,
-        },
-      ],
+      // og:image cascadea desde src/app/opengraph-image.png
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: [ogImage],
+      // twitter:image cascadea desde src/app/opengraph-image.png
     },
   };
 }

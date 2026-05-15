@@ -49,21 +49,14 @@ export const metadata: Metadata = {
     title: "RUA | LAREU - Estudio Jurídico Contable en Mar del Plata",
     description:
       "Estudio jurídico y contable en Mar del Plata. Asesoramiento en derecho laboral, civil, familia, defensa del consumidor, contabilidad, impuestos y sociedades.",
-    images: [
-      {
-        url: "/og/og-default.jpg",
-        width: 1200,
-        height: 630,
-        alt: "RUA | LAREU - Estudio Jurídico Contable",
-      },
-    ],
+    // og:image generada automáticamente desde src/app/opengraph-image.png
   },
   twitter: {
     card: "summary_large_image",
     title: "RUA | LAREU - Estudio Jurídico Contable en Mar del Plata",
     description:
       "Estudio jurídico y contable en Mar del Plata. Asesoramiento en derecho laboral, civil, familia, defensa del consumidor, contabilidad, impuestos y sociedades.",
-    images: ["/og/og-default.jpg"],
+    // twitter:image generada automáticamente desde src/app/opengraph-image.png
   },
   icons: {
     icon: [
