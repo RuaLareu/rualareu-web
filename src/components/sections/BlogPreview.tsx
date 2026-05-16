@@ -31,10 +31,10 @@ export default function BlogPreview() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {posts.map((post, i) => (
-            <ScrollAnimation key={post.slug} delay={i * 80}>
+            <ScrollAnimation key={post.slug} delay={i * 80} className="h-full">
               <Link
                 href={`/blog/${post.slug}`}
-                className="group flex flex-col bg-background border border-primary/15 hover:border-accent hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+                className="group flex flex-col h-full bg-background border border-primary/15 hover:border-accent hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
               >
                 <div className="h-1 bg-primary group-hover:bg-primary/80 transition-colors duration-200" />
                 <div className="flex flex-col flex-1 p-6">

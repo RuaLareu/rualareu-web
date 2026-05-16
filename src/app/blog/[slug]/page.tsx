@@ -123,7 +123,7 @@ export default function BlogPostPage({ params }: Props) {
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
                 {related.map((p, i) => (
-                  <ScrollAnimation key={p.slug} delay={i * 80}>
+                  <ScrollAnimation key={p.slug} delay={i * 80} className="h-full">
                     <Link
                       href={`/blog/${p.slug}`}
                       aria-label={`Leer: ${p.title}`}
