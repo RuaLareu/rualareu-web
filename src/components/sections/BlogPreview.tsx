@@ -1,9 +1,10 @@
 import Link from "next/link";
 import ScrollAnimation from "@/components/ui/ScrollAnimation";
-import { getLatestPosts } from "@/lib/blog";
+import { getLatestPostsBalanced } from "@/lib/blog";
 
 export default function BlogPreview() {
-  const posts = getLatestPosts(3);
+  // 1 jurídica + 2 contables, latest por categoría
+  const posts = getLatestPostsBalanced(1, 2);
 
   if (posts.length === 0) return null;
 

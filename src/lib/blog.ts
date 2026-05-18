@@ -62,3 +62,35 @@ export function getPostBySlug(slug: string): BlogPost | undefined {
 export function getLatestPosts(count: number): BlogPost[] {
   return getAllPosts().slice(0, count);
 }
+
+// Agrupación de categorías para la home (1 jurídica + 2 contables, etc.)
+const JURIDIC_CATEGORIES = new Set([
+  "Civil",
+  "Familia",
+  "Laboral",
+  "Consumidor",
+  "Societario",
+  "Salud",
+  "Propiedad Intelectual",
+]);
+const CONTABLE_CATEGORIES = new Set([
+  "Contable",
+  "Impositivo",
+  "Comercio Exterior",
+  "Compliance",
+  "Laboral-Contable",
+]);
+
+export function getLatestPostsBalanced(
+  juridicCount: number,
+  contableCount: number
+): BlogPost[] {
+  const all = getAllPosts();
+  const juridicos = all
+    .filter((p) => JURIDIC_CATEGORIES.has(p.category))
+    .slice(0, juridicCount);
+  const contables = all
+    .filter((p) => CONTABLE_CATEGORIES.has(p.category))
+    .slice(0, contableCount);
+  return [...juridicos, ...contables].sort((a, b) => (a.date > b.date ? -1 : 1));
+}
