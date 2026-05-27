@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Montserrat, Lora } from "next/font/google";
+import GoogleAnalytics from "@/components/ui/GoogleAnalytics";
 import "./globals.css";
 
 const montserrat = Montserrat({
@@ -86,7 +87,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es-AR" className={`${montserrat.variable} ${lora.variable}`}>
-      <body className="antialiased bg-background text-text">{children}</body>
+      <body className="antialiased bg-background text-text">
+        <GoogleAnalytics />
+        {children}
+      </body>
     </html>
   );
 }
