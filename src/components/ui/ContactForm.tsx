@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
+import { trackEvent } from "@/lib/analytics";
 
 const schema = z.object({
   nombre: z.string().min(2, "Ingresá tu nombre completo"),
@@ -39,6 +40,10 @@ export default function ContactForm() {
         throw new Error("Error al enviar");
       }
 
+      trackEvent("contact_form_submit", {
+        asunto: data.asunto,
+        has_telefono: Boolean(data.telefono),
+      });
       setSubmitted(true);
     } catch {
       setError("Hubo un error al enviar tu consulta. Por favor, intentá de nuevo o escribinos por WhatsApp.");
