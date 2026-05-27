@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Footer from "@/components/layout/Footer";
 import {
   Phone, MessageCircle, Star, ChevronDown,
   ShieldCheck, Search, FileText, CheckCircle,
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
   title: "Registro de Marcas Mar del Plata | INPI | Protegé tu Negocio | RUA | LAREU",
   description:
     "Registro de marcas ante INPI en Mar del Plata. Búsqueda de antecedentes, solicitud, oposiciones y renovación. Protegé tu negocio. Consulta sin compromiso.",
-  robots: { index: true, follow: false },
+  robots: { index: true, follow: true },
   alternates: { canonical: "/landing/registro-de-marcas" },
 };
 
@@ -365,20 +366,7 @@ export default function RegistroMarcasLanding() {
         </section>
       </main>
 
-      {/* ── Minimal footer ── */}
-      <footer className="bg-[#1a2e28] py-6">
-        <div className="max-w-5xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-white/25 text-xs">
-            © {new Date().getFullYear()} RUA | LAREU. Todos los derechos reservados.
-          </p>
-          <a href="/" className="text-white/30 text-xs hover:text-white/60 transition-colors">
-            Conocé más sobre nuestro estudio →
-          </a>
-          <p className="text-white/20 text-xs">
-            Almirante Brown 3071, Piso 2, Mar del Plata (7600)
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }

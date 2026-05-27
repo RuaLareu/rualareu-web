@@ -46,5 +46,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.5,
     },
+    // Landings de captación (Ads + SEO orgánico, fuera del menú principal)
+    {
+      url: `${BASE_URL}/landing/accidentes-de-trabajo`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+    {
+      url: `${BASE_URL}/landing/amparos-de-salud`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+    {
+      url: `${BASE_URL}/landing/monotributo`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+    {
+      url: `${BASE_URL}/landing/registro-de-marcas`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
   ];
 }

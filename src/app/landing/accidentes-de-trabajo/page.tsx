@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Footer from "@/components/layout/Footer";
 import { Phone, MessageCircle, Star, Shield, Clock, Award, ChevronDown } from "lucide-react";
 
 const WHATSAPP_URL =
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
   title: "Abogado Accidentes de Trabajo Mar del Plata | Reclamos ART | Consulta Gratis",
   description:
     "Sufriste un accidente de trabajo? Somos abogados especialistas en reclamos contra ART en Mar del Plata. Consulta gratuita. Cobramos solo si ganás.",
-  robots: { index: true, follow: false },
+  robots: { index: true, follow: true },
   alternates: { canonical: "/landing/accidentes-de-trabajo" },
 };
 
@@ -373,20 +374,7 @@ export default function AccidentesLanding() {
         </section>
       </main>
 
-      {/* ── Minimal footer ── */}
-      <footer className="bg-[#1a2e28] py-6">
-        <div className="max-w-5xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-white/25 text-xs">
-            © {new Date().getFullYear()} RUA | LAREU. Todos los derechos reservados.
-          </p>
-          <a href="/" className="text-white/30 text-xs hover:text-white/60 transition-colors">
-            Conocé más sobre nuestro estudio →
-          </a>
-          <p className="text-white/20 text-xs">
-            Almirante Brown 3071, Piso 2, Mar del Plata (7600)
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }
