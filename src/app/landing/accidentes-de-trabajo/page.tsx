@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Footer from "@/components/layout/Footer";
-import { Phone, MessageCircle, Star, Shield, Clock, Award } from "lucide-react";
+import { Phone, MessageCircle, Star, Shield, Clock, Award, ChevronDown } from "lucide-react";
 import { GOOGLE_REVIEWS } from "@/lib/constants";
 
 function GoogleLogo() {
@@ -61,13 +61,12 @@ function FAQItem({
   defaultOpen?: boolean;
 }) {
   return (
-    <details className="group border-b border-white/10 last:border-0" {...(defaultOpen ? { open: true } : {})}>
-      <summary className="flex items-center justify-between py-5 cursor-pointer text-white text-[15px] font-medium list-none hover:text-accent transition-colors">
+    <details className="group border-b border-primary/15 last:border-0" {...(defaultOpen ? { open: true } : {})}>
+      <summary className="flex items-center justify-between py-5 cursor-pointer text-primary text-[15px] font-medium list-none [&::-webkit-details-marker]:hidden">
         {question}
-        <span className="text-accent flex-shrink-0 ml-4 text-lg font-light leading-none select-none group-open:hidden">+</span>
-        <span className="text-accent flex-shrink-0 ml-4 text-lg font-light leading-none select-none hidden group-open:inline">−</span>
+        <ChevronDown size={18} className="text-primary/40 flex-shrink-0 ml-4 transition-transform duration-200 group-open:rotate-180" />
       </summary>
-      <p className="pb-5 text-white/60 text-sm leading-relaxed pr-8">{answer}</p>
+      <p className="pb-5 text-text-secondary text-sm leading-relaxed pr-8">{answer}</p>
     </details>
   );
 }
@@ -178,7 +177,7 @@ export default function AccidentesLanding() {
                 <div className="w-14 h-14 bg-primary-light text-primary flex items-center justify-center mx-auto mb-5 rounded-full">
                   <Shield size={24} strokeWidth={1.5} />
                 </div>
-                <h3 className="font-semibold text-primary text-lg mb-3">Si la ART rechazó tu reclamo</h3>
+                <h3 className="font-semibold text-primary text-lg mb-3 min-h-[3.5rem] flex items-end justify-center">Si la ART te rechazó</h3>
                 <p className="text-text-secondary text-sm leading-relaxed flex-1">
                   Muchos rechazos pueden revertirse. Analizamos tu caso, evaluamos las vías disponibles
                   —Comisiones Médicas o vía judicial— y te acompañamos en cada paso del proceso.
@@ -188,7 +187,7 @@ export default function AccidentesLanding() {
                 <div className="w-14 h-14 bg-primary-light text-primary flex items-center justify-center mx-auto mb-5 rounded-full">
                   <Clock size={24} strokeWidth={1.5} />
                 </div>
-                <h3 className="font-semibold text-primary text-lg mb-3">Si te dieron el alta y no estás de acuerdo</h3>
+                <h3 className="font-semibold text-primary text-lg mb-3 min-h-[3.5rem] flex items-end justify-center">Si te dieron el alta antes de tiempo</h3>
                 <p className="text-text-secondary text-sm leading-relaxed flex-1">
                   Tenés derecho a solicitar una revisión. Evaluamos tu situación médica y, si corresponde,
                   gestionamos los estudios complementarios para que recibas el tratamiento adecuado.
@@ -198,7 +197,7 @@ export default function AccidentesLanding() {
                 <div className="w-14 h-14 bg-primary-light text-primary flex items-center justify-center mx-auto mb-5 rounded-full">
                   <Award size={24} strokeWidth={1.5} />
                 </div>
-                <h3 className="font-semibold text-primary text-lg mb-3">Si quedaste con una incapacidad</h3>
+                <h3 className="font-semibold text-primary text-lg mb-3 min-h-[3.5rem] flex items-end justify-center">Si quedaste con una incapacidad</h3>
                 <p className="text-text-secondary text-sm leading-relaxed flex-1">
                   Verificamos que el porcentaje de incapacidad refleje tu situación real y calculamos
                   la indemnización que te corresponde según la ley. Nuestro objetivo es que recibas lo justo.
@@ -280,7 +279,7 @@ export default function AccidentesLanding() {
                   <div className="w-12 h-12 bg-accent text-white flex items-center justify-center mx-auto mb-4 rounded-full font-bold text-lg">
                     {item.step}
                   </div>
-                  <h3 className="font-semibold text-primary text-base mb-2">{item.title}</h3>
+                  <h3 className="font-semibold text-primary text-base mb-2 min-h-[2.5rem] flex items-end justify-center">{item.title}</h3>
                   <p className="text-text-secondary text-sm leading-relaxed flex-1">{item.desc}</p>
                 </div>
               ))}
@@ -358,9 +357,9 @@ export default function AccidentesLanding() {
         {/* ══════════════════════════════════════
             6. FAQ
         ══════════════════════════════════════ */}
-        <section className="py-20 bg-primary">
+        <section className="py-20 bg-background">
           <div className="max-w-2xl mx-auto px-6">
-            <h2 className="font-sackers-heavy text-white text-2xl sm:text-3xl text-center mb-4">
+            <h2 className="font-sackers-heavy text-primary text-2xl sm:text-3xl text-center mb-4">
               Preguntas frecuentes
             </h2>
             <div className="w-10 h-px bg-accent mx-auto mb-12" />
@@ -388,7 +387,7 @@ export default function AccidentesLanding() {
         {/* ══════════════════════════════════════
             7. CTA FINAL
         ══════════════════════════════════════ */}
-        <section className="py-24 bg-primary border-t border-white/8">
+        <section className="py-24 bg-primary">
           <div className="max-w-2xl mx-auto px-6 text-center">
             <h2 className="text-white text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight mb-4">
               No dejes pasar más tiempo.
