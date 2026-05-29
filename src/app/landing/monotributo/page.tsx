@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Footer from "@/components/layout/Footer";
 import { Phone, MessageCircle, Star, ChevronDown, CheckCircle, AlertTriangle, Users, FileText, Calculator, RefreshCw } from "lucide-react";
+import { GOOGLE_REVIEWS } from "@/lib/constants";
 
 const WHATSAPP_URL =
   "https://wa.me/5492235790012?text=Hola%2C%20necesito%20asesoramiento%20sobre%20monotributo.";
@@ -34,20 +35,39 @@ const jsonLd = {
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "5.0",
-    reviewCount: "18",
+    reviewCount: "19",
     bestRating: "5",
   },
 };
 
-function FAQItem({ question, answer }: { question: string; answer: string }) {
+function FAQItem({
+  question,
+  answer,
+  defaultOpen = false,
+}: {
+  question: string;
+  answer: string;
+  defaultOpen?: boolean;
+}) {
   return (
-    <details className="group border-b border-primary/20 last:border-0">
-      <summary className="flex items-center justify-between py-5 cursor-pointer text-text text-[15px] font-medium list-none">
+    <details className="group border-b border-primary/15 last:border-0" {...(defaultOpen ? { open: true } : {})}>
+      <summary className="flex items-center justify-between py-5 cursor-pointer text-primary text-[15px] font-medium list-none [&::-webkit-details-marker]:hidden">
         {question}
-        <ChevronDown size={18} className="text-accent flex-shrink-0 ml-4 group-open:rotate-180 transition-transform" />
+        <ChevronDown size={18} className="text-primary/40 flex-shrink-0 ml-4 transition-transform duration-200 group-open:rotate-180" />
       </summary>
       <p className="pb-5 text-text-secondary text-sm leading-relaxed pr-8">{answer}</p>
     </details>
+  );
+}
+
+function GoogleLogo() {
+  return (
+    <svg className="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" aria-hidden="true">
+      <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+      <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+      <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" />
+      <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" />
+    </svg>
   );
 }
 
@@ -94,7 +114,7 @@ export default function MonotributoLanding() {
                   <Star key={i} size={13} className="fill-white text-white" />
                 ))}
               </div>
-              <span className="text-white/70 text-xs">5.0 en Google · 18 opiniones</span>
+              <span className="text-white/70 text-xs">{GOOGLE_REVIEWS.rating} en Google · {GOOGLE_REVIEWS.reviewCount} opiniones</span>
             </div>
 
             <h1 className="text-white text-3xl sm:text-4xl lg:text-4xl xl:text-5xl font-bold leading-tight mb-6">
@@ -114,14 +134,14 @@ export default function MonotributoLanding() {
                 href={WHATSAPP_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-white text-primary text-lg font-semibold px-10 py-5 rounded hover:bg-white/90 transition-all duration-300"
+                className="inline-flex items-center justify-center gap-2 w-full sm:w-auto whitespace-nowrap bg-white text-primary text-lg font-semibold px-10 py-5 rounded hover:bg-white/90 transition-all duration-300"
               >
                 <MessageCircle size={20} />
                 Consultanos ahora
               </a>
               <a
                 href={`tel:${PHONE_RAW}`}
-                className="inline-flex items-center justify-center gap-2 border border-white/25 text-white/80 text-base font-medium px-8 py-5 rounded hover:bg-white/10 hover:text-white transition-all"
+                className="inline-flex items-center justify-center gap-2 w-full sm:w-auto whitespace-nowrap border border-white/25 text-white/80 text-base font-medium px-8 py-5 rounded hover:bg-white/10 hover:text-white transition-all"
               >
                 <Phone size={18} />
                 {PHONE}
@@ -150,12 +170,12 @@ export default function MonotributoLanding() {
               ].map((item) => {
                 const Icon = item.icon;
                 return (
-                  <div key={item.title} className="bg-white p-6 border border-primary/15">
+                  <div key={item.title} className="bg-white p-6 border border-primary/15 flex flex-col h-full">
                     <div className="w-10 h-10 bg-primary-light text-primary flex items-center justify-center mb-4">
                       <Icon size={18} strokeWidth={1.5} />
                     </div>
                     <h3 className="font-semibold text-primary text-sm mb-2">{item.title}</h3>
-                    <p className="text-text-secondary text-sm leading-relaxed">{item.desc}</p>
+                    <p className="text-text-secondary text-sm leading-relaxed flex-1">{item.desc}</p>
                   </div>
                 );
               })}
@@ -246,7 +266,7 @@ export default function MonotributoLanding() {
                 { title: "No emitir facturas electrónicas", desc: "ARCA cruza datos con bancos y plataformas de pago. La informalidad se detecta y trae consecuencias." },
                 { title: "No pagar la obra social", desc: "Si no pagás la cuota, perdés la cobertura médica. Te avisamos antes de que pase." },
               ].map((item) => (
-                <div key={item.title} className="flex gap-4 bg-white p-6 border border-primary/15">
+                <div key={item.title} className="flex gap-4 bg-white p-6 border border-primary/15 h-full">
                   <AlertTriangle size={20} className="text-accent flex-shrink-0 mt-0.5" />
                   <div>
                     <h3 className="font-semibold text-primary text-sm mb-1">{item.title}</h3>
@@ -261,7 +281,7 @@ export default function MonotributoLanding() {
         {/* ══════════════════════════════════════
             5. PARA QUIÉN ES
         ══════════════════════════════════════ */}
-        <section className="py-20 bg-white">
+        <section className="py-20 bg-background">
           <div className="max-w-4xl mx-auto px-6">
             <h2 className="font-sackers-heavy text-primary text-2xl sm:text-3xl text-center mb-4">
               ¿Para quién es este servicio?
@@ -294,6 +314,73 @@ export default function MonotributoLanding() {
         </section>
 
         {/* ══════════════════════════════════════
+            5.5 TESTIMONIOS
+        ══════════════════════════════════════ */}
+        <section className="py-20 bg-white">
+          <div className="max-w-4xl mx-auto px-6">
+            <h2 className="font-sackers-heavy text-primary text-2xl sm:text-3xl text-center mb-4">
+              Lo que dicen nuestros clientes
+            </h2>
+            <div className="w-10 h-px bg-accent mx-auto mb-14" />
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {[
+                {
+                  text: "Excelente estudio. Me asesoran permanentemente en todas sus áreas con mucha claridad y profesionalismo. Siempre con enorme predisposición para abordar cada tema y consulta. Sin dudas los recomiendo.",
+                  name: "Real Step Sport Group",
+                  city: "Mar del Plata",
+                },
+                {
+                  text: "Una excelente opción para quienes buscan un servicio serio, confiable y de alta calidad en el ámbito jurídico-contable. Totalmente recomendable.",
+                  name: "Patricia N.",
+                  city: "Mar del Plata",
+                },
+                {
+                  text: "Excelente trato y profesionalismo. No solo desde lo técnico, sino la comunicación constante con el cliente.",
+                  name: "Carina L.",
+                  city: "Mar del Plata",
+                },
+              ].map((t) => (
+                <div key={t.name} className="bg-white p-6 border border-primary/15 flex flex-col h-full">
+                  <div className="flex gap-0.5 mb-4">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} size={14} className="fill-[#FBBC04] text-[#FBBC04]" />
+                    ))}
+                  </div>
+                  <p className="text-text-secondary text-sm leading-relaxed mb-5 italic flex-1">
+                    &ldquo;{t.text}&rdquo;
+                  </p>
+                  <div className="flex items-center gap-3 pt-5 border-t border-primary/15">
+                    <div className="w-9 h-9 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                      <span className="text-white text-xs font-semibold">{t.name.charAt(0)}</span>
+                    </div>
+                    <div className="min-w-0 flex-1">
+                      <p className="text-text text-xs font-medium leading-snug truncate">{t.name}</p>
+                      <p className="text-text-secondary text-[11px] mt-0.5">{t.city}</p>
+                    </div>
+                    <div className="ml-auto opacity-40 flex-shrink-0">
+                      <GoogleLogo />
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="text-center mt-8">
+              <a
+                href={GOOGLE_REVIEWS.profileUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm text-text-secondary hover:text-primary transition-colors"
+              >
+                Ver las {GOOGLE_REVIEWS.reviewCount} opiniones en Google
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        {/* ══════════════════════════════════════
             6. FAQ
         ══════════════════════════════════════ */}
         <section className="py-20 bg-background">
@@ -304,6 +391,7 @@ export default function MonotributoLanding() {
             <div className="w-10 h-px bg-accent mx-auto mb-12" />
 
             <FAQItem
+              defaultOpen
               question="¿Cuánto pago de monotributo?"
               answer="La cuota depende de tu categoría, que se define por tu facturación anual, la superficie de tu local y el consumo de energía eléctrica. Incluye el componente impositivo, el aporte jubilatorio y la obra social. Consultanos para saber cuánto pagarías según tu situación."
             />
@@ -345,14 +433,14 @@ export default function MonotributoLanding() {
                 href={WHATSAPP_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-white text-primary text-lg font-semibold px-10 py-5 rounded hover:bg-white/90 transition-all duration-300"
+                className="inline-flex items-center justify-center gap-2 w-full sm:w-auto whitespace-nowrap bg-white text-primary text-lg font-semibold px-10 py-5 rounded hover:bg-white/90 transition-all duration-300"
               >
                 <MessageCircle size={20} />
                 Escribinos por WhatsApp
               </a>
               <a
                 href={`tel:${PHONE_RAW}`}
-                className="inline-flex items-center justify-center gap-2 border border-white/25 text-white/80 text-base font-medium px-8 py-5 rounded hover:bg-white/10 hover:text-white transition-all"
+                className="inline-flex items-center justify-center gap-2 w-full sm:w-auto whitespace-nowrap border border-white/25 text-white/80 text-base font-medium px-8 py-5 rounded hover:bg-white/10 hover:text-white transition-all"
               >
                 <Phone size={18} />
                 {PHONE}

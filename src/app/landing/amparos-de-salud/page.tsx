@@ -6,6 +6,7 @@ import {
   HeartPulse, Pill, Brain, Accessibility, Baby,
   ShieldOff, DollarSign, Stethoscope, Clock,
 } from "lucide-react";
+import { GOOGLE_REVIEWS } from "@/lib/constants";
 
 const WHATSAPP_URL =
   "https://wa.me/5492235790012?text=Hola%2C%20necesito%20asesoramiento%20sobre%20un%20amparo%20de%20salud.";
@@ -38,20 +39,39 @@ const jsonLd = {
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "5.0",
-    reviewCount: "18",
+    reviewCount: "19",
     bestRating: "5",
   },
 };
 
-function FAQItem({ question, answer }: { question: string; answer: string }) {
+function FAQItem({
+  question,
+  answer,
+  defaultOpen = false,
+}: {
+  question: string;
+  answer: string;
+  defaultOpen?: boolean;
+}) {
   return (
-    <details className="group border-b border-white/10 last:border-0">
-      <summary className="flex items-center justify-between py-5 cursor-pointer text-white text-[15px] font-medium list-none">
+    <details className="group border-b border-primary/15 last:border-0" {...(defaultOpen ? { open: true } : {})}>
+      <summary className="flex items-center justify-between py-5 cursor-pointer text-primary text-[15px] font-medium list-none [&::-webkit-details-marker]:hidden">
         {question}
-        <ChevronDown size={18} className="text-accent flex-shrink-0 ml-4 group-open:rotate-180 transition-transform" />
+        <ChevronDown size={18} className="text-primary/40 flex-shrink-0 ml-4 transition-transform duration-200 group-open:rotate-180" />
       </summary>
-      <p className="pb-5 text-white/60 text-sm leading-relaxed pr-8">{answer}</p>
+      <p className="pb-5 text-text-secondary text-sm leading-relaxed pr-8">{answer}</p>
     </details>
+  );
+}
+
+function GoogleLogo() {
+  return (
+    <svg className="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" aria-hidden="true">
+      <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+      <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+      <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" />
+      <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" />
+    </svg>
   );
 }
 
@@ -100,7 +120,7 @@ export default function AmparosSaludLanding() {
                   <Star key={i} size={13} className="fill-white text-white" />
                 ))}
               </div>
-              <span className="text-white/70 text-xs">5.0 en Google · 18 opiniones</span>
+              <span className="text-white/70 text-xs">{GOOGLE_REVIEWS.rating} en Google · {GOOGLE_REVIEWS.reviewCount} opiniones</span>
             </div>
 
             <h1 className="text-white text-3xl sm:text-4xl lg:text-4xl xl:text-5xl font-bold leading-tight mb-6">
@@ -121,14 +141,14 @@ export default function AmparosSaludLanding() {
                 href={WHATSAPP_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-white text-primary text-lg font-semibold px-10 py-5 rounded hover:bg-white/90 transition-all duration-300"
+                className="inline-flex items-center justify-center gap-2 w-full sm:w-auto whitespace-nowrap bg-white text-primary text-lg font-semibold px-10 py-5 rounded hover:bg-white/90 transition-all duration-300"
               >
                 <MessageCircle size={20} />
-                Consultanos ahora — Es gratis
+                Consultá gratis ahora
               </a>
               <a
                 href={`tel:${PHONE_RAW}`}
-                className="inline-flex items-center justify-center gap-2 border border-white/25 text-white/80 text-base font-medium px-8 py-5 rounded hover:bg-white/10 hover:text-white transition-all"
+                className="inline-flex items-center justify-center gap-2 w-full sm:w-auto whitespace-nowrap border border-white/25 text-white/80 text-base font-medium px-8 py-5 rounded hover:bg-white/10 hover:text-white transition-all"
               >
                 <Phone size={18} />
                 {PHONE}
@@ -242,12 +262,12 @@ export default function AmparosSaludLanding() {
                   desc: "La medida cautelar puede obtenerse en 48 a 72 horas. Tu obra social o prepaga queda obligada a cubrir el tratamiento.",
                 },
               ].map((item) => (
-                <div key={item.step} className="text-center">
+                <div key={item.step} className="text-center flex flex-col items-center h-full">
                   <div className="w-14 h-14 bg-accent text-white flex items-center justify-center mx-auto mb-5 rounded-full font-bold text-xl">
                     {item.step}
                   </div>
-                  <h3 className="font-semibold text-primary text-lg mb-3">{item.title}</h3>
-                  <p className="text-text-secondary text-sm leading-relaxed">{item.desc}</p>
+                  <h3 className="font-semibold text-primary text-lg mb-3 min-h-[3.5rem] flex items-end justify-center">{item.title}</h3>
+                  <p className="text-text-secondary text-sm leading-relaxed flex-1">{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -267,38 +287,56 @@ export default function AmparosSaludLanding() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
                 {
-                  text: "Mi prepaga me negaba un medicamento oncológico. En 3 días tenía la cautelar y empecé el tratamiento.",
-                  initials: "L.M.",
+                  text: "Excelente trato y profesionalismo. No solo desde lo técnico, sino la comunicación constante con el cliente.",
+                  name: "Carina L.",
                   city: "Mar del Plata",
                 },
                 {
-                  text: "La obra social no me cubría la rehabilitación de mi hijo con discapacidad. Gracias al amparo hoy tiene toda la cobertura.",
-                  initials: "A.R.",
+                  text: "Impecable servicio. Activaron en un par de meses un proceso que esperaba hacía nueve años.",
+                  name: "Juan Cruz P.",
                   city: "Mar del Plata",
                 },
                 {
-                  text: "Me querían dar de baja del plan por mi edad. Presentaron el amparo y no solo me mantuvieron sino que me reintegraron lo cobrado de más.",
-                  initials: "E.V.",
-                  city: "Miramar",
+                  text: "Un profesional con todas las letras. Se puso en mi lugar desde el primer momento y defendió mis derechos. Súper recomendable.",
+                  name: "Cristian R.",
+                  city: "Mar del Plata",
                 },
               ].map((t) => (
-                <div key={t.initials} className="bg-background p-6 border border-primary/15">
+                <div key={t.name} className="bg-background p-6 border border-primary/15 flex flex-col h-full">
                   <div className="flex gap-0.5 mb-4">
                     {[...Array(5)].map((_, i) => (
-                      <Star key={i} size={14} className="fill-accent text-accent" />
+                      <Star key={i} size={14} className="fill-[#FBBC04] text-[#FBBC04]" />
                     ))}
                   </div>
-                  <p className="text-text-secondary text-sm leading-relaxed mb-5 italic">
+                  <p className="text-text-secondary text-sm leading-relaxed mb-5 italic flex-1">
                     &ldquo;{t.text}&rdquo;
                   </p>
-                  <div className="flex items-center gap-3">
-                    <div className="w-9 h-9 bg-primary rounded-full flex items-center justify-center">
-                      <span className="text-white text-xs font-semibold">{t.initials}</span>
+                  <div className="flex items-center gap-3 pt-5 border-t border-primary/15">
+                    <div className="w-9 h-9 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                      <span className="text-white text-xs font-semibold">{t.name.charAt(0)}</span>
                     </div>
-                    <span className="text-text-secondary text-xs">{t.city}</span>
+                    <div className="min-w-0 flex-1">
+                      <p className="text-text text-xs font-medium leading-snug truncate">{t.name}</p>
+                      <p className="text-text-secondary text-[11px] mt-0.5">{t.city}</p>
+                    </div>
+                    <div className="ml-auto opacity-40 flex-shrink-0">
+                      <GoogleLogo />
+                    </div>
                   </div>
                 </div>
               ))}
+            </div>
+
+            <div className="text-center mt-8">
+              <a
+                href={GOOGLE_REVIEWS.profileUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm text-text-secondary hover:text-primary transition-colors"
+              >
+                Ver las {GOOGLE_REVIEWS.reviewCount} opiniones en Google
+                <span aria-hidden="true">→</span>
+              </a>
             </div>
           </div>
         </section>
@@ -306,14 +344,15 @@ export default function AmparosSaludLanding() {
         {/* ══════════════════════════════════════
             6. FAQ
         ══════════════════════════════════════ */}
-        <section className="py-20 bg-primary">
+        <section className="py-20 bg-background">
           <div className="max-w-2xl mx-auto px-6">
-            <h2 className="font-sackers-heavy text-white text-2xl sm:text-3xl text-center mb-4">
+            <h2 className="font-sackers-heavy text-primary text-2xl sm:text-3xl text-center mb-4">
               Preguntas frecuentes
             </h2>
             <div className="w-10 h-px bg-accent mx-auto mb-12" />
 
             <FAQItem
+              defaultOpen
               question="¿Cuánto tarda un amparo de salud?"
               answer="La medida cautelar (que ordena la cobertura inmediata) puede obtenerse en 48 a 72 horas desde la presentación. El juicio de fondo se resuelve en semanas o pocos meses, pero con la cautelar ya tenés la cobertura asegurada mientras tanto."
             />
@@ -339,7 +378,7 @@ export default function AmparosSaludLanding() {
         {/* ══════════════════════════════════════
             7. CTA FINAL
         ══════════════════════════════════════ */}
-        <section className="py-24 bg-primary border-t border-white/8">
+        <section className="py-24 bg-primary">
           <div className="max-w-2xl mx-auto px-6 text-center">
             <h2 className="text-white text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight mb-4">
               Tu salud no puede esperar.
@@ -355,14 +394,14 @@ export default function AmparosSaludLanding() {
                 href={WHATSAPP_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-white text-primary text-lg font-semibold px-10 py-5 rounded hover:bg-white/90 transition-all duration-300"
+                className="inline-flex items-center justify-center gap-2 w-full sm:w-auto whitespace-nowrap bg-white text-primary text-lg font-semibold px-10 py-5 rounded hover:bg-white/90 transition-all duration-300"
               >
                 <MessageCircle size={20} />
                 Escribinos por WhatsApp
               </a>
               <a
                 href={`tel:${PHONE_RAW}`}
-                className="inline-flex items-center justify-center gap-2 border border-white/25 text-white/80 text-base font-medium px-8 py-5 rounded hover:bg-white/10 hover:text-white transition-all"
+                className="inline-flex items-center justify-center gap-2 w-full sm:w-auto whitespace-nowrap border border-white/25 text-white/80 text-base font-medium px-8 py-5 rounded hover:bg-white/10 hover:text-white transition-all"
               >
                 <Phone size={18} />
                 {PHONE}
