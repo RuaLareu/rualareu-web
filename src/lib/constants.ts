@@ -16,7 +16,7 @@ export const WHATSAPP_URL = `https://wa.me/${CONTACT.phoneRaw}?text=${CONTACT.wh
 
 export const GOOGLE_REVIEWS = {
   rating: 5.0,
-  reviewCount: 18,
+  reviewCount: 19,
   profileUrl: "https://g.page/r/CSFHrAdx3y-oEAE/",
 };
 
