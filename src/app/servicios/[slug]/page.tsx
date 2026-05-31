@@ -130,7 +130,7 @@ export default function ServicePage({ params }: Props) {
   const hasIntro = isLaboral || isCivil || isFamilia || isConsumidor || isContabilidad || isImpuestos || isConsultoria || isNuevos || isSueldos || isCompliance || isComex;
   const hasSplitGrid = isLaboral || isCivil || isImpuestos || isConsultoria || isNuevos || isSueldos || isCompliance || isComex;
   const splitAt = (isImpuestos || isConsultoria) ? 2 : 3;
-  const whatsappMsg = `https://wa.me/5492235790012?text=Hola%2C%20me%20contacto%20desde%20la%20web.%20Quisiera%20consultar%20sobre%20${encodeURIComponent(service.title)}.`;
+  const whatsappMsg = `https://wa.me/5492236972421?text=Hola%2C%20me%20contacto%20desde%20la%20web.%20Quisiera%20consultar%20sobre%20${encodeURIComponent(service.title)}.`;
   const posts = relatedPosts[params.slug] ?? [];
 
   return (
@@ -526,7 +526,7 @@ export default function ServicePage({ params }: Props) {
                     ))}
                   </div>
                   <a
-                    href="https://wa.me/5492235790012?text=Hola%2C%20tuve%20un%20accidente%20de%20trabajo%20y%20quisiera%20asesorarme."
+                    href="https://wa.me/5492236972421?text=Hola%2C%20tuve%20un%20accidente%20de%20trabajo%20y%20quisiera%20asesorarme."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center bg-accent text-white text-sm font-semibold px-8 py-4 rounded tracking-wide hover:bg-[#263B35] transition-all duration-300"
@@ -693,7 +693,7 @@ export default function ServicePage({ params }: Props) {
                     ))}
                   </div>
                   <a
-                    href="https://wa.me/5492235790012?text=Hola%2C%20me%20interesa%20el%20servicio%20de%20liquidaci%C3%B3n%20de%20sueldos."
+                    href="https://wa.me/5492236972421?text=Hola%2C%20me%20interesa%20el%20servicio%20de%20liquidaci%C3%B3n%20de%20sueldos."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center bg-accent text-white text-sm font-semibold px-8 py-4 rounded tracking-wide hover:bg-[#263B35] transition-all duration-300"
@@ -738,7 +738,7 @@ export default function ServicePage({ params }: Props) {
                     ))}
                   </div>
                   <a
-                    href="https://wa.me/5492235790012?text=Hola%2C%20quiero%20abrir%20un%20negocio%20y%20necesito%20asesoramiento."
+                    href="https://wa.me/5492236972421?text=Hola%2C%20quiero%20abrir%20un%20negocio%20y%20necesito%20asesoramiento."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center bg-accent text-white text-sm font-semibold px-8 py-4 rounded tracking-wide hover:bg-[#263B35] transition-all duration-300"
@@ -783,7 +783,7 @@ export default function ServicePage({ params }: Props) {
                     ))}
                   </div>
                   <a
-                    href="https://wa.me/5492235790012?text=Hola%2C%20necesito%20asesoramiento%20sobre%20financiamiento%20para%20mi%20empresa."
+                    href="https://wa.me/5492236972421?text=Hola%2C%20necesito%20asesoramiento%20sobre%20financiamiento%20para%20mi%20empresa."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center bg-accent text-white text-sm font-semibold px-8 py-4 rounded tracking-wide hover:bg-[#263B35] transition-all duration-300"
@@ -828,7 +828,7 @@ export default function ServicePage({ params }: Props) {
                     ))}
                   </div>
                   <a
-                    href="https://wa.me/5492235790012?text=Hola%2C%20necesito%20asesoramiento%20sobre%20monotributo."
+                    href="https://wa.me/5492236972421?text=Hola%2C%20necesito%20asesoramiento%20sobre%20monotributo."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center bg-accent text-white text-sm font-semibold px-8 py-4 rounded tracking-wide hover:bg-[#263B35] transition-all duration-300"
@@ -872,7 +872,7 @@ export default function ServicePage({ params }: Props) {
                     ))}
                   </div>
                   <a
-                    href="https://wa.me/5492235790012?text=Hola%2C%20necesito%20asesoramiento%20sobre%20auditor%C3%ADa%20contable."
+                    href="https://wa.me/5492236972421?text=Hola%2C%20necesito%20asesoramiento%20sobre%20auditor%C3%ADa%20contable."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center bg-accent text-white text-sm font-semibold px-8 py-4 rounded tracking-wide hover:bg-[#263B35] transition-all duration-300"
@@ -917,7 +917,7 @@ export default function ServicePage({ params }: Props) {
                     ))}
                   </div>
                   <a
-                    href="https://wa.me/5492235790012?text=Hola%2C%20tengo%20un%20reclamo%20contra%20un%20banco%20y%20quisiera%20asesorarme."
+                    href="https://wa.me/5492236972421?text=Hola%2C%20tengo%20un%20reclamo%20contra%20un%20banco%20y%20quisiera%20asesorarme."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center bg-accent text-white text-sm font-semibold px-8 py-4 rounded tracking-wide hover:bg-[#263B35] transition-all duration-300"
@@ -962,7 +962,7 @@ export default function ServicePage({ params }: Props) {
                     ))}
                   </div>
                   <a
-                    href="https://wa.me/5492235790012?text=Hola%2C%20necesito%20asesoramiento%20sobre%20un%20divorcio."
+                    href="https://wa.me/5492236972421?text=Hola%2C%20necesito%20asesoramiento%20sobre%20un%20divorcio."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center bg-accent text-white text-sm font-semibold px-8 py-4 rounded tracking-wide hover:bg-[#263B35] transition-all duration-300"
@@ -1008,7 +1008,7 @@ export default function ServicePage({ params }: Props) {
                     ))}
                   </div>
                   <a
-                    href="https://wa.me/5492235790012?text=Hola%2C%20necesito%20asesoramiento%20sobre%20una%20sucesi%C3%B3n."
+                    href="https://wa.me/5492236972421?text=Hola%2C%20necesito%20asesoramiento%20sobre%20una%20sucesi%C3%B3n."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center bg-accent text-white text-sm font-semibold px-8 py-4 rounded tracking-wide hover:bg-[#263B35] transition-all duration-300"

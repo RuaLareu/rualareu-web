@@ -9,9 +9,9 @@ import {
 import { GOOGLE_REVIEWS } from "@/lib/constants";
 
 const WHATSAPP_URL =
-  "https://wa.me/5492235790012?text=Hola%2C%20necesito%20asesoramiento%20sobre%20un%20amparo%20de%20salud.";
-const PHONE = "+54 9 223-579-0012";
-const PHONE_RAW = "+5492235790012";
+  "https://wa.me/5492236972421?text=Hola%2C%20necesito%20asesoramiento%20sobre%20un%20amparo%20de%20salud.";
+const PHONE = "+54 9 223-697-2421";
+const PHONE_RAW = "+5492236972421";
 
 export const metadata: Metadata = {
   title: "Amparo de Salud Mar del Plata | Obra Social y Prepaga | Consulta Gratis | RUA | LAREU",
@@ -27,7 +27,7 @@ const jsonLd = {
   name: "RUA | LAREU - Amparos de Salud",
   description: "Abogados especialistas en amparos de salud contra obras sociales y prepagas en Mar del Plata.",
   url: "https://rualareu.com/landing/amparos-de-salud",
-  telephone: "+54-9-223-579-0012",
+  telephone: "+54-9-223-697-2421",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Almirante Brown 3071, Piso 2",

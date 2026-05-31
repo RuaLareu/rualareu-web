@@ -5,9 +5,9 @@ import { Phone, MessageCircle, Star, ChevronDown, CheckCircle, AlertTriangle, Us
 import { GOOGLE_REVIEWS } from "@/lib/constants";
 
 const WHATSAPP_URL =
-  "https://wa.me/5492235790012?text=Hola%2C%20necesito%20asesoramiento%20sobre%20monotributo.";
-const PHONE = "+54 9 223-579-0012";
-const PHONE_RAW = "+5492235790012";
+  "https://wa.me/5492236972421?text=Hola%2C%20necesito%20asesoramiento%20sobre%20monotributo.";
+const PHONE = "+54 9 223-697-2421";
+const PHONE_RAW = "+5492236972421";
 
 export const metadata: Metadata = {
   title: "Monotributo Mar del Plata | Contador | Inscripción y Recategorización | RUA | LAREU",
@@ -23,7 +23,7 @@ const jsonLd = {
   name: "RUA | LAREU - Monotributo",
   description: "Estudio contable especializado en monotributo en Mar del Plata.",
   url: "https://rualareu.com/landing/monotributo",
-  telephone: "+54-9-223-579-0012",
+  telephone: "+54-9-223-697-2421",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Almirante Brown 3071, Piso 2",

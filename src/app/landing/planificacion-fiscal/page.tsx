@@ -9,9 +9,9 @@ import {
 import { GOOGLE_REVIEWS } from "@/lib/constants";
 
 const WHATSAPP_URL =
-  "https://wa.me/5492235790012?text=Hola%2C%20necesito%20asesoramiento%20sobre%20planificaci%C3%B3n%20fiscal.";
-const PHONE = "+54 9 223-579-0012";
-const PHONE_RAW = "+5492235790012";
+  "https://wa.me/5492236972421?text=Hola%2C%20necesito%20asesoramiento%20sobre%20planificaci%C3%B3n%20fiscal.";
+const PHONE = "+54 9 223-697-2421";
+const PHONE_RAW = "+5492236972421";
 
 export const metadata: Metadata = {
   title: "Planificación Fiscal Mar del Plata | Contador | Optimización de Impuestos | RUA | LAREU",
@@ -28,7 +28,7 @@ const jsonLd = {
   description:
     "Planificación fiscal y optimización impositiva para personas y PyMEs en Mar del Plata. Régimen óptimo, reducción de Ganancias e IVA, regularización con ARCA y ARBA.",
   url: "https://rualareu.com/landing/planificacion-fiscal",
-  telephone: "+54-9-223-579-0012",
+  telephone: "+54-9-223-697-2421",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Almirante Brown 3071, Piso 2",

@@ -109,7 +109,7 @@ export const localBusinessSchema = {
   description:
     "Estudio jurídico contable en Mar del Plata especializado en derecho laboral, comercial, civil y asesoramiento impositivo y contable.",
   url: SITE_URL,
-  telephone: "+54-9-223-579-0012",
+  telephone: "+54-9-223-697-2421",
   email: "info@rualareu.com",
   address: {
     "@type": "PostalAddress",

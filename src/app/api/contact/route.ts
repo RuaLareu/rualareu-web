@@ -107,7 +107,7 @@ export async function POST(request: Request) {
             <p style="font-size: 15px; line-height: 1.7; margin: 0 0 24px 0;">
               Si necesitás una respuesta urgente, podés comunicarte por WhatsApp:
             </p>
-            <a href="https://wa.me/5492235790012?text=Hola%2C%20me%20contacto%20desde%20la%20web%20de%20RUA%20%7C%20LAREU.%20Quisiera%20realizar%20una%20consulta."
+            <a href="https://wa.me/5492236972421?text=Hola%2C%20me%20contacto%20desde%20la%20web%20de%20RUA%20%7C%20LAREU.%20Quisiera%20realizar%20una%20consulta."
                style="display: inline-block; background-color: #314A43; color: #FFFFFF; padding: 12px 28px; text-decoration: none; font-size: 13px; letter-spacing: 0.05em;">
               Escribinos por WhatsApp →
             </a>

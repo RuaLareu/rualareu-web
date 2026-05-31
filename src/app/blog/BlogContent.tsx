@@ -346,7 +346,7 @@ export default function BlogContent({ posts }: { posts: BlogPost[] }) {
               Consultanos sobre cualquiera de los temas que publicamos.
             </p>
             <a
-              href="https://wa.me/5492235790012?text=Hola%2C%20me%20contacto%20desde%20la%20web."
+              href="https://wa.me/5492236972421?text=Hola%2C%20me%20contacto%20desde%20la%20web."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-white text-primary text-sm font-semibold w-full py-3 rounded hover:bg-white/90 transition-all duration-300"

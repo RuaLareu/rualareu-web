@@ -9,9 +9,9 @@ import {
 import { GOOGLE_REVIEWS } from "@/lib/constants";
 
 const WHATSAPP_URL =
-  "https://wa.me/5492235790012?text=Hola%2C%20quiero%20registrar%20una%20marca%20y%20necesito%20asesoramiento.";
-const PHONE = "+54 9 223-579-0012";
-const PHONE_RAW = "+5492235790012";
+  "https://wa.me/5492236972421?text=Hola%2C%20quiero%20registrar%20una%20marca%20y%20necesito%20asesoramiento.";
+const PHONE = "+54 9 223-697-2421";
+const PHONE_RAW = "+5492236972421";
 
 export const metadata: Metadata = {
   title: "Registro de Marcas Mar del Plata | INPI | Protegé tu Negocio | RUA | LAREU",
@@ -27,7 +27,7 @@ const jsonLd = {
   name: "RUA | LAREU - Registro de Marcas",
   description: "Registro de marcas ante INPI. Asesoramiento en propiedad intelectual en Mar del Plata.",
   url: "https://rualareu.com/landing/registro-de-marcas",
-  telephone: "+54-9-223-579-0012",
+  telephone: "+54-9-223-697-2421",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Almirante Brown 3071, Piso 2",

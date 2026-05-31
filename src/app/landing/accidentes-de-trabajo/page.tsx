@@ -16,9 +16,9 @@ function GoogleLogo() {
 }
 
 const WHATSAPP_URL =
-  "https://wa.me/5492235790012?text=Hola%2C%20tuve%20un%20accidente%20de%20trabajo%20y%20quisiera%20asesorarme.";
-const PHONE = "+54 9 223-579-0012";
-const PHONE_RAW = "+5492235790012";
+  "https://wa.me/5492236972421?text=Hola%2C%20tuve%20un%20accidente%20de%20trabajo%20y%20quisiera%20asesorarme.";
+const PHONE = "+54 9 223-697-2421";
+const PHONE_RAW = "+5492236972421";
 
 export const metadata: Metadata = {
   title: "Abogado Accidentes de Trabajo Mar del Plata | Reclamos ART | Consulta Gratis",
@@ -34,7 +34,7 @@ const jsonLd = {
   name: "RUA | LAREU - Abogados de Accidentes de Trabajo",
   description: "Abogados especialistas en accidentes de trabajo y reclamos contra ART en Mar del Plata.",
   url: "https://rualareu.com/landing/accidentes-de-trabajo",
-  telephone: "+54-9-223-579-0012",
+  telephone: "+54-9-223-697-2421",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Almirante Brown 3071, Piso 2",

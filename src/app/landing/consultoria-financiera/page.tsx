@@ -9,9 +9,9 @@ import {
 import { GOOGLE_REVIEWS } from "@/lib/constants";
 
 const WHATSAPP_URL =
-  "https://wa.me/5492235790012?text=Hola%2C%20tengo%20una%20PyME%20y%20necesito%20asesoramiento%20financiero.";
-const PHONE = "+54 9 223-579-0012";
-const PHONE_RAW = "+5492235790012";
+  "https://wa.me/5492236972421?text=Hola%2C%20tengo%20una%20PyME%20y%20necesito%20asesoramiento%20financiero.";
+const PHONE = "+54 9 223-697-2421";
+const PHONE_RAW = "+5492236972421";
 
 export const metadata: Metadata = {
   title: "Consultoría Financiera para PyMEs en Mar del Plata | Análisis, Costos, Rentabilidad | RUA | LAREU",
@@ -28,7 +28,7 @@ const jsonLd = {
   description:
     "Consultoría financiera para PyMEs en Mar del Plata. Análisis de costos, rentabilidad, flujo de fondos y acceso al crédito.",
   url: "https://rualareu.com/landing/consultoria-financiera",
-  telephone: "+54-9-223-579-0012",
+  telephone: "+54-9-223-697-2421",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Almirante Brown 3071, Piso 2",

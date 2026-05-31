@@ -2,8 +2,8 @@ export const SITE_URL = "https://rualareu.com";
 
 export const CONTACT = {
   address: "Almirante Brown 3071, Piso 2, Mar del Plata (7600), Buenos Aires, Argentina",
-  phone: "+54 9 223-579-0012",
-  phoneRaw: "+5492235790012",
+  phone: "+54 9 223-697-2421",
+  phoneRaw: "+5492236972421",
   email: "info@rualareu.com",
   hours: "08:00 a 17:00",
   whatsappMessage:
