@@ -1,5 +1,7 @@
 import { ImageResponse } from "next/og";
 import { getPostBySlug } from "@/lib/blog";
+import { readFile } from "fs/promises";
+import { join } from "path";
 
 export const runtime = "nodejs";
 export const alt = "Publicación de RUA | LAREU";
@@ -11,6 +13,10 @@ export default async function Image({ params }: { params: { slug: string } }) {
   const title = post?.title ?? "RUA | LAREU";
   const category = post?.category ?? "";
 
+  const logoPath = join(process.cwd(), "public", "images", "rua-lareu-horizontal-sin-fondo.png");
+  const logoBuffer = await readFile(logoPath);
+  const logoBase64 = `data:image/png;base64,${logoBuffer.toString("base64")}`;
+
   return new ImageResponse(
     (
       <div
@@ -20,71 +26,62 @@ export default async function Image({ params }: { params: { slug: string } }) {
           display: "flex",
           flexDirection: "column",
           backgroundColor: "#314A43",
-          padding: "80px",
+          padding: "60px 80px",
           position: "relative",
         }}
       >
-        {/* Brand (top-left) */}
-        <div
+        <img
+          src={logoBase64}
+          alt=""
           style={{
-            color: "#FFFFFF",
-            fontSize: 22,
-            fontWeight: 700,
-            letterSpacing: "0.25em",
+            height: 32,
+            objectFit: "contain",
+            filter: "brightness(0) invert(1)",
           }}
-        >
-          RUA | LAREU
-        </div>
+        />
 
-        {/* Spacer that pushes the main content to the center */}
         <div style={{ display: "flex", flex: 1 }} />
 
-        {/* Category */}
         {category && (
           <div
             style={{
-              color: "rgba(255,255,255,0.7)",
-              fontSize: 22,
+              color: "rgba(255,255,255,0.5)",
+              fontSize: 18,
               letterSpacing: "0.25em",
-              textTransform: "uppercase" as const,
-              marginBottom: 28,
+              textTransform: "uppercase",
+              marginBottom: 24,
             }}
           >
             {category}
           </div>
         )}
 
-        {/* Title */}
         <div
           style={{
             display: "flex",
             color: "#FFFFFF",
-            fontSize: 60,
+            fontSize: 52,
             fontWeight: 600,
-            lineHeight: 1.2,
+            lineHeight: 1.15,
             letterSpacing: "-0.01em",
-            maxWidth: "85%",
-            // Clamp to 3 lines using webkit line-clamp (supported by Satori)
+            maxWidth: "90%",
             overflow: "hidden",
           }}
         >
           {title}
         </div>
 
-        {/* Gold decorative line */}
         <div
           style={{
-            width: 60,
+            width: 50,
             height: 2,
-            backgroundColor: "rgba(255,255,255,0.4)",
-            marginTop: 36,
+            backgroundColor: "rgba(255,255,255,0.3)",
+            marginTop: 32,
           }}
         />
 
-        {/* Spacer */}
         <div style={{ display: "flex", flex: 1 }} />
 
-        {/* Bottom row (domain on the right) */}
         <div
           style={{
             display: "flex",
@@ -94,8 +91,8 @@ export default async function Image({ params }: { params: { slug: string } }) {
         >
           <div
             style={{
-              color: "rgba(255, 255, 255, 0.5)",
-              fontSize: 20,
+              color: "rgba(255, 255, 255, 0.4)",
+              fontSize: 18,
               letterSpacing: "0.1em",
             }}
           >
