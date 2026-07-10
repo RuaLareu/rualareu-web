@@ -26,6 +26,8 @@ export default function GoogleAnalytics() {
 
       if (href.startsWith("tel:")) {
         trackEvent("phone_click", { phone: href.replace(/^tel:/, "") });
+      } else if (href.startsWith("mailto:")) {
+        trackEvent("email_click", { email: href.replace(/^mailto:/, "").split("?")[0] });
       } else if (href.includes("wa.me") || href.includes("api.whatsapp.com")) {
         trackEvent("whatsapp_click", { url: href });
       }

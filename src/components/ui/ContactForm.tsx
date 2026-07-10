@@ -40,9 +40,8 @@ export default function ContactForm() {
         throw new Error("Error al enviar");
       }
 
-      trackEvent("contact_form_submit", {
-        asunto: data.asunto,
-        has_telefono: Boolean(data.telefono),
+      trackEvent("form_submit_contacto", {
+        page_location: window.location.href,
       });
       setSubmitted(true);
     } catch {
