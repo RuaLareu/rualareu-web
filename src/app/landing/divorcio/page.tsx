@@ -23,7 +23,7 @@ const PHONE_RAW = "+5492236972421";
 export const metadata: Metadata = {
   title: "Abogado de Divorcios en Mar del Plata | Divorcio Express | RUA LAREU",
   description:
-    "Divorcio express y de común acuerdo en Mar del Plata. Rápido, sin audiencias innecesarias y con honorarios claros. Consultá gratis.",
+    "Divorcio express y de común acuerdo en Mar del Plata. Rápido, sin audiencias innecesarias y con honorarios claros. Consultá ahora.",
   robots: { index: true, follow: true },
   alternates: { canonical: "/landing/divorcio" },
 };
@@ -149,7 +149,7 @@ export default function DivorcioLanding() {
                 className="inline-flex items-center justify-center gap-2 w-full sm:w-auto whitespace-nowrap bg-white text-primary text-lg font-semibold px-10 py-5 rounded hover:bg-white/90 transition-all duration-300"
               >
                 <MessageCircle size={20} />
-                Consultá gratis ahora
+                Consultá ahora
               </a>
               <a
                 href={`tel:${PHONE_RAW}`}
@@ -159,7 +159,7 @@ export default function DivorcioLanding() {
                 {PHONE}
               </a>
             </div>
-            <p className="text-white/35 text-xs">Consulta gratuita y sin compromiso</p>
+            <p className="text-white/35 text-xs">Consulta sin compromiso</p>
           </div>
         </section>
 
@@ -271,7 +271,7 @@ export default function DivorcioLanding() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
-                { step: "1", title: "Nos contactás", desc: "Consulta gratuita por WhatsApp o teléfono." },
+                { step: "1", title: "Nos contactás", desc: "Escribinos por WhatsApp o llamanos para una consulta inicial." },
                 { step: "2", title: "Armamos tu propuesta", desc: "Te asesoramos sobre hijos, alimentos y bienes, y redactamos la propuesta reguladora." },
                 { step: "3", title: "Presentamos el divorcio", desc: "Gestionamos todo el trámite judicial. En general no necesitás ir a audiencias." },
                 { step: "4", title: "Obtenés la sentencia", desc: "Quedás legalmente divorciado/a y con tus acuerdos homologados." },
@@ -380,7 +380,7 @@ export default function DivorcioLanding() {
             />
             <FAQItem
               question="¿Cuánto cuesta?"
-              answer="Los honorarios dependen de la complejidad (con o sin acuerdo, bienes a dividir). En la primera consulta gratuita te damos un presupuesto claro y sin sorpresas."
+              answer="Los honorarios dependen de la complejidad (con o sin acuerdo, bienes a dividir). En la primera consulta te damos un presupuesto claro y sin sorpresas."
             />
           </div>
         </section>
@@ -396,7 +396,7 @@ export default function DivorcioLanding() {
               <span className="text-white/70">Nosotros nos ocupamos del trámite.</span>
             </h2>
             <p className="text-white/50 text-base mb-10">
-              Consulta gratuita, confidencial y sin compromiso.
+              Consulta confidencial y sin compromiso.
             </p>
 
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 mb-8">
