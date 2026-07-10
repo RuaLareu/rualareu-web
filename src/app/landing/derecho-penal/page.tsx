@@ -5,9 +5,9 @@ import { Phone, MessageCircle, Star, Shield, Scale, Gavel, ChevronDown } from "l
 import { GOOGLE_REVIEWS } from "@/lib/constants";
 
 const WHATSAPP_URL =
-  "https://wa.me/5492236972421?text=Hola%2C%20necesito%20asesoramiento%20penal%20urgente.";
-const PHONE = "+54 9 223-697-2421";
-const PHONE_RAW = "+5492236972421";
+  "https://wa.me/5492235790012?text=Hola%2C%20necesito%20asesoramiento%20penal%20urgente.";
+const PHONE = "+54 9 223-579-0012";
+const PHONE_RAW = "+5492235790012";
 
 export const metadata: Metadata = {
   title: "Abogado Penalista en Mar del Plata | Defensa Penal | Consulta Reservada",
@@ -24,7 +24,7 @@ const jsonLd = {
   description:
     "Abogados penalistas en Mar del Plata. Defensa penal, excarcelaciones, particular damnificado y recursos con estrategia y confidencialidad.",
   url: "https://rualareu.com/landing/derecho-penal",
-  telephone: "+54-9-223-697-2421",
+  telephone: "+54-9-223-579-0012",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Almirante Brown 3071, Piso 2",
@@ -148,7 +148,6 @@ export default function DerechoPenalLanding() {
                 {PHONE}
               </a>
             </div>
-            <p className="text-white/35 text-xs">Consulta confidencial y sin compromiso</p>
           </div>
         </section>
 
