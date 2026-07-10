@@ -14,9 +14,9 @@ const PHONE = "+54 9 223-697-2421";
 const PHONE_RAW = "+5492236972421";
 
 export const metadata: Metadata = {
-  title: "Amparo de Salud Mar del Plata | Obra Social y Prepaga | Consulta Gratis | RUA | LAREU",
+  title: "Amparo de Salud Mar del Plata | Obra Social y Prepaga | Medida Cautelar 48-72hs | RUA | LAREU",
   description:
-    "Tu obra social o prepaga te niega un tratamiento? Iniciamos amparos de salud en Mar del Plata. Medida cautelar en 48-72hs. Consulta gratuita.",
+    "Tu obra social o prepaga te niega un tratamiento? Iniciamos amparos de salud en Mar del Plata. Medida cautelar en 48-72hs. Consultá ahora.",
   robots: { index: true, follow: true },
   alternates: { canonical: "/landing/amparos-de-salud" },
 };
@@ -144,7 +144,7 @@ export default function AmparosSaludLanding() {
                 className="inline-flex items-center justify-center gap-2 w-full sm:w-auto whitespace-nowrap bg-white text-primary text-lg font-semibold px-10 py-5 rounded hover:bg-white/90 transition-all duration-300"
               >
                 <MessageCircle size={20} />
-                Consultá gratis ahora
+                Consultá ahora
               </a>
               <a
                 href={`tel:${PHONE_RAW}`}
@@ -154,7 +154,7 @@ export default function AmparosSaludLanding() {
                 {PHONE}
               </a>
             </div>
-            <p className="text-white/30 text-xs">Medida cautelar en 48-72 horas · Consulta gratuita</p>
+            <p className="text-white/30 text-xs">Medida cautelar en 48-72 horas · Sin compromiso</p>
           </div>
         </section>
 
@@ -249,7 +249,7 @@ export default function AmparosSaludLanding() {
                 {
                   step: "1",
                   title: "Nos contactás",
-                  desc: "Evaluamos tu caso de forma gratuita. Necesitamos la prescripción médica y la constancia de rechazo o demora de la obra social/prepaga.",
+                  desc: "Evaluamos tu caso sin compromiso. Necesitamos la prescripción médica y la constancia de rechazo o demora de la obra social/prepaga.",
                 },
                 {
                   step: "2",
@@ -358,7 +358,7 @@ export default function AmparosSaludLanding() {
             />
             <FAQItem
               question="¿Cuánto cuesta?"
-              answer="La consulta inicial es gratuita. Respecto de los honorarios del juicio, se pueden pactar de forma accesible dada la urgencia de la situación. Además, si ganás, las costas (gastos del juicio) las paga la obra social o prepaga que perdió."
+              answer="Los honorarios del juicio se pueden pactar de forma accesible dada la urgencia de la situación. Además, si ganás, las costas (gastos del juicio) las paga la obra social o prepaga que perdió."
             />
             <FAQItem
               question="¿Contra quién se presenta?"
@@ -386,7 +386,7 @@ export default function AmparosSaludLanding() {
               <span className="text-white/70">Actuamos hoy.</span>
             </h2>
             <p className="text-white/50 text-base mb-10">
-              Consultanos ahora. Es gratis, es confidencial y podemos tener una respuesta judicial en horas.
+              Consultanos ahora. Es confidencial y podemos tener una respuesta judicial en horas.
             </p>
 
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 mb-8">

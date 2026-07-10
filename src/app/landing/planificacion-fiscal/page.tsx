@@ -152,7 +152,7 @@ export default function PlanificacionFiscalLanding() {
                 {PHONE}
               </a>
             </div>
-            <p className="text-white/30 text-xs">Primera consulta gratuita · Presupuesto cerrado</p>
+            <p className="text-white/30 text-xs">Presupuesto cerrado · Sin sorpresas</p>
           </div>
         </section>
 
@@ -391,7 +391,7 @@ export default function PlanificacionFiscalLanding() {
             />
             <FAQItem
               question="¿Cuánto cuesta el asesoramiento fiscal?"
-              answer="Depende de la complejidad. La primera consulta es gratuita. Si decidís avanzar, te damos un presupuesto cerrado que incluye el diagnóstico, la propuesta y la implementación."
+              answer="Depende de la complejidad. Antes de avanzar te damos un presupuesto cerrado que incluye el diagnóstico, la propuesta y la implementación."
             />
           </div>
         </section>
@@ -407,7 +407,7 @@ export default function PlanificacionFiscalLanding() {
               <span className="text-white/70">es un peso que no invertís en tu negocio.</span>
             </h2>
             <p className="text-white/50 text-base mb-10">
-              Consultanos y hacemos un diagnóstico gratuito de tu situación fiscal.
+              Consultanos y hacemos un diagnóstico inicial de tu situación fiscal.
             </p>
 
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 mb-8">

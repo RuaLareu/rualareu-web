@@ -152,7 +152,7 @@ export default function ConsultoriaFinancieraLanding() {
                 {PHONE}
               </a>
             </div>
-            <p className="text-white/30 text-xs">Primera reunión gratuita · Sin compromiso</p>
+            <p className="text-white/30 text-xs">Primera reunión sin compromiso</p>
           </div>
         </section>
 
@@ -372,7 +372,7 @@ export default function ConsultoriaFinancieraLanding() {
             <FAQItem
               defaultOpen
               question="¿Cuánto cuesta el servicio de consultoría?"
-              answer="Depende del alcance. Puede ser un proyecto puntual (análisis de costos, evaluación de inversión) o un acompañamiento mensual. En todos los casos damos un presupuesto cerrado antes de empezar. La primera reunión es gratuita."
+              answer="Depende del alcance. Puede ser un proyecto puntual (análisis de costos, evaluación de inversión) o un acompañamiento mensual. En todos los casos damos un presupuesto cerrado antes de empezar."
             />
             <FAQItem
               question="¿En qué se diferencia de la contabilidad?"
