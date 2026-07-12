@@ -173,12 +173,12 @@ export default function AmparosSaludLanding() {
                 { icon: Stethoscope, title: "Negación de cirugía", desc: "Tu obra social o prepaga no autoriza una intervención quirúrgica prescripta por tu médico." },
                 { icon: Pill, title: "Medicación de alto costo", desc: "Te niegan la cobertura de un medicamento que necesitás para tu tratamiento." },
                 { icon: HeartPulse, title: "Tratamiento oncológico", desc: "Rechazan o demoran la cobertura de quimioterapia, radioterapia u otros tratamientos oncológicos." },
-                { icon: Accessibility, title: "Discapacidad", desc: "No cubren las prestaciones que la ley garantiza para personas con discapacidad (Ley 24.901)." },
+                { icon: Accessibility, title: "Prestaciones por discapacidad", desc: "No cubren las prestaciones que la ley garantiza para personas con discapacidad (Ley 24.901)." },
                 { icon: Baby, title: "Fertilización asistida", desc: "Te niegan los tratamientos de reproducción médicamente asistida que la ley obliga a cubrir." },
-                { icon: Brain, title: "Salud mental", desc: "Rechazan cobertura de tratamientos psicológicos, psiquiátricos o internaciones contemplados por la ley." },
-                { icon: ShieldOff, title: "Baja unilateral", desc: "Tu prepaga te dio de baja o te cambió de plan sin tu consentimiento." },
-                { icon: DollarSign, title: "Aumento abusivo de cuotas", desc: "Aumentos que exceden lo autorizado por la autoridad sanitaria." },
-                { icon: Clock, title: "Demora injustificada", desc: "Tardan semanas en autorizar un estudio, práctica o tratamiento urgente." },
+                { icon: Brain, title: "Cobertura de salud mental", desc: "Rechazan cobertura de tratamientos psicológicos, psiquiátricos o internaciones que la ley contempla." },
+                { icon: ShieldOff, title: "Baja unilateral de prepaga", desc: "Tu prepaga te dio de baja o te cambió de plan sin tu consentimiento ni justificación válida." },
+                { icon: DollarSign, title: "Aumento abusivo de cuotas", desc: "Aumentos de cuota que exceden lo autorizado por la autoridad sanitaria." },
+                { icon: Clock, title: "Demora injustificada", desc: "Tardan semanas en autorizar un estudio, práctica o tratamiento que necesitás con urgencia." },
               ].map((item) => {
                 const Icon = item.icon;
                 return (
@@ -186,7 +186,7 @@ export default function AmparosSaludLanding() {
                     <div className="w-10 h-10 bg-primary-light text-primary flex items-center justify-center mb-4 rounded-full">
                       <Icon size={18} strokeWidth={1.5} />
                     </div>
-                    <h3 className="font-semibold text-primary text-sm mb-2">{item.title}</h3>
+                    <h3 className="font-semibold text-primary text-sm mb-2 text-balance md:min-h-[2.5rem]">{item.title}</h3>
                     <p className="text-text-secondary text-sm leading-relaxed">{item.desc}</p>
                   </div>
                 );
@@ -266,7 +266,7 @@ export default function AmparosSaludLanding() {
                   <div className="w-14 h-14 bg-accent text-white flex items-center justify-center mx-auto mb-5 rounded-full font-bold text-xl">
                     {item.step}
                   </div>
-                  <h3 className="font-semibold text-primary text-lg mb-3 min-h-[3.5rem] flex items-end justify-center">{item.title}</h3>
+                  <h3 className="font-semibold text-primary text-lg mb-3 text-balance md:min-h-[3.5rem] flex items-end justify-center">{item.title}</h3>
                   <p className="text-text-secondary text-sm leading-relaxed flex-1">{item.desc}</p>
                 </div>
               ))}

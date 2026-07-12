@@ -174,7 +174,7 @@ export default function MonotributoLanding() {
                     <div className="w-10 h-10 bg-primary-light text-primary flex items-center justify-center mb-4">
                       <Icon size={18} strokeWidth={1.5} />
                     </div>
-                    <h3 className="font-semibold text-primary text-sm mb-2">{item.title}</h3>
+                    <h3 className="font-semibold text-primary text-sm mb-2 text-balance md:min-h-[2.5rem]">{item.title}</h3>
                     <p className="text-text-secondary text-sm leading-relaxed flex-1">{item.desc}</p>
                   </div>
                 );

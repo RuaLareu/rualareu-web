@@ -170,7 +170,7 @@ export default function PlanificacionFiscalLanding() {
               {[
                 {
                   icon: Calculator,
-                  title: "Régimen óptimo",
+                  title: "Régimen óptimo para tu caso",
                   desc: "Analizamos si te conviene monotributo, responsable inscripto o una estructura societaria. Cada caso es distinto.",
                 },
                 {
@@ -181,12 +181,12 @@ export default function PlanificacionFiscalLanding() {
                 {
                   icon: Receipt,
                   title: "Optimización de IVA",
-                  desc: "Controlamos tu posición mensual de IVA y gestionamos exclusiones de retenciones y percepciones.",
+                  desc: "Controlamos tu posición mensual de IVA y gestionamos exclusiones y reducciones de retenciones y percepciones.",
                 },
                 {
                   icon: Scale,
-                  title: "Regularización",
-                  desc: "Deudas con ARCA o ARBA, planes de facilidades, moratorias vigentes y atención de inspecciones.",
+                  title: "Regularización con ARCA y ARBA",
+                  desc: "Deudas con ARCA o ARBA, planes de facilidades, moratorias vigentes y atención integral de inspecciones.",
                 },
               ].map((item) => {
                 const Icon = item.icon;
@@ -195,7 +195,7 @@ export default function PlanificacionFiscalLanding() {
                     <div className="w-10 h-10 bg-primary-light text-primary flex items-center justify-center mb-4">
                       <Icon size={18} strokeWidth={1.5} />
                     </div>
-                    <h3 className="font-semibold text-primary text-sm mb-2">{item.title}</h3>
+                    <h3 className="font-semibold text-primary text-sm mb-2 text-balance md:min-h-[2.5rem]">{item.title}</h3>
                     <p className="text-text-secondary text-sm leading-relaxed flex-1">{item.desc}</p>
                   </div>
                 );
@@ -273,11 +273,11 @@ export default function PlanificacionFiscalLanding() {
                 {
                   step: "2",
                   title: "Propuesta de ahorro",
-                  desc: "Te presentamos un informe con las estrategias concretas y el ahorro estimado.",
+                  desc: "Te presentamos un informe con las estrategias concretas y el ahorro estimado antes de avanzar.",
                 },
                 {
                   step: "3",
-                  title: "Implementación",
+                  title: "Implementación y seguimiento",
                   desc: "Ejecutamos las acciones y hacemos seguimiento continuo para mantener la carga optimizada.",
                 },
               ].map((item) => (
@@ -285,7 +285,7 @@ export default function PlanificacionFiscalLanding() {
                   <div className="w-14 h-14 bg-accent text-white flex items-center justify-center mx-auto mb-5 rounded-full font-bold text-xl">
                     {item.step}
                   </div>
-                  <h3 className="font-semibold text-primary text-base mb-2 min-h-[2.5rem] flex items-end justify-center">
+                  <h3 className="font-semibold text-primary text-base mb-2 text-balance sm:min-h-[2.5rem] flex items-end justify-center">
                     {item.title}
                   </h3>
                   <p className="text-text-secondary text-sm leading-relaxed flex-1">{item.desc}</p>

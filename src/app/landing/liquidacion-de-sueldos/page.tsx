@@ -176,7 +176,7 @@ export default function LiquidacionDeSueldosLanding() {
                 <div className="w-14 h-14 bg-primary-light text-primary flex items-center justify-center mx-auto mb-5 rounded-full">
                   <ClipboardList size={24} strokeWidth={1.5} />
                 </div>
-                <h3 className="font-semibold text-primary text-lg mb-3 min-h-[3.5rem] flex items-end justify-center">Nómina completa todos los meses</h3>
+                <h3 className="font-semibold text-primary text-lg mb-3 text-balance md:min-h-[3.5rem] flex items-end justify-center">Nómina completa mes a mes</h3>
                 <p className="text-text-secondary text-sm leading-relaxed flex-1">
                   Liquidación mensual, aguinaldos, vacaciones, horas extras y adicionales de convenio, con recibos
                   listos para firmar.
@@ -186,7 +186,7 @@ export default function LiquidacionDeSueldosLanding() {
                 <div className="w-14 h-14 bg-primary-light text-primary flex items-center justify-center mx-auto mb-5 rounded-full">
                   <ShieldCheck size={24} strokeWidth={1.5} />
                 </div>
-                <h3 className="font-semibold text-primary text-lg mb-3 min-h-[3.5rem] flex items-end justify-center">Cargas sociales y F.931 al día</h3>
+                <h3 className="font-semibold text-primary text-lg mb-3 text-balance md:min-h-[3.5rem] flex items-end justify-center">Cargas sociales y F.931 al día</h3>
                 <p className="text-text-secondary text-sm leading-relaxed flex-1">
                   Presentaciones ante ARCA, sindicatos y obras sociales en fecha, para que no acumules multas ni intereses.
                 </p>
@@ -195,7 +195,7 @@ export default function LiquidacionDeSueldosLanding() {
                 <div className="w-14 h-14 bg-primary-light text-primary flex items-center justify-center mx-auto mb-5 rounded-full">
                   <Scale size={24} strokeWidth={1.5} />
                 </div>
-                <h3 className="font-semibold text-primary text-lg mb-3 min-h-[3.5rem] flex items-end justify-center">Respaldo contable y laboral</h3>
+                <h3 className="font-semibold text-primary text-lg mb-3 text-balance md:min-h-[3.5rem] flex items-end justify-center">Respaldo contable y laboral</h3>
                 <p className="text-text-secondary text-sm leading-relaxed flex-1">
                   Somos estudio jurídico contable: ante una inspección, un reclamo o una duda de convenio, tenés
                   contadores y abogados laboralistas en el mismo equipo.
@@ -267,15 +267,15 @@ export default function LiquidacionDeSueldosLanding() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
                 { step: "1", title: "Relevamos tu nómina", desc: "Analizamos empleados, convenios y situación actual de tu empresa." },
-                { step: "2", title: "Ordenamos lo que haga falta", desc: "Regularizamos atrasos o inconsistencias antes de arrancar." },
-                { step: "3", title: "Liquidamos cada mes", desc: "Nos pasás las novedades y recibís recibos y aportes listos, siempre en fecha." },
-                { step: "4", title: "Te respaldamos todo el año", desc: "Consultas laborales e impositivas incluidas, sin costos ocultos." },
+                { step: "2", title: "Ordenamos tu situación", desc: "Regularizamos atrasos o inconsistencias antes de empezar a operar." },
+                { step: "3", title: "Liquidamos cada mes", desc: "Nos pasás las novedades y recibís recibos y aportes listos en fecha." },
+                { step: "4", title: "Te respaldamos siempre", desc: "Consultas laborales e impositivas incluidas, sin costos ocultos." },
               ].map((item) => (
                 <div key={item.step} className="text-center flex flex-col items-center h-full">
                   <div className="w-12 h-12 bg-accent text-white flex items-center justify-center mx-auto mb-4 rounded-full font-bold text-lg">
                     {item.step}
                   </div>
-                  <h3 className="font-semibold text-primary text-base mb-2 min-h-[2.5rem] flex items-end justify-center">{item.title}</h3>
+                  <h3 className="font-semibold text-primary text-base mb-2 text-balance sm:min-h-[2.5rem] flex items-end justify-center">{item.title}</h3>
                   <p className="text-text-secondary text-sm leading-relaxed flex-1">{item.desc}</p>
                 </div>
               ))}

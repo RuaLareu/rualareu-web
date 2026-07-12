@@ -170,22 +170,22 @@ export default function ConsultoriaFinancieraLanding() {
               {[
                 {
                   icon: TrendingUp,
-                  title: "Rentabilidad real",
+                  title: "Rentabilidad real del negocio",
                   desc: "¿Cuánto ganás por producto, servicio o cliente? Identificamos dónde está el margen y dónde se pierde.",
                 },
                 {
                   icon: DollarSign,
                   title: "Costos y punto de equilibrio",
-                  desc: "Relevamos costos fijos y variables para saber cuánto necesitás facturar para cubrir gastos.",
+                  desc: "Relevamos costos fijos y variables para saber cuánto necesitás facturar para cubrir gastos y ganar.",
                 },
                 {
                   icon: BarChart3,
-                  title: "Flujo de fondos",
-                  desc: "Proyección de cobros y pagos a corto y mediano plazo. Anticipamos problemas de caja.",
+                  title: "Flujo de fondos y liquidez",
+                  desc: "Proyección de cobros y pagos a corto y mediano plazo. Anticipamos problemas de caja antes de tiempo.",
                 },
                 {
                   icon: PieChart,
-                  title: "Tablero de control",
+                  title: "Tablero de control mensual",
                   desc: "Indicadores clave de tu negocio en una sola página. Información clara para decisiones rápidas.",
                 },
               ].map((item) => {
@@ -195,7 +195,7 @@ export default function ConsultoriaFinancieraLanding() {
                     <div className="w-10 h-10 bg-primary-light text-primary flex items-center justify-center mb-4">
                       <Icon size={18} strokeWidth={1.5} />
                     </div>
-                    <h3 className="font-semibold text-primary text-sm mb-2">{item.title}</h3>
+                    <h3 className="font-semibold text-primary text-sm mb-2 text-balance md:min-h-[2.5rem]">{item.title}</h3>
                     <p className="text-text-secondary text-sm leading-relaxed flex-1">{item.desc}</p>
                   </div>
                 );
@@ -241,7 +241,7 @@ export default function ConsultoriaFinancieraLanding() {
                     <div className="w-10 h-10 bg-primary-light text-primary flex items-center justify-center mb-4">
                       <Icon size={18} strokeWidth={1.5} />
                     </div>
-                    <h3 className="font-semibold text-primary text-sm mb-2">{item.title}</h3>
+                    <h3 className="font-semibold text-primary text-sm mb-2 text-balance md:min-h-[2.5rem]">{item.title}</h3>
                     <p className="text-text-secondary text-sm leading-relaxed flex-1">{item.desc}</p>
                   </div>
                 );
@@ -282,7 +282,7 @@ export default function ConsultoriaFinancieraLanding() {
                   <div className="w-14 h-14 bg-accent text-white flex items-center justify-center mx-auto mb-5 rounded-full font-bold text-xl">
                     {item.step}
                   </div>
-                  <h3 className="font-semibold text-primary text-base mb-2 min-h-[2.5rem] flex items-end justify-center">
+                  <h3 className="font-semibold text-primary text-base mb-2 text-balance sm:min-h-[2.5rem] flex items-end justify-center">
                     {item.title}
                   </h3>
                   <p className="text-text-secondary text-sm leading-relaxed flex-1">{item.desc}</p>
