@@ -267,9 +267,9 @@ export default function LiquidacionDeSueldosLanding() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
                 { step: "1", title: "Relevamos tu nómina", desc: "Analizamos empleados, convenios y situación actual de tu empresa." },
-                { step: "2", title: "Ordenamos tu situación", desc: "Regularizamos atrasos o inconsistencias antes de empezar a operar." },
+                { step: "2", title: "Ordenamos todo", desc: "Regularizamos atrasos o inconsistencias antes de empezar a operar." },
                 { step: "3", title: "Liquidamos cada mes", desc: "Nos pasás las novedades y recibís recibos y aportes listos en fecha." },
-                { step: "4", title: "Te respaldamos siempre", desc: "Consultas laborales e impositivas incluidas, sin costos ocultos." },
+                { step: "4", title: "Te acompañamos", desc: "Consultas laborales e impositivas incluidas, sin costos ocultos." },
               ].map((item) => (
                 <div key={item.step} className="text-center flex flex-col items-center h-full">
                   <div className="w-12 h-12 bg-accent text-white flex items-center justify-center mx-auto mb-4 rounded-full font-bold text-lg">
