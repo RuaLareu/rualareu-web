@@ -175,7 +175,7 @@ export default function ConstitucionDeSociedadesLanding() {
                 <div className="w-14 h-14 bg-primary-light text-primary flex items-center justify-center mx-auto mb-5 rounded-full">
                   <Search size={24} strokeWidth={1.5} />
                 </div>
-                <h3 className="font-semibold text-primary text-lg mb-3 text-balance md:min-h-[3.5rem] flex items-end justify-center">Elegimos juntos el tipo societario</h3>
+                <h3 className="font-semibold text-primary text-lg mb-3 text-balance md:min-h-[4rem] flex items-end justify-center">Elegimos juntos el tipo societario</h3>
                 <p className="text-text-secondary text-sm leading-relaxed flex-1">
                   Analizamos tu actividad, socios y proyección para recomendarte SAS, SRL o SA según costos,
                   responsabilidad y velocidad de inscripción.
@@ -185,7 +185,7 @@ export default function ConstitucionDeSociedadesLanding() {
                 <div className="w-14 h-14 bg-primary-light text-primary flex items-center justify-center mx-auto mb-5 rounded-full">
                   <FileText size={24} strokeWidth={1.5} />
                 </div>
-                <h3 className="font-semibold text-primary text-lg mb-3 text-balance md:min-h-[3.5rem] flex items-end justify-center">Nos ocupamos de todo el trámite</h3>
+                <h3 className="font-semibold text-primary text-lg mb-3 text-balance md:min-h-[4rem] flex items-end justify-center">Nos ocupamos de todo el trámite</h3>
                 <p className="text-text-secondary text-sm leading-relaxed flex-1">
                   Redacción del estatuto, inscripción en IGJ/DPPJ, obtención de CUIT, alta en ARCA e Ingresos Brutos
                   y rúbrica de libros.
@@ -195,7 +195,7 @@ export default function ConstitucionDeSociedadesLanding() {
                 <div className="w-14 h-14 bg-primary-light text-primary flex items-center justify-center mx-auto mb-5 rounded-full">
                   <Rocket size={24} strokeWidth={1.5} />
                 </div>
-                <h3 className="font-semibold text-primary text-lg mb-3 text-balance md:min-h-[3.5rem] flex items-end justify-center">Tu empresa arranca lista para operar</h3>
+                <h3 className="font-semibold text-primary text-lg mb-3 text-balance md:min-h-[4rem] flex items-end justify-center">Tu empresa arranca lista para operar</h3>
                 <p className="text-text-secondary text-sm leading-relaxed flex-1">
                   Facturación electrónica configurada, cuentas y obligaciones al día, y un equipo contable que te
                   acompaña desde el día uno.
@@ -274,7 +274,7 @@ export default function ConstitucionDeSociedadesLanding() {
                   <div className="w-12 h-12 bg-accent text-white flex items-center justify-center mx-auto mb-4 rounded-full font-bold text-lg">
                     {item.step}
                   </div>
-                  <h3 className="font-semibold text-primary text-base mb-2 text-balance sm:min-h-[2.5rem] flex items-end justify-center">{item.title}</h3>
+                  <h3 className="font-semibold text-primary text-base mb-2 text-balance sm:min-h-[3rem] flex items-end justify-center">{item.title}</h3>
                   <p className="text-text-secondary text-sm leading-relaxed flex-1">{item.desc}</p>
                 </div>
               ))}

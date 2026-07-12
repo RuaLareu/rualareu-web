@@ -166,7 +166,7 @@ export default function DerechoPenalLanding() {
                 <div className="w-14 h-14 bg-primary-light text-primary flex items-center justify-center mx-auto mb-5 rounded-full">
                   <Shield size={24} strokeWidth={1.5} />
                 </div>
-                <h3 className="font-semibold text-primary text-lg mb-3 text-balance md:min-h-[3.5rem] flex items-end justify-center">Si te citaron a declarar</h3>
+                <h3 className="font-semibold text-primary text-lg mb-3 text-balance md:min-h-[4rem] flex items-end justify-center">Si te citaron a declarar</h3>
                 <p className="text-text-secondary text-sm leading-relaxed flex-1">
                   Antes de declarar, hablá con un abogado. Analizamos tu situación procesal, preparamos tu declaración
                   y te acompañamos en cada audiencia. Declarar sin asesoramiento puede comprometer tu defensa.
@@ -176,7 +176,7 @@ export default function DerechoPenalLanding() {
                 <div className="w-14 h-14 bg-primary-light text-primary flex items-center justify-center mx-auto mb-5 rounded-full">
                   <Gavel size={24} strokeWidth={1.5} />
                 </div>
-                <h3 className="font-semibold text-primary text-lg mb-3 text-balance md:min-h-[3.5rem] flex items-end justify-center">Si un familiar fue detenido</h3>
+                <h3 className="font-semibold text-primary text-lg mb-3 text-balance md:min-h-[4rem] flex items-end justify-center">Si un familiar fue detenido</h3>
                 <p className="text-text-secondary text-sm leading-relaxed flex-1">
                   Las primeras horas son decisivas. Evaluamos la situación, pedimos acceso a la causa y trabajamos para
                   obtener la libertad cuanto antes: eximición de prisión, excarcelación o morigeración según el caso.
@@ -186,7 +186,7 @@ export default function DerechoPenalLanding() {
                 <div className="w-14 h-14 bg-primary-light text-primary flex items-center justify-center mx-auto mb-5 rounded-full">
                   <Scale size={24} strokeWidth={1.5} />
                 </div>
-                <h3 className="font-semibold text-primary text-lg mb-3 text-balance md:min-h-[3.5rem] flex items-end justify-center">Si sos víctima de un delito</h3>
+                <h3 className="font-semibold text-primary text-lg mb-3 text-balance md:min-h-[4rem] flex items-end justify-center">Si sos víctima de un delito</h3>
                 <p className="text-text-secondary text-sm leading-relaxed flex-1">
                   Te representamos como particular damnificado para que tu voz cuente en el proceso: impulso de la
                   investigación, medidas de prueba y reclamo de la reparación del daño.
@@ -268,7 +268,7 @@ export default function DerechoPenalLanding() {
                   <div className="w-12 h-12 bg-accent text-white flex items-center justify-center mx-auto mb-4 rounded-full font-bold text-lg">
                     {item.step}
                   </div>
-                  <h3 className="font-semibold text-primary text-base mb-2 text-balance sm:min-h-[2.5rem] flex items-end justify-center">{item.title}</h3>
+                  <h3 className="font-semibold text-primary text-base mb-2 text-balance sm:min-h-[3rem] flex items-end justify-center">{item.title}</h3>
                   <p className="text-text-secondary text-sm leading-relaxed flex-1">{item.desc}</p>
                 </div>
               ))}

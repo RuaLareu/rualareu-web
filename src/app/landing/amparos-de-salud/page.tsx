@@ -186,7 +186,7 @@ export default function AmparosSaludLanding() {
                     <div className="w-10 h-10 bg-primary-light text-primary flex items-center justify-center mb-4 rounded-full">
                       <Icon size={18} strokeWidth={1.5} />
                     </div>
-                    <h3 className="font-semibold text-primary text-sm mb-2 text-balance md:min-h-[2.5rem]">{item.title}</h3>
+                    <h3 className="font-semibold text-primary text-sm mb-2 text-balance md:min-h-[3rem]">{item.title}</h3>
                     <p className="text-text-secondary text-sm leading-relaxed">{item.desc}</p>
                   </div>
                 );
@@ -266,7 +266,7 @@ export default function AmparosSaludLanding() {
                   <div className="w-14 h-14 bg-accent text-white flex items-center justify-center mx-auto mb-5 rounded-full font-bold text-xl">
                     {item.step}
                   </div>
-                  <h3 className="font-semibold text-primary text-lg mb-3 text-balance md:min-h-[3.5rem] flex items-end justify-center">{item.title}</h3>
+                  <h3 className="font-semibold text-primary text-lg mb-3 text-balance md:min-h-[4rem] flex items-end justify-center">{item.title}</h3>
                   <p className="text-text-secondary text-sm leading-relaxed flex-1">{item.desc}</p>
                 </div>
               ))}

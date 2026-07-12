@@ -177,7 +177,7 @@ export default function AccidentesLanding() {
                 <div className="w-14 h-14 bg-primary-light text-primary flex items-center justify-center mx-auto mb-5 rounded-full">
                   <Shield size={24} strokeWidth={1.5} />
                 </div>
-                <h3 className="font-semibold text-primary text-lg mb-3 text-balance md:min-h-[3.5rem] flex items-end justify-center">Si la ART te rechazó el reclamo</h3>
+                <h3 className="font-semibold text-primary text-lg mb-3 text-balance md:min-h-[4rem] flex items-end justify-center">Si la ART te rechazó el reclamo</h3>
                 <p className="text-text-secondary text-sm leading-relaxed flex-1">
                   Muchos rechazos pueden revertirse. Analizamos tu caso, evaluamos las vías disponibles
                   —Comisiones Médicas o vía judicial— y te acompañamos en cada paso del proceso.
@@ -187,7 +187,7 @@ export default function AccidentesLanding() {
                 <div className="w-14 h-14 bg-primary-light text-primary flex items-center justify-center mx-auto mb-5 rounded-full">
                   <Clock size={24} strokeWidth={1.5} />
                 </div>
-                <h3 className="font-semibold text-primary text-lg mb-3 text-balance md:min-h-[3.5rem] flex items-end justify-center">Si te dieron el alta antes de tiempo</h3>
+                <h3 className="font-semibold text-primary text-lg mb-3 text-balance md:min-h-[4rem] flex items-end justify-center">Si te dieron el alta antes de tiempo</h3>
                 <p className="text-text-secondary text-sm leading-relaxed flex-1">
                   Tenés derecho a solicitar una revisión. Evaluamos tu situación médica y, si corresponde,
                   gestionamos los estudios complementarios para que recibas el tratamiento adecuado.
@@ -197,7 +197,7 @@ export default function AccidentesLanding() {
                 <div className="w-14 h-14 bg-primary-light text-primary flex items-center justify-center mx-auto mb-5 rounded-full">
                   <Award size={24} strokeWidth={1.5} />
                 </div>
-                <h3 className="font-semibold text-primary text-lg mb-3 text-balance md:min-h-[3.5rem] flex items-end justify-center">Si quedaste con una incapacidad</h3>
+                <h3 className="font-semibold text-primary text-lg mb-3 text-balance md:min-h-[4rem] flex items-end justify-center">Si quedaste con una incapacidad</h3>
                 <p className="text-text-secondary text-sm leading-relaxed flex-1">
                   Verificamos que el porcentaje de incapacidad refleje tu situación real y calculamos
                   la indemnización que te corresponde según la ley. Nuestro objetivo es que recibas lo justo.
@@ -279,7 +279,7 @@ export default function AccidentesLanding() {
                   <div className="w-12 h-12 bg-accent text-white flex items-center justify-center mx-auto mb-4 rounded-full font-bold text-lg">
                     {item.step}
                   </div>
-                  <h3 className="font-semibold text-primary text-base mb-2 text-balance sm:min-h-[2.5rem] flex items-end justify-center">{item.title}</h3>
+                  <h3 className="font-semibold text-primary text-base mb-2 text-balance sm:min-h-[3rem] flex items-end justify-center">{item.title}</h3>
                   <p className="text-text-secondary text-sm leading-relaxed flex-1">{item.desc}</p>
                 </div>
               ))}

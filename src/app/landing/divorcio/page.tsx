@@ -178,7 +178,7 @@ export default function DivorcioLanding() {
                 <div className="w-14 h-14 bg-primary-light text-primary flex items-center justify-center mx-auto mb-5 rounded-full">
                   <Heart size={24} strokeWidth={1.5} />
                 </div>
-                <h3 className="font-semibold text-primary text-lg mb-3 text-balance md:min-h-[3.5rem] flex items-end justify-center">Divorcio de común acuerdo</h3>
+                <h3 className="font-semibold text-primary text-lg mb-3 text-balance md:min-h-[4rem] flex items-end justify-center">Divorcio de común acuerdo</h3>
                 <p className="text-text-secondary text-sm leading-relaxed flex-1">
                   Desde la reforma del Código Civil no hace falta invocar causas ni esperar plazos. Presentamos la
                   petición con tu propuesta reguladora y obtenés la sentencia sin audiencias innecesarias.
@@ -188,7 +188,7 @@ export default function DivorcioLanding() {
                 <div className="w-14 h-14 bg-primary-light text-primary flex items-center justify-center mx-auto mb-5 rounded-full">
                   <Users size={24} strokeWidth={1.5} />
                 </div>
-                <h3 className="font-semibold text-primary text-lg mb-3 text-balance md:min-h-[3.5rem] flex items-end justify-center">Divorcio sin acuerdo del cónyuge</h3>
+                <h3 className="font-semibold text-primary text-lg mb-3 text-balance md:min-h-[4rem] flex items-end justify-center">Divorcio sin acuerdo del cónyuge</h3>
                 <p className="text-text-secondary text-sm leading-relaxed flex-1">
                   No necesitás el consentimiento del otro cónyuge para divorciarte. Iniciamos el trámite igual
                   y gestionamos todos los efectos: alimentos, cuidado de los hijos y división de bienes.
@@ -198,7 +198,7 @@ export default function DivorcioLanding() {
                 <div className="w-14 h-14 bg-primary-light text-primary flex items-center justify-center mx-auto mb-5 rounded-full">
                   <Home size={24} strokeWidth={1.5} />
                 </div>
-                <h3 className="font-semibold text-primary text-lg mb-3 text-balance md:min-h-[3.5rem] flex items-end justify-center">Acuerdos y efectos del divorcio</h3>
+                <h3 className="font-semibold text-primary text-lg mb-3 text-balance md:min-h-[4rem] flex items-end justify-center">Acuerdos y efectos del divorcio</h3>
                 <p className="text-text-secondary text-sm leading-relaxed flex-1">
                   Cuota alimentaria, régimen de comunicación, compensación económica y división de la sociedad conyugal.
                   Negociamos y redactamos acuerdos que protejan lo que te importa.
@@ -280,7 +280,7 @@ export default function DivorcioLanding() {
                   <div className="w-12 h-12 bg-accent text-white flex items-center justify-center mx-auto mb-4 rounded-full font-bold text-lg">
                     {item.step}
                   </div>
-                  <h3 className="font-semibold text-primary text-base mb-2 text-balance sm:min-h-[2.5rem] flex items-end justify-center">{item.title}</h3>
+                  <h3 className="font-semibold text-primary text-base mb-2 text-balance sm:min-h-[3rem] flex items-end justify-center">{item.title}</h3>
                   <p className="text-text-secondary text-sm leading-relaxed flex-1">{item.desc}</p>
                 </div>
               ))}
