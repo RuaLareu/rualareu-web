@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Footer from "@/components/layout/Footer";
-import { Phone, MessageCircle, Star, Scale, UserX, FileWarning, ChevronDown } from "lucide-react";
+import { Phone, MessageCircle, Star, Scale, UserX, AlertTriangle, FileWarning, ChevronDown } from "lucide-react";
 import { GOOGLE_REVIEWS } from "@/lib/constants";
 
 function GoogleLogo() {
@@ -173,15 +173,15 @@ export default function DespidosLanding() {
             </h2>
             <div className="w-10 h-px bg-accent mx-auto mb-14" />
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="text-center flex flex-col h-full">
                 <div className="w-14 h-14 bg-primary-light text-primary flex items-center justify-center mx-auto mb-5 rounded-full">
                   <Scale size={24} strokeWidth={1.5} />
                 </div>
                 <h3 className="font-semibold text-primary text-lg mb-3 text-balance md:min-h-[4rem] flex items-end justify-center">Si te despidieron sin causa</h3>
                 <p className="text-text-secondary text-sm leading-relaxed flex-1">
-                  Analizamos tu situación, calculamos tu indemnización según el art. 245 LCT y reclamamos ante
-                  el empleador o la justicia lo que corresponde por ley.
+                  Analizamos tu situación, calculamos tu indemnización según el art. 245 LCT y reclamamos
+                  ante el empleador o la justicia lo que corresponde por ley.
                 </p>
               </div>
               <div className="text-center flex flex-col h-full">
@@ -192,6 +192,16 @@ export default function DespidosLanding() {
                 <p className="text-text-secondary text-sm leading-relaxed flex-1">
                   En muchos casos podés reclamar como despido encubierto o indirecto. Analizamos las
                   circunstancias y accionamos si tenés derecho a indemnización.
+                </p>
+              </div>
+              <div className="text-center flex flex-col h-full">
+                <div className="w-14 h-14 bg-primary-light text-primary flex items-center justify-center mx-auto mb-5 rounded-full">
+                  <AlertTriangle size={24} strokeWidth={1.5} />
+                </div>
+                <h3 className="font-semibold text-primary text-lg mb-3 text-balance md:min-h-[4rem] flex items-end justify-center">Si el empleador incumplió</h3>
+                <p className="text-text-secondary text-sm leading-relaxed flex-1">
+                  Si no te pagan, no te registran o cambian condiciones sin tu consentimiento, podés intimar
+                  y considerarte despedido con la misma indemnización que un despido sin causa.
                 </p>
               </div>
               <div className="text-center flex flex-col h-full">
