@@ -208,7 +208,7 @@ export default function DespidosLanding() {
                 <div className="w-14 h-14 bg-primary-light text-primary flex items-center justify-center mx-auto mb-5 rounded-full">
                   <FileWarning size={24} strokeWidth={1.5} />
                 </div>
-                <h3 className="font-semibold text-primary text-lg mb-3 text-balance md:min-h-[4rem] flex items-end justify-center">Si trabajabas en negro</h3>
+                <h3 className="font-semibold text-primary text-lg mb-3 text-balance md:min-h-[4rem] flex items-end justify-center">Si trabajabas sin registración (&ldquo;en negro&rdquo;)</h3>
                 <p className="text-text-secondary text-sm leading-relaxed flex-1">
                   Aunque no estés registrado (o estés mal registrado), tenés derecho a indemnización y multas.
                   Reclamamos tu antigüedad real y los pagos pendientes.
