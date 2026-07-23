@@ -16,7 +16,7 @@ const PHONE_RAW = "+5492236972421";
 export const metadata: Metadata = {
   title: "Planificación Fiscal Mar del Plata | Contador | Optimización de Impuestos | RUA | LAREU",
   description:
-    "¿Pagás más impuestos de los que deberías? Planificación fiscal para personas y PyMEs en Mar del Plata. Reducí tu carga impositiva de forma legal. Consultá sin compromiso.",
+    "¿Pagás más impuestos de los que deberías? Planificación fiscal para personas y PyMEs en Mar del Plata. Reducí tu carga impositiva de forma legal. Consultanos ahora.",
   robots: { index: true, follow: true },
   alternates: { canonical: "/landing/planificacion-fiscal" },
 };
@@ -142,7 +142,7 @@ export default function PlanificacionFiscalLanding() {
                 className="inline-flex items-center justify-center gap-2 w-full sm:w-auto whitespace-nowrap bg-white text-primary text-lg font-semibold px-10 py-5 rounded hover:bg-white/90 transition-all duration-300"
               >
                 <MessageCircle size={20} />
-                Consultá sin compromiso
+                Consultá ahora
               </a>
               <a
                 href={`tel:${PHONE_RAW}`}

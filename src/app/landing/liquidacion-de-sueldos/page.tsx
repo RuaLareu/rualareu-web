@@ -269,7 +269,7 @@ export default function LiquidacionDeSueldosLanding() {
                 { step: "1", title: "Relevamos tu nómina", desc: "Analizamos empleados, convenios y situación actual de tu empresa." },
                 { step: "2", title: "Ordenamos todo", desc: "Regularizamos atrasos o inconsistencias antes de empezar a operar." },
                 { step: "3", title: "Liquidamos cada mes", desc: "Nos pasás las novedades y recibís recibos y aportes listos en fecha." },
-                { step: "4", title: "Te acompañamos", desc: "Consultas laborales e impositivas incluidas, sin costos ocultos." },
+                { step: "4", title: "Te acompañamos", desc: "Consultas laborales e impositivas incluidas todo el año." },
               ].map((item) => (
                 <div key={item.step} className="text-center flex flex-col items-center h-full">
                   <div className="w-12 h-12 bg-accent text-white flex items-center justify-center mx-auto mb-4 rounded-full font-bold text-lg">

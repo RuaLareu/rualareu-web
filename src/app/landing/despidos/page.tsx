@@ -23,7 +23,7 @@ const PHONE_RAW = "+5492236972421";
 export const metadata: Metadata = {
   title: "Abogado por Despido en Mar del Plata | Indemnización y Reclamos Laborales | RUA | LAREU",
   description:
-    "¿Te despidieron o te obligaron a renunciar? Calculamos tu indemnización y reclamamos lo que corresponde. Abogados laboralistas en Mar del Plata. Consulta gratuita.",
+    "¿Te despidieron o te obligaron a renunciar? Calculamos tu indemnización y reclamamos lo que corresponde. Abogados laboralistas en Mar del Plata. Consultanos ahora.",
   robots: { index: true, follow: true },
   alternates: { canonical: "/landing/despidos" },
 };
@@ -149,7 +149,7 @@ export default function DespidosLanding() {
                 className="inline-flex items-center justify-center gap-2 w-full sm:w-auto whitespace-nowrap bg-white text-primary text-lg font-semibold px-10 py-5 rounded hover:bg-white/90 transition-all duration-300"
               >
                 <MessageCircle size={20} />
-                Consultá gratis ahora
+                Consultá ahora
               </a>
               <a
                 href={`tel:${PHONE_RAW}`}
@@ -159,7 +159,7 @@ export default function DespidosLanding() {
                 {PHONE}
               </a>
             </div>
-            <p className="text-white/35 text-xs">Consulta gratuita y sin compromiso</p>
+            <p className="text-white/35 text-xs">Atención personalizada</p>
           </div>
         </section>
 
@@ -281,7 +281,7 @@ export default function DespidosLanding() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
-                { step: "1", title: "Nos contactás", desc: "Escribinos por WhatsApp o llamanos. La consulta es gratuita." },
+                { step: "1", title: "Nos contactás", desc: "Escribinos por WhatsApp o llamanos. Te escuchamos y evaluamos tu caso." },
                 { step: "2", title: "Evaluamos el caso", desc: "Analizamos tu documentación y calculamos lo que te corresponde." },
                 { step: "3", title: "Iniciamos acción", desc: "Intimamos al empleador y, si no hay acuerdo, iniciamos el juicio." },
                 { step: "4", title: "Cobrás lo tuyo", desc: "Te acompañamos hasta que cobres tu indemnización completa." },
@@ -378,7 +378,7 @@ export default function DespidosLanding() {
             <FAQItem
               defaultOpen
               question="¿Cuánto me corresponde de indemnización?"
-              answer="Se calcula en base a tu antigüedad y a la mejor remuneración mensual, normal y habitual del último año (art. 245 LCT): un mes de sueldo por cada año de antigüedad (o fracción mayor a tres meses). A eso se suman la indemnización sustitutiva de preaviso, la integración del mes de despido, SAC y vacaciones proporcionales. Consultanos y te calculamos el monto exacto sin costo."
+              answer="Se calcula en base a tu antigüedad y a la mejor remuneración mensual, normal y habitual del último año (art. 245 LCT): un mes de sueldo por cada año de antigüedad (o fracción mayor a tres meses). A eso se suman la indemnización sustitutiva de preaviso, la integración del mes de despido, SAC y vacaciones proporcionales. Consultanos y te calculamos el monto exacto de tu caso."
             />
             <FAQItem
               question="¿Y si trabajaba en negro o mal registrado?"
@@ -389,8 +389,8 @@ export default function DespidosLanding() {
               answer="Los créditos laborales prescriben a los 2 años desde la extinción del vínculo. Pero conviene actuar rápido: las multas por mala registración requieren intimar mientras el vínculo esté vigente o dentro de plazos cortos posteriores al despido."
             />
             <FAQItem
-              question="¿La consulta tiene costo?"
-              answer="No. La primera consulta es completamente gratuita y sin compromiso. Evaluamos tu caso, te decimos si tenés reclamo y te explicamos cuáles son tus opciones antes de que decidas si querés avanzar."
+              question="¿Puedo hacer todo el trámite a distancia?"
+              answer="Sí. La mayoría de los reclamos laborales se gestionan de forma digital: audiencias virtuales, firma electrónica y presentaciones online. Te representamos estés en Mar del Plata o en cualquier otra parte del país."
             />
           </div>
         </section>
@@ -406,7 +406,7 @@ export default function DespidosLanding() {
               <span className="text-white/70">Cada día cuenta.</span>
             </h2>
             <p className="text-white/50 text-base mb-10">
-              Consultanos hoy. Es gratis, es confidencial y no te compromete a nada.
+              Consultanos hoy. Respuesta rápida y atención confidencial.
             </p>
 
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 mb-8">

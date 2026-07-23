@@ -16,7 +16,7 @@ const PHONE_RAW = "+5492236972421";
 export const metadata: Metadata = {
   title: "Registro de Marcas Mar del Plata | INPI | Protegé tu Negocio | RUA | LAREU",
   description:
-    "Registro de marcas ante INPI en Mar del Plata. Búsqueda de antecedentes, solicitud, oposiciones y renovación. Protegé tu negocio. Consulta sin compromiso.",
+    "Registro de marcas ante INPI en Mar del Plata. Búsqueda de antecedentes, solicitud, oposiciones y renovación. Protegé tu negocio. Consultanos ahora.",
   robots: { index: true, follow: true },
   alternates: { canonical: "/landing/registro-de-marcas" },
 };
@@ -147,7 +147,7 @@ export default function RegistroMarcasLanding() {
                 {PHONE}
               </a>
             </div>
-            <p className="text-white/30 text-xs">Consulta sin compromiso · Presupuesto cerrado</p>
+            <p className="text-white/30 text-xs">Presupuesto cerrado · Sin sorpresas</p>
           </div>
         </section>
 

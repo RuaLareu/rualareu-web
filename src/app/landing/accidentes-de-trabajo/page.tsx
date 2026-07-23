@@ -21,9 +21,9 @@ const PHONE = "+54 9 223-697-2421";
 const PHONE_RAW = "+5492236972421";
 
 export const metadata: Metadata = {
-  title: "Abogado Accidentes de Trabajo Mar del Plata | Reclamos ART | Consulta Gratis",
+  title: "Abogado Accidentes de Trabajo Mar del Plata | Reclamos ART | RUA | LAREU",
   description:
-    "Sufriste un accidente de trabajo? Somos abogados especialistas en reclamos contra ART en Mar del Plata. Consulta gratuita. Cobramos solo si ganás.",
+    "Sufriste un accidente de trabajo? Somos abogados especialistas en reclamos contra ART en Mar del Plata. Consultanos ahora.",
   robots: { index: true, follow: true },
   alternates: { canonical: "/landing/accidentes-de-trabajo" },
 };
@@ -148,7 +148,7 @@ export default function AccidentesLanding() {
                 className="inline-flex items-center justify-center gap-2 w-full sm:w-auto whitespace-nowrap bg-white text-primary text-lg font-semibold px-10 py-5 rounded hover:bg-white/90 transition-all duration-300"
               >
                 <MessageCircle size={20} />
-                Consultá gratis ahora
+                Consultá ahora
               </a>
               <a
                 href={`tel:${PHONE_RAW}`}
@@ -158,7 +158,7 @@ export default function AccidentesLanding() {
                 {PHONE}
               </a>
             </div>
-            <p className="text-white/35 text-xs">Consulta gratuita y sin compromiso</p>
+            <p className="text-white/35 text-xs">Atención personalizada</p>
           </div>
         </section>
 
@@ -270,7 +270,7 @@ export default function AccidentesLanding() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
-                { step: "1", title: "Nos contactás", desc: "Escribinos por WhatsApp o llamanos. La consulta es gratuita." },
+                { step: "1", title: "Nos contactás", desc: "Escribinos por WhatsApp o llamanos. Te escuchamos y evaluamos tu caso." },
                 { step: "2", title: "Evaluamos tu caso", desc: "Analizamos tu documentación y te explicamos tus opciones." },
                 { step: "3", title: "Iniciamos el reclamo", desc: "Gestionamos ante la ART, Comisiones Médicas o la justicia." },
                 { step: "4", title: "Cobrás tu indemnización", desc: "Te acompañamos hasta que recibas lo que te corresponde." },
@@ -378,8 +378,8 @@ export default function AccidentesLanding() {
               answer="Lo ideal es contar con DNI, la denuncia del accidente o enfermedad profesional (si la tenés), el alta médica (si llegaste a esa instancia), estudios médicos o historia clínica, y recibos de sueldo. Pero si te falta algo, no te preocupes: podemos trabajar igual y ayudarte a armar la carpeta. Consultanos de todas formas."
             />
             <FAQItem
-              question="¿La consulta tiene costo?"
-              answer="No. La consulta inicial es completamente gratuita y sin compromiso. Evaluamos tu caso y te explicamos cuáles son tus opciones."
+              question="¿Puedo hacer todo el trámite a distancia?"
+              answer="Sí. La mayoría de los reclamos laborales se gestionan de forma digital: audiencias virtuales, comisiones médicas online y firma electrónica. Te representamos estés en Mar del Plata o en cualquier otra parte del país."
             />
           </div>
         </section>
@@ -395,7 +395,7 @@ export default function AccidentesLanding() {
               <span className="text-white/70">Cada día cuenta.</span>
             </h2>
             <p className="text-white/50 text-base mb-10">
-              Consultanos hoy. Es gratis, es confidencial y no te compromete a nada.
+              Consultanos hoy. Respuesta rápida y atención confidencial.
             </p>
 
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 mb-8">

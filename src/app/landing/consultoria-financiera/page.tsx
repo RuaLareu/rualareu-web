@@ -16,7 +16,7 @@ const PHONE_RAW = "+5492236972421";
 export const metadata: Metadata = {
   title: "Consultoría Financiera para PyMEs en Mar del Plata | Análisis, Costos, Rentabilidad | RUA | LAREU",
   description:
-    "¿Sabés cuánto gana realmente tu negocio? Análisis de costos, rentabilidad, flujo de fondos y acceso al crédito para PyMEs en Mar del Plata. Consultá sin compromiso.",
+    "¿Sabés cuánto gana realmente tu negocio? Análisis de costos, rentabilidad, flujo de fondos y acceso al crédito para PyMEs en Mar del Plata. Consultanos ahora.",
   robots: { index: true, follow: true },
   alternates: { canonical: "/landing/consultoria-financiera" },
 };
@@ -142,7 +142,7 @@ export default function ConsultoriaFinancieraLanding() {
                 className="inline-flex items-center justify-center gap-2 w-full sm:w-auto whitespace-nowrap bg-white text-primary text-lg font-semibold px-10 py-5 rounded hover:bg-white/90 transition-all duration-300"
               >
                 <MessageCircle size={20} />
-                Consultá sin compromiso
+                Consultá ahora
               </a>
               <a
                 href={`tel:${PHONE_RAW}`}
@@ -152,7 +152,7 @@ export default function ConsultoriaFinancieraLanding() {
                 {PHONE}
               </a>
             </div>
-            <p className="text-white/30 text-xs">Primera reunión sin compromiso</p>
+            <p className="text-white/30 text-xs">Análisis personalizado de tu negocio</p>
           </div>
         </section>
 
@@ -400,7 +400,7 @@ export default function ConsultoriaFinancieraLanding() {
               <span className="text-white/70">mejores resultados.</span>
             </h2>
             <p className="text-white/50 text-base mb-10">
-              Escribinos y coordinamos una primera reunión sin costo ni compromiso.
+              Escribinos y coordinamos una primera reunión para analizar tu caso.
             </p>
 
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 mb-8">

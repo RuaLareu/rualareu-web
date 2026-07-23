@@ -154,7 +154,7 @@ export default function AmparosSaludLanding() {
                 {PHONE}
               </a>
             </div>
-            <p className="text-white/30 text-xs">Medida cautelar en 48-72 horas · Sin compromiso</p>
+            <p className="text-white/30 text-xs">Medida cautelar en 48-72 horas · Respuesta inmediata</p>
           </div>
         </section>
 
@@ -249,7 +249,7 @@ export default function AmparosSaludLanding() {
                 {
                   step: "1",
                   title: "Nos contactás",
-                  desc: "Evaluamos tu caso sin compromiso. Necesitamos la prescripción médica y la constancia de rechazo o demora de la obra social/prepaga.",
+                  desc: "Evaluamos tu caso. Necesitamos la prescripción médica y la constancia de rechazo o demora de la obra social/prepaga.",
                 },
                 {
                   step: "2",

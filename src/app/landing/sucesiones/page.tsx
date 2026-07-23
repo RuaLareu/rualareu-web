@@ -23,7 +23,7 @@ const PHONE_RAW = "+5492236972421";
 export const metadata: Metadata = {
   title: "Abogado de Sucesiones en Mar del Plata | Trámite Sucesorio | RUA | LAREU",
   description:
-    "¿Tenés que hacer una sucesión? Iniciamos y llevamos adelante todo el trámite sucesorio en Mar del Plata, hasta la inscripción de los bienes. Consultá sin compromiso.",
+    "¿Tenés que hacer una sucesión? Iniciamos y llevamos adelante todo el trámite sucesorio en Mar del Plata, hasta la inscripción de los bienes. Consultanos ahora.",
   robots: { index: true, follow: true },
   alternates: { canonical: "/landing/sucesiones" },
 };
@@ -149,7 +149,7 @@ export default function SucesionesLanding() {
                 className="inline-flex items-center justify-center gap-2 w-full sm:w-auto whitespace-nowrap bg-white text-primary text-lg font-semibold px-10 py-5 rounded hover:bg-white/90 transition-all duration-300"
               >
                 <MessageCircle size={20} />
-                Consultá sin compromiso
+                Consultá ahora
               </a>
               <a
                 href={`tel:${PHONE_RAW}`}
@@ -159,7 +159,7 @@ export default function SucesionesLanding() {
                 {PHONE}
               </a>
             </div>
-            <p className="text-white/35 text-xs">Consulta confidencial y sin compromiso</p>
+            <p className="text-white/35 text-xs">Atención confidencial y personalizada</p>
           </div>
         </section>
 
@@ -270,7 +270,7 @@ export default function SucesionesLanding() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
-                { step: "1", title: "Nos contactás", desc: "Escribinos por WhatsApp o llamanos. La consulta es sin compromiso." },
+                { step: "1", title: "Nos contactás", desc: "Escribinos por WhatsApp o llamanos y te devolvemos el contacto." },
                 { step: "2", title: "Analizamos el caso", desc: "Revisamos la documentación y armamos la estrategia sucesoria." },
                 { step: "3", title: "Iniciamos el trámite", desc: "Presentamos la sucesión y gestionamos la declaratoria de herederos." },
                 { step: "4", title: "Inscribimos los bienes", desc: "Registramos inmuebles, cuentas y demás bienes a nombre de los herederos." },

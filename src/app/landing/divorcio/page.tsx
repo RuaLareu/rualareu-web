@@ -159,7 +159,7 @@ export default function DivorcioLanding() {
                 {PHONE}
               </a>
             </div>
-            <p className="text-white/35 text-xs">Consulta sin compromiso</p>
+            <p className="text-white/35 text-xs">Atención personalizada</p>
           </div>
         </section>
 
@@ -396,7 +396,7 @@ export default function DivorcioLanding() {
               <span className="text-white/70">Nosotros nos ocupamos del trámite.</span>
             </h2>
             <p className="text-white/50 text-base mb-10">
-              Consulta confidencial y sin compromiso.
+              Atención confidencial y personalizada.
             </p>
 
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 mb-8">

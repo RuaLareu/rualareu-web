@@ -12,7 +12,7 @@ const PHONE_RAW = "+5492236972421";
 export const metadata: Metadata = {
   title: "Monotributo Mar del Plata | Contador | Inscripción y Recategorización | RUA | LAREU",
   description:
-    "Estudio contable en Mar del Plata. Inscripción, recategorización, facturación electrónica y asesoramiento permanente para monotributistas. Consultá sin compromiso.",
+    "Estudio contable en Mar del Plata. Inscripción, recategorización, facturación electrónica y asesoramiento permanente para monotributistas. Consultanos ahora.",
   robots: { index: true, follow: true },
   alternates: { canonical: "/landing/monotributo" },
 };
@@ -147,7 +147,7 @@ export default function MonotributoLanding() {
                 {PHONE}
               </a>
             </div>
-            <p className="text-white/30 text-xs">Sin compromiso · Respuesta inmediata</p>
+            <p className="text-white/30 text-xs">Respuesta inmediata · Atención personalizada</p>
           </div>
         </section>
 
@@ -425,7 +425,7 @@ export default function MonotributoLanding() {
               <span className="text-white/70">en buenas manos.</span>
             </h2>
             <p className="text-white/50 text-base mb-10">
-              Escribinos y te asesoramos sin compromiso.
+              Escribinos y te asesoramos con tu caso.
             </p>
 
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 mb-8">
