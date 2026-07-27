@@ -210,8 +210,8 @@ export default function DespidosLanding() {
                 </div>
                 <h3 className="font-semibold text-primary text-lg mb-3 text-balance md:min-h-[4rem] flex items-end justify-center">Si trabajabas sin registro</h3>
                 <p className="text-text-secondary text-sm leading-relaxed flex-1">
-                  Aunque no estés registrado (o estés mal registrado), tenés derecho a indemnización y multas.
-                  Reclamamos tu antigüedad real y los pagos pendientes.
+                  Aunque no estés registrado (o estés mal registrado), tenés derecho a la misma indemnización
+                  y a reclamar los daños y perjuicios derivados. Reclamamos tu antigüedad real y los pagos pendientes.
                 </p>
               </div>
             </div>
@@ -245,7 +245,7 @@ export default function DespidosLanding() {
                 "Discriminación laboral",
                 "Mobbing y acoso",
                 "Acuerdos de desvinculación",
-                "Multas laborales",
+                "Daños y perjuicios laborales",
               ].map((item) => (
                 <span
                   key={item}
@@ -382,15 +382,15 @@ export default function DespidosLanding() {
             />
             <FAQItem
               question="¿Y si trabajaba en negro o mal registrado?"
-              answer="Tenés derecho a la misma indemnización que un empleado registrado, más las multas de las leyes 24.013 y 25.323 que pueden duplicar el monto. La clave es intimar rápido al empleador por carta documento para no perder las multas. Después, si no hay acuerdo, se acciona judicialmente."
+              answer="Tenés derecho a la misma indemnización que un empleado registrado. Además, tras la sanción de la Ley 27.802 (Modernización Laboral), la falta o deficiencia de registración habilita a reclamar los daños y perjuicios derivados (aportes no ingresados, pérdida de cobertura, antigüedad no reconocida, etc.). Conviene intimar rápido al empleador por carta documento para preservar la prueba y tus derechos."
             />
             <FAQItem
               question="¿Cuánto tiempo tengo para reclamar?"
-              answer="Los créditos laborales prescriben a los 2 años desde la extinción del vínculo. Pero conviene actuar rápido: las multas por mala registración requieren intimar mientras el vínculo esté vigente o dentro de plazos cortos posteriores al despido."
+              answer="Los créditos laborales prescriben a los 2 años desde la extinción del vínculo. Pero conviene actuar rápido: los reclamos por trabajo no registrado requieren intimar mientras el vínculo esté vigente o dentro de plazos cortos posteriores al despido."
             />
             <FAQItem
               question="¿Puedo hacer todo el trámite a distancia?"
-              answer="Sí. La mayoría de los reclamos laborales se gestionan de forma digital: audiencias virtuales, firma electrónica y presentaciones online. Te representamos estés en Mar del Plata o en cualquier otra parte del país."
+              answer="Sí. La mayoría de los reclamos laborales se gestionan de forma digital: audiencias virtuales, firma electrónica y presentaciones online. Te representamos en Mar del Plata, CABA y toda la provincia de Buenos Aires."
             />
           </div>
         </section>
