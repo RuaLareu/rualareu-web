@@ -211,7 +211,7 @@ export default function DespidosLanding() {
                 <h3 className="font-semibold text-primary text-lg mb-3 text-balance md:min-h-[4rem] flex items-end justify-center">Si trabajabas sin registro</h3>
                 <p className="text-text-secondary text-sm leading-relaxed flex-1">
                   Aunque no estés registrado (o estés mal registrado), tenés derecho a la misma indemnización
-                  y a reclamar los daños y perjuicios derivados. Reclamamos tu antigüedad real y los pagos pendientes.
+                  y a reclamar los perjuicios que te causó no estar registrado. Cada caso se analiza por separado.
                 </p>
               </div>
             </div>
@@ -382,7 +382,7 @@ export default function DespidosLanding() {
             />
             <FAQItem
               question="¿Y si trabajaba en negro o mal registrado?"
-              answer="Tenés derecho a la misma indemnización que un empleado registrado. Además, tras la sanción de la Ley 27.802 (Modernización Laboral), la falta o deficiencia de registración habilita a reclamar los daños y perjuicios derivados (aportes no ingresados, pérdida de cobertura, antigüedad no reconocida, etc.). Conviene intimar rápido al empleador por carta documento para preservar la prueba y tus derechos."
+              answer="Tenés derecho a la misma indemnización que un empleado registrado. Además podemos reclamar por los perjuicios concretos que te causó no estar registrado: aportes previsionales no ingresados, pérdida de cobertura, antigüedad no reconocida. Cada caso se analiza por separado y conviene intimar rápido al empleador para preservar la prueba."
             />
             <FAQItem
               question="¿Cuánto tiempo tengo para reclamar?"
