@@ -16,14 +16,14 @@ function GoogleLogo() {
 }
 
 const WHATSAPP_URL =
-  "https://wa.me/5492236972421?text=Hola%2C%20quiero%20constituir%20una%20sociedad%20y%20me%20gustar%C3%ADa%20hacer%20una%20consulta.";
+  "https://wa.me/5492236972421?text=Hola%2C%20quiero%20constituir%20una%20sociedad%20(SRL%2FSA)%20en%20Mar%20del%20Plata.";
 const PHONE = "+54 9 223-697-2421";
 const PHONE_RAW = "+5492236972421";
 
 export const metadata: Metadata = {
-  title: "Constitución de Sociedades en Mar del Plata | SAS, SRL y SA | RUA | LAREU",
+  title: "Constitución de SRL y SA en Mar del Plata | Inscripción en DPPJ | RUA | LAREU",
   description:
-    "Creá tu empresa con respaldo legal y contable en un solo estudio. Constitución de SAS, SRL y SA en Mar del Plata. Te acompañamos desde el estatuto hasta el alta en ARCA.",
+    "Constituimos SRL y SA en Mar del Plata con inscripción ante la DPPJ (Provincia de Buenos Aires). Estatuto, escritura, edictos, CUIT y facturación en un solo estudio jurídico y contable.",
   robots: { index: true, follow: true },
   alternates: { canonical: "https://rualareu.com/landing/constitucion-de-sociedades" },
 };
@@ -31,9 +31,9 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "AccountingService",
-  name: "RUA | LAREU - Constitución de Sociedades",
+  name: "RUA | LAREU - Constitución de SRL y SA",
   description:
-    "Constitución de SAS, SRL y SA en Mar del Plata. Estudio jurídico contable que gestiona el estatuto, la inscripción, el alta en ARCA y los libros societarios.",
+    "Constitución de SRL y SA en Mar del Plata con inscripción en la DPPJ (Provincia de Buenos Aires). Estudio jurídico y contable que gestiona estatuto, escritura, edictos, inscripción, CUIT y libros societarios.",
   url: "https://rualareu.com/landing/constitucion-de-sociedades",
   telephone: "+54-9-223-697-2421",
   address: {
@@ -130,12 +130,12 @@ export default function ConstitucionDeSociedadesLanding() {
             </div>
 
             <h1 className="text-white text-3xl sm:text-4xl lg:text-4xl xl:text-5xl font-bold leading-tight mb-6">
-              Creá tu empresa
+              Constitución de SRL y SA
               <br />
-              sin trámites eternos
+              en Mar del Plata
             </h1>
             <p className="text-white/85 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto mb-10">
-              Constituimos tu SAS, SRL o SA en Mar del Plata con un equipo que une abogados y contadores: estatuto, inscripción, alta en ARCA y libros, todo en un solo lugar.
+              Constituimos tu sociedad de punta a punta: estatuto, escritura, edictos, inscripción en DPPJ, CUIT y facturación. Un solo equipo jurídico y contable hasta que empieces a operar.
             </p>
 
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 mb-6">
@@ -146,7 +146,7 @@ export default function ConstitucionDeSociedadesLanding() {
                 className="inline-flex items-center justify-center gap-2 w-full sm:w-auto whitespace-nowrap bg-white text-primary text-lg font-semibold px-10 py-5 rounded hover:bg-white/90 transition-all duration-300"
               >
                 <MessageCircle size={20} />
-                Consultanos por WhatsApp
+                Quiero constituir mi sociedad
               </a>
               <a
                 href={`tel:${PHONE_RAW}`}
@@ -156,7 +156,7 @@ export default function ConstitucionDeSociedadesLanding() {
                 {PHONE}
               </a>
             </div>
-            <p className="text-white/35 text-xs">Presupuesto cerrado · Sin sorpresas</p>
+            <p className="text-white/35 text-xs">Presupuesto cerrado · Seguimiento hasta que factures</p>
           </div>
         </section>
 
@@ -175,10 +175,10 @@ export default function ConstitucionDeSociedadesLanding() {
                 <div className="w-14 h-14 bg-primary-light text-primary flex items-center justify-center mx-auto mb-5 rounded-full">
                   <Search size={24} strokeWidth={1.5} />
                 </div>
-                <h3 className="font-semibold text-primary text-lg mb-3 text-balance md:min-h-[4rem] flex items-end justify-center">Elegimos juntos el tipo societario</h3>
+                <h3 className="font-semibold text-primary text-lg mb-3 text-balance md:min-h-[4rem] flex items-end justify-center">Elegimos juntos entre SRL o SA</h3>
                 <p className="text-text-secondary text-sm leading-relaxed flex-1">
-                  Analizamos tu actividad, socios y proyección para recomendarte SAS, SRL o SA según costos,
-                  responsabilidad y velocidad de inscripción.
+                  Analizamos tu actividad, socios y proyección para recomendarte SRL (cuotas, gerencia, ideal para pymes)
+                  o SA (acciones, directorio, estructuras más grandes o con inversores).
                 </p>
               </div>
               <div className="text-center flex flex-col h-full">
@@ -187,8 +187,8 @@ export default function ConstitucionDeSociedadesLanding() {
                 </div>
                 <h3 className="font-semibold text-primary text-lg mb-3 text-balance md:min-h-[4rem] flex items-end justify-center">Nos ocupamos de todo el trámite</h3>
                 <p className="text-text-secondary text-sm leading-relaxed flex-1">
-                  Redacción del estatuto, inscripción en IGJ/DPPJ, obtención de CUIT, alta en ARCA e Ingresos Brutos
-                  y rúbrica de libros.
+                  Redacción del estatuto y escritura, publicación de edictos, inscripción ante la DPPJ (Provincia de
+                  Buenos Aires), obtención de CUIT, alta en ARCA e Ingresos Brutos y rúbrica de libros.
                 </p>
               </div>
               <div className="text-center flex flex-col h-full">
@@ -197,8 +197,8 @@ export default function ConstitucionDeSociedadesLanding() {
                 </div>
                 <h3 className="font-semibold text-primary text-lg mb-3 text-balance md:min-h-[4rem] flex items-end justify-center">Tu empresa arranca lista para operar</h3>
                 <p className="text-text-secondary text-sm leading-relaxed flex-1">
-                  Facturación electrónica configurada, cuentas y obligaciones al día, y un equipo contable que te
-                  acompaña desde el día uno.
+                  Facturación electrónica configurada, cuentas y obligaciones al día. Un equipo contable te acompaña
+                  desde el primer mes.
                 </p>
               </div>
             </div>
@@ -215,14 +215,17 @@ export default function ConstitucionDeSociedadesLanding() {
             </h2>
             <div className="w-10 h-px bg-accent mx-auto mb-6" />
             <p className="text-text-secondary text-sm text-center max-w-xl mx-auto mb-10">
-              Constituimos y reorganizamos todo tipo de sociedades. Si tu caso no aparece en la lista, consultanos igual.
+              Constituimos SRL y SA en la Provincia de Buenos Aires con inscripción ante la DPPJ, y reorganizamos
+              sociedades existentes. Si tu caso no aparece en la lista, consultanos igual.
             </p>
 
             <div className="flex flex-wrap justify-center gap-3">
               {[
-                "Constitución de SAS",
                 "Constitución de SRL",
                 "Constitución de SA",
+                "SRL vs SA — asesoramiento",
+                "Inscripción en DPPJ",
+                "Trámite común o preferencial",
                 "Transformación de sociedades",
                 "Sociedades entre familiares",
                 "Incorporación de socios",
@@ -254,21 +257,25 @@ export default function ConstitucionDeSociedadesLanding() {
         </section>
 
         {/* ══════════════════════════════════════
-            4. PROCESO EN 4 PASOS
+            4. INSCRIPCIÓN EN LA DPPJ — PASO A PASO
         ══════════════════════════════════════ */}
         <section className="py-20 bg-background">
-          <div className="max-w-4xl mx-auto px-6">
+          <div className="max-w-5xl mx-auto px-6">
             <h2 className="font-sackers-heavy text-primary text-2xl sm:text-3xl text-center mb-4">
-              Cómo funciona
+              Inscripción paso a paso en la DPPJ
             </h2>
-            <div className="w-10 h-px bg-accent mx-auto mb-14" />
+            <div className="w-10 h-px bg-accent mx-auto mb-6" />
+            <p className="text-text-secondary text-sm text-center max-w-xl mx-auto mb-14">
+              Dirección Provincial de Personas Jurídicas — Provincia de Buenos Aires
+            </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
               {[
-                { step: "1", title: "Consulta inicial", desc: "Nos contás tu proyecto y te recomendamos la estructura societaria más conveniente." },
-                { step: "2", title: "Preparamos la documentación", desc: "Redactamos estatuto y actas, y te pedimos solo la documentación indispensable." },
-                { step: "3", title: "Inscribimos tu sociedad", desc: "Gestionamos el trámite completo ante los organismos y te mantenemos al tanto." },
-                { step: "4", title: "Dejamos todo operativo", desc: "CUIT, facturación, libros y obligaciones fiscales listas para que empieces a operar." },
+                { step: "1", title: "Asesoramiento", desc: "Analizamos tu proyecto y elegimos entre SRL o SA según tu caso." },
+                { step: "2", title: "Estatuto y escritura", desc: "Redactamos el estatuto y coordinamos la escritura constitutiva." },
+                { step: "3", title: "Edictos y tasas", desc: "Publicamos los edictos y abonamos las tasas correspondientes." },
+                { step: "4", title: "Inscripción en DPPJ", desc: "Presentamos el trámite ante la DPPJ (común o con plazo preferencial)." },
+                { step: "5", title: "CUIT y facturación", desc: "Tramitamos CUIT, altas fiscales, rúbrica de libros y facturación electrónica." },
               ].map((item) => (
                 <div key={item.step} className="text-center flex flex-col items-center h-full">
                   <div className="w-12 h-12 bg-accent text-white flex items-center justify-center mx-auto mb-4 rounded-full font-bold text-lg">
@@ -279,6 +286,11 @@ export default function ConstitucionDeSociedadesLanding() {
                 </div>
               ))}
             </div>
+
+            <p className="text-text-secondary text-sm text-center max-w-2xl mx-auto mt-12 leading-relaxed">
+              La DPPJ ofrece dos vías: el trámite común y un trámite con plazo preferencial que reduce
+              significativamente los tiempos. Te asesoramos sobre la conveniencia de cada uno según tu caso.
+            </p>
           </div>
         </section>
 
@@ -356,16 +368,16 @@ export default function ConstitucionDeSociedadesLanding() {
 
             <FAQItem
               defaultOpen
-              question="¿Qué conviene más: SAS, SRL o SA?"
-              answer="Depende de tu actividad, cantidad de socios, capital y planes de crecimiento. La SAS suele ser la más rápida y económica; la SRL da un marco clásico y probado; la SA conviene para estructuras más grandes o con inversores. En la primera consulta te lo definimos con números concretos."
+              question="¿Qué conviene más: SRL o SA?"
+              answer="Depende de tu actividad, cantidad de socios, capital y planes de crecimiento. La SRL da un marco clásico y probado, con capital dividido en cuotas y gerencia, y suele ser la opción para pymes y estructuras familiares o de pocos socios. La SA conviene para estructuras más grandes, con directorio y capital dividido en acciones, o cuando se planea sumar inversores. En la primera consulta te lo definimos con números concretos."
             />
             <FAQItem
               question="¿Cuánto tarda constituir una sociedad?"
-              answer="Una SAS puede estar operativa en pocas semanas; SRL y SA llevan algo más por los plazos de los organismos de registro. Te damos un cronograma real al inicio."
+              answer="Depende del tipo societario y del trámite elegido en la DPPJ. Existe un trámite común y un trámite con plazo preferencial (urgente) que acorta significativamente los tiempos. Te damos un cronograma real al inicio, contemplando los plazos del organismo, la escribanía y la publicación de edictos."
             />
             <FAQItem
               question="¿Qué costos tiene?"
-              answer="Hay costos de inscripción, publicación de edictos, capital mínimo (según el tipo) y honorarios. Te pasamos un presupuesto cerrado antes de empezar, sin sorpresas."
+              answer="Hay costos de inscripción y tasas de la DPPJ, publicación de edictos, escribanía, capital mínimo (según el tipo societario) y honorarios profesionales. Te pasamos un presupuesto cerrado antes de empezar, con todos los ítems detallados."
             />
             <FAQItem
               question="¿Puedo constituir una sociedad si hoy soy monotributista?"
@@ -373,11 +385,11 @@ export default function ConstitucionDeSociedadesLanding() {
             />
             <FAQItem
               question="¿Necesito un contador además del abogado?"
-              answer="En nuestro estudio tenés los dos. Los abogados arman la estructura legal y los contadores dejan la parte impositiva y contable funcionando."
+              answer="En nuestro estudio tenés los dos. Los abogados arman la estructura legal y los contadores dejan la parte impositiva y contable funcionando desde el primer mes."
             />
             <FAQItem
-              question="¿Trabajan con clientes de fuera de Mar del Plata?"
-              answer="Sí, la mayoría de los trámites se gestionan de forma digital, así que podemos constituir tu sociedad estés donde estés."
+              question="¿Constituyen SAS o inscriben ante IGJ (CABA)?"
+              answer="No. Constituimos exclusivamente SRL y SA con inscripción en la DPPJ (Dirección Provincial de Personas Jurídicas de la Provincia de Buenos Aires). No tramitamos inscripciones ante la IGJ (CABA) ni constituimos SAS. Trabajamos con clientes de toda la Provincia; la mayoría de los trámites se gestionan de forma digital."
             />
           </div>
         </section>
@@ -393,7 +405,7 @@ export default function ConstitucionDeSociedadesLanding() {
               <span className="text-white/70">con el respaldo de un estudio jurídico contable.</span>
             </h2>
             <p className="text-white/50 text-base mb-10">
-              Constitución, inscripción y puesta en marcha en un solo lugar.
+              Constitución, inscripción en DPPJ y puesta en marcha en un solo lugar.
             </p>
 
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 mb-8">
@@ -404,7 +416,7 @@ export default function ConstitucionDeSociedadesLanding() {
                 className="inline-flex items-center justify-center gap-2 w-full sm:w-auto whitespace-nowrap bg-white text-primary text-lg font-semibold px-10 py-5 rounded hover:bg-white/90 transition-all duration-300"
               >
                 <MessageCircle size={20} />
-                Escribinos por WhatsApp
+                Quiero constituir mi sociedad
               </a>
               <a
                 href={`tel:${PHONE_RAW}`}
