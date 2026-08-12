@@ -23,7 +23,7 @@ const PHONE_RAW = "+5492236972421";
 export const metadata: Metadata = {
   title: "Constitución de SRL y SA en Mar del Plata | Inscripción en DPPJ | RUA | LAREU",
   description:
-    "Constituimos SRL y SA en Mar del Plata con inscripción ante la DPPJ (Provincia de Buenos Aires). Estatuto, escritura, edictos, CUIT y facturación en un solo estudio jurídico y contable.",
+    "Constituimos SRL y SA en Mar del Plata con inscripción ante la DPPJ (Provincia de Buenos Aires). Estatuto, escritura, edictos, CUIT y altas fiscales, con el respaldo de un estudio jurídico y contable.",
   robots: { index: true, follow: true },
   alternates: { canonical: "https://rualareu.com/landing/constitucion-de-sociedades" },
 };
@@ -33,7 +33,7 @@ const jsonLd = {
   "@type": "AccountingService",
   name: "RUA | LAREU - Constitución de SRL y SA",
   description:
-    "Constitución de SRL y SA en Mar del Plata con inscripción en la DPPJ (Provincia de Buenos Aires). Estudio jurídico y contable que gestiona estatuto, escritura, edictos, inscripción, CUIT y libros societarios.",
+    "Constitución de SRL y SA en Mar del Plata con inscripción en la DPPJ (Provincia de Buenos Aires). Estudio jurídico y contable que gestiona estatuto, escritura, edictos, inscripción, CUIT y altas fiscales.",
   url: "https://rualareu.com/landing/constitucion-de-sociedades",
   telephone: "+54-9-223-697-2421",
   address: {
@@ -135,7 +135,7 @@ export default function ConstitucionDeSociedadesLanding() {
               en Mar del Plata
             </h1>
             <p className="text-white/85 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto mb-10">
-              Constituimos tu sociedad de punta a punta: estatuto, escritura, edictos, inscripción en DPPJ, CUIT y facturación. Un solo equipo jurídico y contable hasta que empieces a operar.
+              Constituimos tu sociedad de punta a punta: estatuto, escritura, edictos, inscripción en DPPJ, CUIT y altas fiscales. Un solo equipo jurídico y contable hasta que quedes en condiciones de operar.
             </p>
 
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 mb-6">
@@ -187,18 +187,18 @@ export default function ConstitucionDeSociedadesLanding() {
                 </div>
                 <h3 className="font-semibold text-primary text-lg mb-3 text-balance md:min-h-[4rem] flex items-end justify-center">Nos ocupamos de todo el trámite</h3>
                 <p className="text-text-secondary text-sm leading-relaxed flex-1">
-                  Redacción del estatuto y escritura, publicación de edictos, inscripción ante la DPPJ (Provincia de
-                  Buenos Aires), obtención de CUIT, alta en ARCA e Ingresos Brutos y rúbrica de libros.
+                  Redacción del estatuto y escritura, publicación de edictos, inscripción ante la DPPJ (Provincia
+                  de Buenos Aires), obtención de CUIT y altas ante ARCA e Ingresos Brutos.
                 </p>
               </div>
               <div className="text-center flex flex-col h-full">
                 <div className="w-14 h-14 bg-primary-light text-primary flex items-center justify-center mx-auto mb-5 rounded-full">
                   <Rocket size={24} strokeWidth={1.5} />
                 </div>
-                <h3 className="font-semibold text-primary text-lg mb-3 text-balance md:min-h-[4rem] flex items-end justify-center">Tu empresa arranca lista para operar</h3>
+                <h3 className="font-semibold text-primary text-lg mb-3 text-balance md:min-h-[4rem] flex items-end justify-center">Tu sociedad lista para operar</h3>
                 <p className="text-text-secondary text-sm leading-relaxed flex-1">
-                  Facturación electrónica configurada, cuentas y obligaciones al día. Un equipo contable te acompaña
-                  desde el primer mes.
+                  Terminamos la constitución con CUIT y altas fiscales. Rúbrica de libros, facturación
+                  electrónica, impuestos y sueldos son servicios contables aparte que también podemos brindarte.
                 </p>
               </div>
             </div>
@@ -275,7 +275,7 @@ export default function ConstitucionDeSociedadesLanding() {
                 { step: "2", title: "Estatuto y escritura", desc: "Redactamos el estatuto y coordinamos la escritura constitutiva." },
                 { step: "3", title: "Edictos y tasas", desc: "Publicamos los edictos y abonamos las tasas correspondientes." },
                 { step: "4", title: "Inscripción en DPPJ", desc: "Presentamos el trámite ante la DPPJ (común o con plazo preferencial)." },
-                { step: "5", title: "CUIT y facturación", desc: "Tramitamos CUIT, altas fiscales, rúbrica de libros y facturación electrónica." },
+                { step: "5", title: "CUIT y altas fiscales", desc: "Tramitamos CUIT y las altas ante ARCA e Ingresos Brutos para que quedes en condiciones de operar." },
               ].map((item) => (
                 <div key={item.step} className="text-center flex flex-col items-center h-full">
                   <div className="w-12 h-12 bg-accent text-white flex items-center justify-center mx-auto mb-4 rounded-full font-bold text-lg">
@@ -290,6 +290,18 @@ export default function ConstitucionDeSociedadesLanding() {
             <p className="text-text-secondary text-sm text-center max-w-2xl mx-auto mt-12 leading-relaxed">
               La DPPJ ofrece dos vías: el trámite común y un trámite con plazo preferencial que reduce
               significativamente los tiempos. Te asesoramos sobre la conveniencia de cada uno según tu caso.
+            </p>
+            <p className="text-text-secondary/80 text-sm text-center max-w-2xl mx-auto mt-6 leading-relaxed">
+              La rúbrica de libros, la facturación electrónica, la liquidación de sueldos y la contabilidad mensual
+              son <strong className="text-primary">servicios contables aparte</strong>. Si querés seguir con nosotros,{" "}
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-accent hover:text-primary font-medium transition-colors"
+              >
+                consultanos
+              </a>.
             </p>
           </div>
         </section>
