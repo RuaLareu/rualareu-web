@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Footer from "@/components/layout/Footer";
-import { Phone, MessageCircle, Star, Shield, Clock, Award, ChevronDown } from "lucide-react";
+import { Phone, MessageCircle, Star, Shield, Clock, Award, ChevronDown, FileCheck2 } from "lucide-react";
 import { GOOGLE_REVIEWS } from "@/lib/constants";
 
 function GoogleLogo() {
@@ -21,9 +21,9 @@ const PHONE = "+54 9 223-697-2421";
 const PHONE_RAW = "+5492236972421";
 
 export const metadata: Metadata = {
-  title: "Abogado Accidentes de Trabajo Mar del Plata | Reclamos ART | RUA | LAREU",
+  title: "Abogados de Accidentes de Trabajo y ART en Mar del Plata | RUA | LAREU",
   description:
-    "Sufriste un accidente de trabajo? Somos abogados especialistas en reclamos contra ART en Mar del Plata. Consultanos ahora.",
+    "Reclamos ante la ART por accidentes de trabajo y enfermedades profesionales. Honorarios a resultado y primera consulta sin cargo. Mar del Plata.",
   robots: { index: true, follow: true },
   alternates: { canonical: "/landing/accidentes-de-trabajo" },
 };
@@ -136,6 +136,9 @@ export default function AccidentesLanding() {
             <p className="text-white/60 text-lg sm:text-xl leading-relaxed max-w-xl mx-auto mb-4">
               Te ayudamos a cobrar lo que te corresponde.
             </p>
+            <p className="text-white/50 text-xs sm:text-sm mb-8">
+              Honorarios a resultado · Primera consulta sin cargo · Convenio por escrito
+            </p>
             <p className="text-white/85 text-sm sm:text-base mb-10">
               Abogados especialistas en accidentes de trabajo y enfermedades profesionales en Mar del Plata.
             </p>
@@ -203,6 +206,16 @@ export default function AccidentesLanding() {
                   la indemnización que te corresponde según la ley. Nuestro objetivo es que recibas lo justo.
                 </p>
               </div>
+            </div>
+
+            {/* Callout: plazos */}
+            <div className="mt-14 max-w-3xl mx-auto bg-white border-l-2 border-accent px-6 py-5">
+              <h3 className="font-semibold text-primary text-sm mb-2">Los plazos importan</h3>
+              <p className="text-text-secondary text-sm leading-relaxed">
+                La impugnación de un alta médica ante la Comisión Médica tiene un plazo de 21 días hábiles desde la
+                notificación, y la acción por accidente de trabajo prescribe a los 2 años. Cuanto antes consultes,
+                más opciones tenés.
+              </p>
             </div>
           </div>
         </section>
@@ -288,6 +301,49 @@ export default function AccidentesLanding() {
         </section>
 
         {/* ══════════════════════════════════════
+            4.5 HONORARIOS CLAROS
+        ══════════════════════════════════════ */}
+        <section className="py-20 bg-background">
+          <div className="max-w-5xl mx-auto px-6">
+            <h2 className="font-sackers-heavy text-primary text-2xl sm:text-3xl text-center mb-4">
+              Honorarios claros
+            </h2>
+            <div className="w-10 h-px bg-accent mx-auto mb-14" />
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {[
+                {
+                  icon: MessageCircle,
+                  title: "Primera consulta sin cargo",
+                  desc: "Escuchamos tu caso y te decimos con franqueza si conviene reclamar.",
+                },
+                {
+                  icon: Award,
+                  title: "Trabajamos a resultado",
+                  desc: "Nuestros honorarios son un porcentaje de lo que efectivamente cobres. Si el reclamo no prospera, no nos debés honorarios.",
+                },
+                {
+                  icon: FileCheck2,
+                  title: "Sin sorpresas",
+                  desc: "El porcentaje se acuerda al inicio y queda por escrito en un convenio de honorarios.",
+                },
+              ].map((item) => {
+                const Icon = item.icon;
+                return (
+                  <div key={item.title} className="bg-white p-6 border border-primary/15 flex flex-col h-full">
+                    <div className="w-10 h-10 bg-primary-light text-primary flex items-center justify-center mb-4 rounded-full">
+                      <Icon size={18} strokeWidth={1.5} />
+                    </div>
+                    <h3 className="font-semibold text-primary text-sm mb-2 text-balance">{item.title}</h3>
+                    <p className="text-text-secondary text-sm leading-relaxed flex-1">{item.desc}</p>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
+        {/* ══════════════════════════════════════
             5. TESTIMONIOS
         ══════════════════════════════════════ */}
         <section className="py-20 bg-white">
@@ -366,6 +422,10 @@ export default function AccidentesLanding() {
 
             <FAQItem
               defaultOpen
+              question="¿Cuánto cuesta hacer el reclamo?"
+              answer="La primera consulta no tiene cargo. Si decidís avanzar, trabajamos a resultado: cobramos un porcentaje de lo que obtengas, acordado por escrito desde el inicio. No tenés que adelantar dinero en ningún momento."
+            />
+            <FAQItem
               question="¿Cuánto tiempo tengo para reclamar?"
               answer="Los plazos dependen del tipo de reclamo: si es ante la ART, ante Comisiones Médicas o un reclamo judicial. En todos los casos, es importante actuar lo antes posible para preservar la prueba médica y no perder derechos. Contactanos y te orientamos según tu situación particular."
             />
