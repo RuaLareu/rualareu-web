@@ -21,7 +21,7 @@ const PHONE = "+54 9 223-697-2421";
 const PHONE_RAW = "+5492236972421";
 
 export const metadata: Metadata = {
-  title: "Abogado de Sucesiones en Mar del Plata | Trámite Sucesorio | RUA | LAREU",
+  title: { absolute: "Abogados de Sucesiones en Mar del Plata | RUA | LAREU" },
   description:
     "¿Tenés que hacer una sucesión? Iniciamos y llevamos adelante todo el trámite sucesorio en Mar del Plata, hasta la inscripción de los bienes. Consultanos ahora.",
   robots: { index: true, follow: true },
@@ -138,7 +138,7 @@ export default function SucesionesLanding() {
               Te acompañamos en cada paso.
             </p>
             <p className="text-white/85 text-sm sm:text-base mb-10">
-              Abogados de familia en Mar del Plata. Llevamos adelante todo el trámite hasta la inscripción de los bienes a nombre de los herederos.
+              Abogados de familia en Mar del Plata. Llevamos adelante todo el proceso hasta que los bienes queden a nombre de los herederos.
             </p>
 
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 mb-6">
@@ -190,8 +190,8 @@ export default function SucesionesLanding() {
                 </div>
                 <h3 className="font-semibold text-primary text-lg mb-3 text-balance md:min-h-[4rem] flex items-end justify-center">Si hay bienes a transferir</h3>
                 <p className="text-text-secondary text-sm leading-relaxed flex-1">
-                  Inmuebles, cuentas bancarias, vehículos, acciones o cuotas societarias: inscribimos
-                  todos los bienes a nombre de los herederos, con toda la documentación en regla.
+                  Inmuebles, cuentas bancarias, vehículos, acciones o cuotas societarias: gestionamos que
+                  todos los bienes queden a nombre de los herederos, con toda la documentación en regla.
                 </p>
               </div>
               <div className="text-center flex flex-col h-full">
@@ -226,7 +226,7 @@ export default function SucesionesLanding() {
                 "Sucesión sin testamento (ab intestato)",
                 "Sucesión testamentaria",
                 "Declaratoria de herederos",
-                "Inscripción de inmuebles",
+                "Transferencia de inmuebles heredados",
                 "Cuentas bancarias del causante",
                 "Vehículos y bienes muebles",
                 "Acciones y cuotas societarias",
@@ -272,8 +272,8 @@ export default function SucesionesLanding() {
               {[
                 { step: "1", title: "Nos contactás", desc: "Escribinos por WhatsApp o llamanos y te devolvemos el contacto." },
                 { step: "2", title: "Analizamos el caso", desc: "Revisamos la documentación y armamos la estrategia sucesoria." },
-                { step: "3", title: "Iniciamos el trámite", desc: "Presentamos la sucesión y gestionamos la declaratoria de herederos." },
-                { step: "4", title: "Inscribimos los bienes", desc: "Registramos inmuebles, cuentas y demás bienes a nombre de los herederos." },
+                { step: "3", title: "Iniciamos la sucesión", desc: "Presentamos la sucesión y gestionamos la declaratoria de herederos." },
+                { step: "4", title: "Inscribimos los bienes", desc: "Dejamos inmuebles, cuentas y demás bienes a nombre de los herederos, con la documentación en regla." },
               ].map((item) => (
                 <div key={item.step} className="text-center flex flex-col items-center h-full">
                   <div className="w-12 h-12 bg-accent text-white flex items-center justify-center mx-auto mb-4 rounded-full font-bold text-lg">
@@ -395,7 +395,7 @@ export default function SucesionesLanding() {
               <span className="text-white/70">Un equipo que te acompaña.</span>
             </h2>
             <p className="text-white/50 text-base mb-10">
-              Consultanos y nos encargamos del trámite completo, con seguimiento en cada etapa.
+              Consultanos y nos encargamos de todo el proceso, con seguimiento en cada etapa.
             </p>
 
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 mb-8">
