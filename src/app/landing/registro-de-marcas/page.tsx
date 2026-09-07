@@ -14,9 +14,9 @@ const PHONE = "+54 9 223-697-2421";
 const PHONE_RAW = "+5492236972421";
 
 export const metadata: Metadata = {
-  title: "Registro de Marcas Mar del Plata | INPI | Protegé tu Negocio | RUA | LAREU",
+  title: { absolute: "Abogados de Marcas en Mar del Plata | RUA | LAREU" },
   description:
-    "Registro de marcas ante INPI en Mar del Plata. Búsqueda de antecedentes, solicitud, oposiciones y renovación. Protegé tu negocio. Consultanos ahora.",
+    "Estudio de abogados en Mar del Plata especializado en marcas. Asesoramiento integral en propiedad intelectual, búsqueda de antecedentes y defensa ante oposiciones.",
   robots: { index: true, follow: true },
   alternates: { canonical: "/landing/registro-de-marcas" },
 };
@@ -25,7 +25,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "LegalService",
   name: "RUA | LAREU - Registro de Marcas",
-  description: "Registro de marcas ante INPI. Asesoramiento en propiedad intelectual en Mar del Plata.",
+  description: "Estudio jurídico en Mar del Plata especializado en propiedad intelectual y protección de marcas. Asesoramiento integral, búsqueda de antecedentes y defensa ante oposiciones.",
   url: "https://rualareu.com/landing/registro-de-marcas",
   telephone: "+54-9-223-697-2421",
   address: {
@@ -123,10 +123,10 @@ export default function RegistroMarcasLanding() {
             <h1 className="text-white text-3xl sm:text-4xl lg:text-4xl xl:text-5xl font-bold leading-tight mb-6">
               Protegé tu marca.
               <br />
-              <span className="text-white/70">Registrala antes de que otro lo haga.</span>
+              <span className="text-white/70">Protegela antes de que otro la use.</span>
             </h1>
             <p className="text-white/55 text-base sm:text-lg leading-relaxed max-w-lg mx-auto mb-10">
-              Registro de marcas ante INPI. Trámite rápido y asesoramiento integral desde Mar del Plata.
+              Abogados especialistas en marcas. Asesoramiento integral y protección legal desde Mar del Plata.
             </p>
 
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 mb-6">
@@ -157,7 +157,7 @@ export default function RegistroMarcasLanding() {
         <section className="py-20 bg-background">
           <div className="max-w-3xl mx-auto px-6">
             <h2 className="font-sackers-heavy text-primary text-2xl sm:text-3xl text-center mb-4">
-              ¿Qué es una marca y por qué registrarla?
+              ¿Qué es una marca y por qué protegerla?
             </h2>
             <div className="w-10 h-px bg-accent mx-auto mb-10" />
 
@@ -168,11 +168,11 @@ export default function RegistroMarcasLanding() {
                 valiosos de cualquier emprendimiento o empresa.
               </p>
               <p>
-                Registrarla ante el <strong className="text-primary">INPI</strong> (Instituto Nacional
-                de la Propiedad Industrial) te otorga el <strong className="text-primary">derecho
+                El registro ante el <strong className="text-primary">INPI</strong> (Instituto Nacional
+                de la Propiedad Industrial) otorga el <strong className="text-primary">derecho
                 exclusivo de uso</strong> en todo el territorio argentino por <strong className="text-primary">10
-                años renovables</strong>. Sin registro, cualquier tercero podría usar un nombre igual
-                o similar — e incluso registrarlo antes que vos.
+                años renovables</strong>. Sin ese registro, cualquier tercero podría usar un nombre igual
+                o similar — e incluso adelantársete.
               </p>
             </div>
 
@@ -200,7 +200,7 @@ export default function RegistroMarcasLanding() {
         <section className="py-20 bg-white">
           <div className="max-w-4xl mx-auto px-6">
             <h2 className="font-sackers-heavy text-primary text-2xl sm:text-3xl text-center mb-4">
-              Proceso de registro
+              Cómo trabajamos
             </h2>
             <div className="w-10 h-px bg-accent mx-auto mb-14" />
 
@@ -213,8 +213,8 @@ export default function RegistroMarcasLanding() {
                 },
                 {
                   step: "2", icon: FileText,
-                  title: "Solicitud de registro",
-                  desc: "Presentamos la solicitud ante el INPI, eligiendo las clases de Niza que correspondan a tu actividad.",
+                  title: "Estrategia de protección",
+                  desc: "Definimos las clases de Niza correctas y preparamos la presentación con criterio legal.",
                 },
                 {
                   step: "3", icon: Layers,
@@ -236,6 +236,11 @@ export default function RegistroMarcasLanding() {
                 </div>
               ))}
             </div>
+
+            <p className="text-text-secondary/60 text-xs text-center max-w-2xl mx-auto mt-12 leading-relaxed">
+              RUA | LAREU es un estudio jurídico contable independiente. No estamos afiliados al INPI ni a
+              ningún organismo estatal.
+            </p>
           </div>
         </section>
 
@@ -245,7 +250,7 @@ export default function RegistroMarcasLanding() {
         <section className="py-20 bg-background">
           <div className="max-w-4xl mx-auto px-6">
             <h2 className="font-sackers-heavy text-primary text-2xl sm:text-3xl text-center mb-4">
-              ¿Qué podemos registrar?
+              ¿Qué tipos de marca existen?
             </h2>
             <div className="w-10 h-px bg-accent mx-auto mb-14" />
 
@@ -378,7 +383,7 @@ export default function RegistroMarcasLanding() {
             <FAQItem
               defaultOpen
               question="¿Cuánto cuesta registrar una marca?"
-              answer="El costo incluye la tasa oficial del INPI (que se paga por clase) y los honorarios profesionales por la búsqueda de antecedentes, la presentación y el seguimiento del trámite. Te damos un presupuesto cerrado antes de empezar para que sepas exactamente cuánto vas a invertir."
+              answer="El costo incluye la tasa oficial del INPI (que se paga por clase) y los honorarios profesionales por la búsqueda de antecedentes, la presentación y el seguimiento del proceso. Te damos un presupuesto cerrado antes de empezar para que sepas exactamente cuánto vas a invertir."
             />
             <FAQItem
               question="¿Cuánto tiempo tarda el registro?"
@@ -410,7 +415,7 @@ export default function RegistroMarcasLanding() {
               <span className="text-white/70">Protegela.</span>
             </h2>
             <p className="text-white/50 text-base mb-10">
-              Consultanos y te damos un presupuesto cerrado para registrar tu marca.
+              Consultanos y te damos un presupuesto cerrado para proteger tu marca.
             </p>
 
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 mb-8">

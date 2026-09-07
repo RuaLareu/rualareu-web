@@ -23,7 +23,7 @@ const PHONE_RAW = "+5492236972421";
 export const metadata: Metadata = {
   title: { absolute: "Abogados de Sucesiones en Mar del Plata | RUA | LAREU" },
   description:
-    "¿Tenés que hacer una sucesión? Iniciamos y llevamos adelante todo el trámite sucesorio en Mar del Plata, hasta la inscripción de los bienes. Consultanos ahora.",
+    "¿Tenés que hacer una sucesión? Abogados de familia en Mar del Plata. Te acompañamos en todo el proceso sucesorio, hasta que los bienes queden a nombre de los herederos.",
   robots: { index: true, follow: true },
   alternates: { canonical: "/landing/sucesiones" },
 };
@@ -33,7 +33,7 @@ const jsonLd = {
   "@type": "LegalService",
   name: "RUA | LAREU - Abogados de Sucesiones",
   description:
-    "Abogados de sucesiones en Mar del Plata. Trámite sucesorio, declaratoria de herederos, inscripción de bienes y resolución de conflictos entre herederos.",
+    "Abogados de familia en Mar del Plata especializados en sucesiones. Asesoramiento en declaratoria de herederos, distribución de bienes y resolución de conflictos entre herederos.",
   url: "https://rualareu.com/landing/sucesiones",
   telephone: "+54-9-223-697-2421",
   address: {
