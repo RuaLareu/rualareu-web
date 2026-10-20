@@ -1,0 +1,172 @@
+---
+title: "Emitiste mal una factura: cómo se corrige con nota de crédito o nota de débito (y qué NO hay que hacer)"
+date: "2026-08-17"
+category: "Impositivo"
+excerpt: "Pusiste el CUIT equivocado, cargaste 150.000 en lugar de 15.000 o emitiste dos veces el mismo comprobante. Es de las cosas más habituales que nos consultan, y también de las que más se resuelven mal: la factura electrónica no se borra ni se rompe. Se corrige con otro comprobante. Te explicamos cuál corresponde en cada caso, cómo se hace y qué pasa con el IVA."
+author: "Francisco Lareu"
+tags: ["Impositivo", "Facturación", "Nota de crédito", "Nota de débito", "ARCA", "IVA", "Monotributo", "PyMEs", "Emprendedores"]
+---
+
+## Lo que tenés que saber (resumen rápido)
+
+- **Una factura electrónica no se anula ni se borra.** Una vez que ARCA le dio el CAE, ese comprobante existe. Lo que se hace es neutralizarlo o ajustarlo con otro comprobante.
+- Si facturaste **de más, por error, o duplicado**, el comprobante correcto es la **nota de crédito**. Si facturaste **de menos**, corresponde una **nota de débito**.
+- La nota tiene que ser de **la misma letra** que la factura original (A con A, B con B, C con C) y hay que **asociarla al comprobante que corrige**.
+- **La numeración es correlativa y no se saltea.** Emitir "una factura de más" y dejarla sin corregir es peor que corregirla: queda declarada.
+- El ajuste **impacta en el período en que emitís la nota**, no en el de la factura original. Por eso conviene detectar el error antes del cierre del mes.
+
+---
+
+## El problema: la factura ya salió y no hay botón de "deshacer"
+
+Casi todos los que facturan pasaron por esto. Estabas apurado, cargaste el comprobante y recién después te diste cuenta: el CUIT era el de otro cliente, el importe tenía un cero de más, la fecha estaba mal, o directamente emitiste dos veces la misma operación porque la primera parecía haber fallado.
+
+El primer impulso es buscar la forma de borrarla. No existe. El sistema de ARCA no tiene una opción de "eliminar comprobante", y no es un olvido de diseño: la factura electrónica se autoriza en el momento con un **CAE** (Código de Autorización Electrónico), y ese número queda registrado del lado de ARCA. Desde ese instante, el comprobante integra tu numeración y tus declaraciones juradas.
+
+El segundo impulso —más peligroso— es no hacer nada y "arreglarlo el mes que viene". El problema es que esa factura, mientras tanto, ya generó débito fiscal si sos responsable inscripto, o ya sumó a tus ingresos brutos facturados si sos monotributista. No corregirla no la hace desaparecer: la deja acumulando efectos.
+
+La buena noticia es que la solución es simple y está prevista en la normativa. Solo hay que usar el comprobante correcto.
+
+---
+
+## Nota de crédito o nota de débito: cuál va en cada caso
+
+Las notas de crédito y de débito son **comprobantes de ajuste**. No reemplazan a la factura: la modifican. Y la lógica es siempre la misma: se miran desde el lado de quien emitió la factura.
+
+| Situación | Comprobante que corresponde | Por qué |
+|---|---|---|
+| Facturaste de más (importe equivocado hacia arriba) | **Nota de crédito** por la diferencia | Le estás "devolviendo" plata al cliente |
+| Facturaste el comprobante completo por error o duplicado | **Nota de crédito** por el total | Neutraliza toda la factura |
+| El cliente devolvió la mercadería | **Nota de crédito** | Se revierte la venta, total o parcialmente |
+| Le hiciste un descuento posterior a la factura | **Nota de crédito** | Reduce el precio ya facturado |
+| Facturaste de menos | **Nota de débito** por la diferencia | Le estás cobrando un adicional |
+| Cobrás intereses por mora, gastos de envío o ajustes a tu favor | **Nota de débito** | Incrementa lo facturado |
+| Pusiste mal el CUIT o los datos del cliente | **Nota de crédito** por el total + factura nueva correcta | El comprobante está emitido a otro sujeto: no se "edita" |
+
+La regla mental más útil: **la nota de crédito baja, la nota de débito sube**. Siempre desde la perspectiva de quien vende.
+
+### El caso más frecuente: datos del cliente mal cargados
+
+Este merece un párrafo aparte porque genera confusión. Si emitiste una factura A a nombre de un CUIT que no es el del cliente real, no alcanza con "avisarle". Ese comprobante quedó emitido a un tercero, que teóricamente podría computarse el crédito fiscal.
+
+Lo correcto es: **nota de crédito por el total**, asociada a la factura errónea y emitida al mismo CUIT que figuraba en ella, y después **una factura nueva** con los datos correctos. No se corrige "de palabra".
+
+---
+
+## Cómo se emite, paso a paso
+
+Si facturás desde el servicio **Comprobantes en Línea** de ARCA con clave fiscal, el circuito es este:
+
+1. Entrás a **Comprobantes en Línea** y seleccionás el punto de venta y el tipo de comprobante: *Nota de Crédito* (o *Nota de Débito*) de la letra que corresponda.
+2. Cargás los datos del receptor. Tienen que ser **los mismos** que figuran en la factura que estás corrigiendo.
+3. En el campo de **comprobantes asociados**, indicás tipo, punto de venta y número de la factura original. Este paso no es opcional: es lo que vincula el ajuste con el comprobante corregido.
+4. Cargás el detalle. Si es una anulación total, replicás los conceptos e importes de la factura original. Si es parcial, solo la diferencia.
+5. Confirmás. ARCA te devuelve el CAE de la nota.
+6. Le enviás la nota al cliente. **Esto también es parte del trámite**: el comprobante de ajuste tiene que llegar a la otra parte, igual que la factura.
+
+Si facturás desde un sistema de gestión propio o desde una plataforma de terceros, el circuito es equivalente, pero conviene verificar que el sistema esté cargando correctamente el bloque de comprobantes asociados. Es el error técnico más común en integraciones.
+
+### Detalles que se pasan por alto
+
+- **La letra tiene que coincidir.** Una factura A se corrige con una nota de crédito A. Si emitís una B para corregir una A, el ajuste no cierra ni para vos ni para el cliente.
+- **Usá el mismo punto de venta.** No es imprescindible en todos los casos, pero simplifica muchísimo la trazabilidad y evita observaciones.
+- **La fecha de la nota es la de emisión real**, no la de la factura original. No se puede "retrofechar" un comprobante.
+- **No existe la nota de crédito sin comprobante asociado** para corregir un error puntual. Si tu sistema te deja emitirla suelta, igual cargá la referencia: es lo que después justifica el ajuste ante una fiscalización.
+
+---
+
+## Qué pasa con el IVA (si sos responsable inscripto)
+
+Acá está la parte que más consultas genera y que conviene entender bien.
+
+Cuando emitís una factura A, el IVA que discriminaste es **débito fiscal**: se lo debés al fisco. Cuando emitís la nota de crédito que la corrige, ese IVA vuelve para atrás. La Ley de IVA (Ley 23.349, artículo 12) permite computar como **crédito fiscal** el impuesto correspondiente a devoluciones, rescisiones, descuentos, bonificaciones o quitas que se otorguen sobre operaciones ya facturadas.
+
+En criollo: la nota de crédito te devuelve el IVA que habías declarado de más.
+
+Del otro lado ocurre lo simétrico. El cliente que se había computado el crédito fiscal de tu factura, al recibir la nota de crédito tiene que **revertir ese crédito**. Por eso el comprobante hay que mandárselo: si no lo recibe, se computa un crédito que ya no le corresponde.
+
+**El punto clave es temporal.** El ajuste se imputa al período fiscal en el que emitís la nota, no al de la factura original. Si detectás el error dentro del mismo mes, todo se neutraliza en la misma declaración jurada y no pasa nada. Si lo detectás tres meses después, la factura ya se declaró y el ajuste va a impactar en el mes de la nota. No es un problema, pero sí una diferencia entre lo declarado y lo realmente vendido en cada período, que hay que poder explicar.
+
+Si querés repasar cómo funciona el mecanismo de débito y crédito fiscal, lo desarrollamos en [IVA para responsables inscriptos: débito y crédito fiscal explicado simple](/blog/iva-responsable-inscripto-debito-credito-fiscal-guia-simple).
+
+---
+
+## Y si sos monotributista, ¿esto te afecta?
+
+Sí, aunque el efecto es distinto: no hay IVA que ajustar, pero sí **ingresos brutos facturados**, que es el parámetro principal de tu categoría.
+
+Una factura emitida por error e inflada te sube artificialmente los ingresos acumulados de los últimos 12 meses. Y ese acumulado es exactamente lo que se mira en la [recategorización semestral](/blog/recategorizacion-monotributo-agosto-2026) y lo que puede empujarte a una categoría que no te corresponde —o, en casos extremos, a una [exclusión de oficio](/blog/exclusion-monotributo-arca-causales-como-defenderse).
+
+Por eso, para un monotributista, emitir la nota de crédito no es un trámite formal: es lo que mantiene tu escala real. Y conviene hacerlo **antes** de cada corte semestral, no después.
+
+---
+
+## Errores que vemos seguido (y que salen caro)
+
+**1. "Salteé el número y listo."**
+La numeración de comprobantes es correlativa. No emitir la factura siguiente, o intentar "reservar" el número, genera un salto que después hay que explicar. Si el comprobante salió mal, se corrige; no se esconde.
+
+**2. Emitir una factura negativa.**
+No existe. Una factura con importes en negativo no es un comprobante válido. El ajuste hacia abajo se hace exclusivamente con nota de crédito.
+
+**3. Corregir con un remito o un recibo.**
+El remito documenta traslado de mercadería y el recibo documenta cobranza. Ninguno de los dos modifica una factura.
+
+**4. Emitir la nota de crédito y no entregarla.**
+Si el cliente no la recibe, no la registra. Y si no la registra, sigue computando un crédito fiscal que ya no existe. Ese desfasaje aparece en los cruces de información de ARCA.
+
+**5. Dejar la factura mal emitida "para que la vea el contador a fin de año".**
+Diez meses después, el ajuste sigue siendo posible, pero ya arrastró efectos en IVA, en Ingresos Brutos y —según el caso— en retenciones y percepciones. Corregir a tiempo es gratis; corregir tarde cuesta tiempo profesional.
+
+**6. No guardar la documentación de respaldo.**
+Una nota de crédito por devolución de mercadería debería tener detrás un remito de devolución, un mail del cliente, algo. Ante una fiscalización, la nota sola no explica nada. Sobre cómo prepararse para eso, escribimos [qué hacer ante una inspección de ARCA](/blog/inspeccion-arca-fiscalizacion-que-hacer).
+
+---
+
+## Checklist para corregir bien un comprobante
+
+- [ ] Identifiqué exactamente qué está mal (importe, datos del receptor, duplicación, concepto).
+- [ ] Definí si corresponde nota de crédito (baja) o nota de débito (sube).
+- [ ] Verifiqué que la letra de la nota coincida con la de la factura original.
+- [ ] Cargué el comprobante asociado: tipo, punto de venta y número.
+- [ ] Usé los mismos datos de receptor que la factura corregida.
+- [ ] Obtuve el CAE de la nota.
+- [ ] Se la envié al cliente y tengo constancia del envío.
+- [ ] Si hacía falta, emití la factura nueva correcta.
+- [ ] Archivé el respaldo documental del ajuste.
+- [ ] Avisé a quien liquida los impuestos, para que el ajuste se refleje en la declaración jurada del período.
+
+---
+
+## Preguntas que nos hacen seguido
+
+**¿Hay un plazo máximo para emitir la nota de crédito?**
+La normativa no fija un plazo perentorio para el ajuste. En la práctica, cuanto antes, mejor: el impacto impositivo se simplifica muchísimo si el ajuste cae en el mismo período fiscal que la factura.
+
+**¿Puedo anular una factura con nota de crédito si el cliente ya pagó?**
+Podés emitir la nota, pero entonces estás documentando una devolución o un descuento, no un error de emisión. La realidad económica y el comprobante tienen que coincidir. Si el cliente pagó y la operación existió, no corresponde neutralizarla.
+
+**¿Y si me equivoqué en la nota de crédito?**
+Se corrige con una nota de débito asociada a la nota de crédito. El sistema lo permite. Sí: quedan tres comprobantes encadenados, y por eso conviene revisar antes de confirmar.
+
+**¿La nota de crédito me borra el número de la factura?**
+No. La factura sigue existiendo, con su CAE y su número. Lo que hace la nota es dejarla sin efecto económico.
+
+**¿Esto vale igual para facturas M o de crédito electrónica MiPyME?**
+El principio general es el mismo, pero la **Factura de Crédito Electrónica MiPyME** tiene un circuito propio de aceptación, rechazo y anulación con plazos específicos. Lo explicamos en [Factura de Crédito Electrónica MiPyME: cuándo emitirla y cómo cobrarla](/blog/factura-credito-electronica-mipyme-cuando-emitir-como-cobrar).
+
+---
+
+## Conclusión
+
+Corregir una factura mal emitida no es complicado. Lo complicado es lo otro: dejarla sin corregir, saltear numeración, o inventar soluciones caseras que después no se pueden explicar ante una fiscalización.
+
+El circuito es siempre el mismo. **Identificar el error, elegir el comprobante de ajuste correcto, asociarlo a la factura original, entregárselo al cliente y guardar el respaldo.** Cinco pasos que llevan diez minutos si se hacen a tiempo.
+
+Y si venís arrastrando comprobantes mal emitidos de meses anteriores, no hay que entrar en pánico: casi siempre se puede regularizar. Pero conviene ordenar primero la documentación y recién después tocar el sistema.
+
+**¿Tenés comprobantes mal emitidos o dudas sobre cómo ajustarlos?** En el estudio hacemos [asesoramiento impositivo](/servicios/asesoramiento-impositivo) y revisamos el circuito de facturación completo, para que el error no se repita. También acompañamos la parte de [auditoría y contabilidad](/servicios/auditoria-contabilidad) cuando hay que reconstruir varios períodos. [Consultanos por WhatsApp](https://wa.me/5492235790012?text=Hola%2C%20quisiera%20realizar%20una%20consulta.)
+
+---
+
+*Este artículo tiene fines informativos y no reemplaza el asesoramiento profesional para un caso concreto. Los procedimientos y servicios de ARCA pueden modificarse: verificá los vigentes al momento de emitir el comprobante.*

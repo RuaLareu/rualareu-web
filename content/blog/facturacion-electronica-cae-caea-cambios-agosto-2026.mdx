@@ -1,0 +1,153 @@
+---
+title: "CAE, CAEA y el cambio que rige desde agosto de 2026: qué tenés que revisar en tu sistema de facturación"
+date: "2026-08-17"
+category: "Impositivo"
+excerpt: "Desde el 1° de agosto de 2026 ARCA dejó firme un cambio que veníamos siguiendo desde el año pasado: el CAE en línea pasa a ser la forma normal de autorizar comprobantes y el CAEA queda reservado únicamente para contingencias. Si tenés un sistema de gestión propio o facturás con software de terceros, esto te toca. Te contamos qué cambió, a quién afecta y qué revisar antes de que se te caiga la facturación un día de mucha venta."
+author: "Francisco Lareu"
+tags: ["Impositivo", "Facturación electrónica", "CAE", "CAEA", "ARCA", "IVA", "PyMEs", "RG 5852/2026"]
+---
+
+## Lo que tenés que saber (resumen rápido)
+
+- Desde el **1° de agosto de 2026** rige plenamente el nuevo esquema: el **CAE** —la autorización en línea, comprobante por comprobante— es la modalidad **principal y general** para los responsables inscriptos en IVA.
+- El **CAEA** deja de ser una alternativa de uso habitual y queda como **modalidad de contingencia**: para cuando no podés conectarte con ARCA.
+- El cambio venía de la **RG 5782/2025** y su entrada en vigencia fue postergada por la **RG 5852/2026**, que corrió la fecha del 1° de junio al 1° de agosto de 2026.
+- Si facturás con **Comprobantes en Línea** o con el Facturador Móvil de ARCA, no tenés que hacer nada: ya estabas usando CAE.
+- Si tenés **sistema de gestión propio, ERP o software de terceros conectado por webservice**, sí hay que revisar la configuración. Es el grupo con riesgo real de quedar sin poder facturar.
+
+---
+
+## El problema: la mayoría no sabe con qué código está facturando
+
+Cuando emitís una factura electrónica, ARCA te devuelve un código de autorización. Ese código es lo que convierte al comprobante en válido. Sin él, lo que imprimiste es un papel sin valor fiscal.
+
+Lo que casi nadie mira es **cuál** de los dos códigos usa su sistema. Y hasta ahora daba bastante lo mismo, porque los dos eran válidos para operar. Desde agosto de 2026 dejó de dar lo mismo.
+
+La diferencia importa especialmente si tenés un comercio con mucho movimiento, un sistema de punto de venta, o una integración armada hace años que nadie volvió a tocar. Son justamente los casos donde el CAEA se usaba por comodidad —porque no dependía de la conexión— y donde el cambio puede aparecer de la peor forma: un sábado a la tarde, con gente en el mostrador.
+
+---
+
+## CAE y CAEA: la diferencia en criollo
+
+| | **CAE** | **CAEA** |
+|---|---|---|
+| Qué es | Código de Autorización Electrónico | Código de Autorización Electrónico **Anticipado** |
+| Cuándo se pide | En el momento, comprobante por comprobante | Por adelantado, por bloques de días |
+| Requiere conexión | Sí, en tiempo real | No al momento de emitir |
+| Qué informa a ARCA | Cada comprobante, al instante | Los comprobantes emitidos se informan después |
+| Situación a partir de agosto 2026 | **Modalidad principal y general** | **Solo contingencia** |
+
+El **CAE** funciona como una autorización en vivo: tu sistema le pregunta a ARCA, ARCA responde con el código y recién ahí la factura queda emitida. Es más control y más trazabilidad, pero depende de que haya conexión.
+
+El **CAEA** es lo contrario: pedís por adelantado un código que te habilita a emitir durante un período, y después informás lo emitido. Nació para resolver situaciones donde la conexión no estaba garantizada —el clásico ejemplo del comercio en una zona sin buena señal, o de sistemas que facturan miles de comprobantes por hora.
+
+El problema, desde el punto de vista de ARCA, es que muchos contribuyentes lo terminaron usando como modalidad permanente. Y con eso el fisco perdía la información en tiempo real que es toda la lógica del sistema.
+
+---
+
+## Qué cambió concretamente
+
+La **RG 5782/2025** estableció que el CAE pasa a ser el mecanismo general de autorización para los responsables inscriptos en IVA y que el CAEA queda limitado a situaciones de contingencia. La **RG 5852/2026** postergó dos meses esa entrada en vigencia, que estaba prevista originalmente para el 1° de junio de 2026, y la llevó al **1° de agosto de 2026**.
+
+Los tres puntos prácticos del cambio:
+
+**1. El CAE es la regla, no una opción.**
+Un responsable inscripto en IVA tiene que emitir con CAE en línea. Facturar habitualmente con CAEA, teniendo conectividad, deja de estar amparado.
+
+**2. El CAEA queda para cuando no podés conectarte.**
+Caída del sistema de ARCA, corte de conectividad, imposibilidad técnica de obtener el CAE. Es un recurso de emergencia, y como tal hay que tenerlo disponible **antes** de necesitarlo.
+
+**3. Se simplificó el acceso al CAEA como contingencia.**
+Uno de los cambios positivos: ya no hace falta tramitar una adhesión especial para poder usar el CAEA como modalidad complementaria de contingencia. Eso baja la fricción justo donde antes era más molesta.
+
+En paralelo, ARCA ajustó el cronograma para **entidades financieras y compañías de seguros** mediante la **RG 5866/2026**, que reemplazó a la RG 5824 y estableció un esquema escalonado para ese sector, después de que plantearan dificultades técnicas de adaptación.
+
+---
+
+## ¿A quién afecta de verdad?
+
+Esta es la pregunta que más nos hacen, y la respuesta es bastante tranquilizadora para la mayoría.
+
+**No te afecta en el día a día si:**
+
+- Sos **monotributista** y facturás desde Comprobantes en Línea, el Portal IVA o el Facturador Móvil. Esas herramientas ya emiten con CAE.
+- Sos responsable inscripto y facturás desde los servicios web de ARCA con clave fiscal. Mismo caso.
+- Usás un software de facturación en la nube que ya trabaja con CAE en línea (que es lo habitual en los productos actualizados).
+
+**Sí tenés que revisarlo si:**
+
+- Tenés un **ERP o sistema de gestión propio** que se conecta a ARCA por webservice, especialmente si la integración se armó hace varios años.
+- Tu punto de venta está configurado para operar con CAEA de forma habitual (es común en gastronomía, retail y estaciones de servicio).
+- Emitís **grandes volúmenes** de comprobantes y en algún momento se decidió usar CAEA "para no depender de la conexión".
+- Trabajás con un proveedor de software que no te informó nada sobre este cambio. En ese caso, preguntá directamente.
+
+---
+
+## Checklist de revisión antes de que se convierta en un problema
+
+- [ ] **Averiguá con qué código emitís hoy.** Está en el comprobante: la leyenda dice "CAE N°" o "CAEA N°". Mirá una factura de esta semana.
+- [ ] **Preguntale a tu proveedor de software** si su sistema ya opera con CAE como modalidad principal y si actualizó la integración.
+- [ ] **Verificá que tus certificados digitales estén vigentes.** El webservice de facturación electrónica usa certificado y clave privada asociados a la clave fiscal. Un certificado vencido corta la facturación de un día para el otro, sin aviso previo.
+- [ ] **Revisá que los puntos de venta estén correctamente habilitados** y asociados a la modalidad correcta en el Administrador de Relaciones.
+- [ ] **Definí tu plan de contingencia.** Si se cae la conexión, ¿qué hacés? Tener el circuito de CAEA identificado, y a alguien que sepa activarlo, no es burocracia: es lo que evita cerrar la caja.
+- [ ] **Probá el circuito de contingencia antes de necesitarlo.** Una vez. En un día tranquilo.
+- [ ] **Documentá quién es el responsable interno** de la facturación electrónica. En muchas PyMEs, esa persona es "el que armó el sistema hace seis años" y ya no trabaja ahí.
+
+---
+
+## Qué pasa si no lo revisás
+
+Dos escenarios, y ninguno es teórico.
+
+**El escenario operativo:** un día tu sistema intenta emitir y no puede. No es una multa, es algo más inmediato: no podés facturar. Y si no podés facturar, en muchos rubros directamente no podés vender. Este es, de lejos, el riesgo más concreto para una PyME.
+
+**El escenario sancionatorio:** la Ley 11.683 de Procedimiento Tributario prevé multas por incumplimientos formales (artículo 39) y, más grave, **clausura del establecimiento** cuando no se emiten o no se entregan facturas o comprobantes en las formas y condiciones que exige el fisco (artículo 40). Emitir un comprobante que no cumple con el régimen vigente entra en ese terreno.
+
+No es que ARCA vaya a clausurar comercios por un CAEA la semana que viene. Pero sí es el marco normativo que respalda el cambio, y conviene conocerlo.
+
+---
+
+## Cómo se conecta esto con el resto de tus obligaciones
+
+Este cambio no es aislado. Va en la misma dirección que todo lo que viene haciendo ARCA: **información en tiempo real y trazabilidad completa de los comprobantes**.
+
+En los últimos meses vimos varias piezas del mismo rompecabezas: el régimen de la [Factura de Crédito Electrónica MiPyME](/blog/factura-credito-electronica-mipyme-cuando-emitir-como-cobrar), los cruces con la [base APOC de facturas apócrifas](/blog/facturas-apocrifas-base-apoc-arca-proveedores), los [regímenes de información sobre transferencias y billeteras virtuales](/blog/arca-transferencias-billeteras-virtuales-montos-2026) y el control creciente sobre las [ventas por plataformas de e-commerce](/blog/vender-online-impuestos-ecommerce-plataformas-2026).
+
+La conclusión práctica es la misma en todos los casos: lo que facturás, ARCA lo ve. Y lo ve cada vez más rápido. Un circuito de facturación desprolijo no es solo un riesgo formal: es lo que después genera diferencias en las declaraciones juradas, observaciones en las fiscalizaciones y problemas para justificar el crédito fiscal de tus clientes.
+
+Si venís de una emisión de comprobantes desordenada, vale la pena repasar también [cómo se corrige una factura mal emitida con nota de crédito o débito](/blog/nota-de-credito-y-debito-como-corregir-una-factura-mal-emitida).
+
+---
+
+## Preguntas que nos hacen seguido
+
+**Soy monotributista y facturo desde el celular. ¿Tengo que hacer algo?**
+No. El Facturador Móvil y Comprobantes en Línea emiten con CAE. El cambio apunta al universo de responsables inscriptos con sistemas propios.
+
+**¿El CAEA se elimina?**
+No. Sigue existiendo, pero como recurso de contingencia. La diferencia es que deja de ser una modalidad de uso habitual.
+
+**¿Puedo seguir usando CAEA si mi zona tiene mala conexión?**
+El régimen contempla las situaciones de contingencia, y la falta de conectividad es una de ellas. Pero contingencia significa excepción, no rutina. Si tu operación depende estructuralmente del CAEA, conviene analizar el caso con tu contador antes de asumir que estás cubierto.
+
+**Mi sistema lo maneja un proveedor externo. ¿Igual soy responsable?**
+Sí. La responsabilidad por la emisión de comprobantes es del contribuyente, no del proveedor de software. Podés reclamarle a tu proveedor, pero la multa o la clausura te llegan a vos.
+
+**¿Cómo sé si mis certificados digitales están por vencer?**
+Se consulta desde el Administrador de Certificados Digitales con clave fiscal. Es una revisión de cinco minutos que conviene agendar una vez al año.
+
+---
+
+## Conclusión
+
+Este no es de los cambios normativos que obligan a rehacer todo. Para la enorme mayoría de los monotributistas y de quienes facturan desde los servicios de ARCA, no cambia nada.
+
+Pero para el grupo que tiene sistemas propios o integraciones antiguas, es una revisión que **conviene hacer ahora y no el día que se corta la facturación**. Media hora con tu proveedor de software y una mirada a una factura reciente alcanzan para saber si estás en regla.
+
+Y si de paso aprovechás para revisar certificados, puntos de venta y plan de contingencia, mejor: son las tres cosas que en general nadie mira hasta que fallan.
+
+**¿Querés que revisemos tu circuito de facturación?** En el estudio hacemos [asesoramiento impositivo](/servicios/asesoramiento-impositivo) y acompañamos a PyMEs en la revisión de sus sistemas de emisión y en la parte de [auditoría y contabilidad](/servicios/auditoria-contabilidad). [Consultanos por WhatsApp](https://wa.me/5492235790012?text=Hola%2C%20quisiera%20realizar%20una%20consulta.)
+
+---
+
+*Este artículo tiene fines informativos y no reemplaza el asesoramiento profesional para un caso concreto. Las resoluciones generales de ARCA pueden ser modificadas o prorrogadas: verificá el texto vigente y las fechas aplicables a tu actividad antes de tomar decisiones sobre tu sistema de facturación.*
