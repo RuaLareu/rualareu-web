@@ -190,7 +190,7 @@ export default function DivorcioLanding() {
                 </div>
                 <h3 className="font-semibold text-primary text-lg mb-3 text-balance md:min-h-[4rem] flex items-end justify-center">Divorcio sin acuerdo del cónyuge</h3>
                 <p className="text-text-secondary text-sm leading-relaxed flex-1">
-                  No necesitás el consentimiento del otro cónyuge para divorciarte. Iniciamos el trámite igual
+                  No necesitás el consentimiento del otro cónyuge para divorciarte. Iniciamos el divorcio igual
                   y gestionamos todos los efectos: alimentos, cuidado de los hijos y división de bienes.
                 </p>
               </div>
@@ -273,7 +273,7 @@ export default function DivorcioLanding() {
               {[
                 { step: "1", title: "Nos contactás", desc: "Escribinos por WhatsApp o llamanos para una consulta inicial." },
                 { step: "2", title: "Armamos tu propuesta", desc: "Te asesoramos sobre hijos, alimentos y bienes, y redactamos la propuesta reguladora." },
-                { step: "3", title: "Presentamos el divorcio", desc: "Gestionamos todo el trámite judicial. En general no necesitás ir a audiencias." },
+                { step: "3", title: "Presentamos el divorcio", desc: "Llevamos adelante todo el proceso judicial. En general no necesitás ir a audiencias." },
                 { step: "4", title: "Obtenés la sentencia", desc: "Quedás legalmente divorciado/a y con tus acuerdos homologados." },
               ].map((item) => (
                 <div key={item.step} className="text-center flex flex-col items-center h-full">
@@ -393,7 +393,7 @@ export default function DivorcioLanding() {
             <h2 className="text-white text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight mb-4">
               Empezá tu nueva etapa.
               <br />
-              <span className="text-white/70">Nosotros nos ocupamos del trámite.</span>
+              <span className="text-white/70">Nosotros nos ocupamos de todo.</span>
             </h2>
             <p className="text-white/50 text-base mb-10">
               Atención confidencial y personalizada.
