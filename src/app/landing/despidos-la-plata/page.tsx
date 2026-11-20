@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Image from "next/image";
 import Footer from "@/components/layout/Footer";
 import { Phone, MessageCircle, Star, Scale, UserX, AlertTriangle, FileWarning, ChevronDown } from "lucide-react";
@@ -16,9 +16,9 @@ function GoogleLogo() {
 }
 
 const WHATSAPP_URL =
-  "https://wa.me/5492236972421?text=Hola%2C%20soy%20de%20La%20Plata.%20Me%20despidieron%20y%20quisiera%20asesorarme.";
-const PHONE = "+54 9 223-697-2421";
-const PHONE_RAW = "+5492236972421";
+  "https://wa.me/5492212015592?text=Hola%2C%20soy%20de%20La%20Plata.%20Me%20despidieron%20y%20quisiera%20asesorarme.";
+const PHONE = "+54 9 221-201-5592";
+const PHONE_RAW = "+5492212015592";
 
 export const metadata: Metadata = {
   title: "Abogado por Despido en La Plata | Indemnización y Reclamos Laborales",
@@ -35,7 +35,7 @@ const jsonLd = {
   description:
     "Abogados laboralistas que atienden La Plata, Berisso y Ensenada. Reclamos por despido sin causa, despido indirecto, trabajo sin registro y liquidación final.",
   url: "https://rualareu.com/landing/despidos-la-plata",
-  telephone: "+54-9-223-697-2421",
+  telephone: "+54-9-221-201-5592",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Almirante Brown 3071, Piso 2",

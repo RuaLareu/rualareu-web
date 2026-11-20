@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Image from "next/image";
 import Footer from "@/components/layout/Footer";
 import {
@@ -9,9 +9,9 @@ import {
 import { GOOGLE_REVIEWS } from "@/lib/constants";
 
 const WHATSAPP_URL =
-  "https://wa.me/5492236972421?text=Hola%2C%20soy%20de%20La%20Plata%20y%20necesito%20asesoramiento%20sobre%20un%20amparo%20de%20salud.";
-const PHONE = "+54 9 223-697-2421";
-const PHONE_RAW = "+5492236972421";
+  "https://wa.me/5492212015592?text=Hola%2C%20soy%20de%20La%20Plata%20y%20necesito%20asesoramiento%20sobre%20un%20amparo%20de%20salud.";
+const PHONE = "+54 9 221-201-5592";
+const PHONE_RAW = "+5492212015592";
 
 export const metadata: Metadata = {
   title: "Amparo de Salud en La Plata | Obra Social, Prepaga e IOMA | Medida Cautelar",
@@ -28,7 +28,7 @@ const jsonLd = {
   description:
     "Abogados especialistas en amparos de salud contra obras sociales, prepagas e IOMA que atienden La Plata, Berisso y Ensenada.",
   url: "https://rualareu.com/landing/amparos-de-salud-la-plata",
-  telephone: "+54-9-223-697-2421",
+  telephone: "+54-9-221-201-5592",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Almirante Brown 3071, Piso 2",

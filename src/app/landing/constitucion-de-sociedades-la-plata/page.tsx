@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Image from "next/image";
 import Footer from "@/components/layout/Footer";
 import { Phone, MessageCircle, Star, Search, FileText, Rocket, ChevronDown } from "lucide-react";
@@ -16,9 +16,9 @@ function GoogleLogo() {
 }
 
 const WHATSAPP_URL =
-  "https://wa.me/5492236972421?text=Hola%2C%20quiero%20asesorarme%20sobre%20la%20constituci%C3%B3n%20de%20una%20SRL%20o%20SA%20en%20La%20Plata.";
-const PHONE = "+54 9 223-697-2421";
-const PHONE_RAW = "+5492236972421";
+  "https://wa.me/5492212015592?text=Hola%2C%20quiero%20asesorarme%20sobre%20la%20constituci%C3%B3n%20de%20una%20SRL%20o%20SA%20en%20La%20Plata.";
+const PHONE = "+54 9 221-201-5592";
+const PHONE_RAW = "+5492212015592";
 
 export const metadata: Metadata = {
   title: "Abogados para Constituir SRL o SA en La Plata",
@@ -35,7 +35,7 @@ const jsonLd = {
   description:
     "Estudio jurídico contable que atiende a clientes de La Plata. Asesoramos en la constitución de SRL y SA: elección del tipo societario, redacción del estatuto y acompañamiento legal y contable posterior.",
   url: "https://rualareu.com/landing/constitucion-de-sociedades-la-plata",
-  telephone: "+54-9-223-697-2421",
+  telephone: "+54-9-221-201-5592",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Almirante Brown 3071, Piso 2",
